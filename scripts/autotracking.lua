@@ -301,3 +301,5 @@ ScriptHost:AddMemoryWatch( "Soul Blazer Item Data", 0x7e1b1e, 64, updateItemsFro
 ScriptHost:AddMemoryWatch( "Soul Blazer Stone Holders", 0x7e1a79, 64, updateStoneHoldersFromMemorySegment )
 ScriptHost:AddMemoryWatch( "Soul Blazer Souls from the Sky", 0x7e1b82, 64, updateSoulsFromSkyFromMemorySegment )
 ScriptHost:AddMemoryWatch( "Soul Blazer Soul Reveals from Lairs", 0x7e1ade, 64, updateReleasedSoulsFromMemorySegment )
+
+ScriptHost:LoadScript( "scripts/autotracking-custom.lua" )
