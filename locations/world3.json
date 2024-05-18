@@ -38,7 +38,7 @@
             ],
             "sections": [
               {
-                "name": "Thanks for the house.",
+                "name": "Thanks for the house",
                 "capture_item": true,
                 "item_count": 1
               }
@@ -111,17 +111,45 @@
                 ],
                 "sections": [
                   {
-                    "name": "Passage to Blester (3 Souls & 1 Item)",
-                    "clear_as_group": false,
-                    "item_count": 4
+                    "name": "Seabed Angelfish",
+                    "item_count": 1
                   },
                   {
-                    "name": "Blester (non metal creatures)",
-                    "clear_as_group": false,
-                    "item_count": 5
+                    "name": "Seabed Mermaid",
+                    "item_count": 1
                   },
                   {
-                    "name": "Blester Metal Gorrilas",
+                    "name": "Seabed Angelfish 2",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Jewel Fairy Near Blester",
+                    "chest_unopened_img": "images/tracker/jewel.png",
+                    "chest_opened_img": "images/tracker/jewelfairy.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Mermaid 7",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Mermaid Angelfish 4",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Mermaid 8",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Dolphin Secret Cave",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Mermaid Statue Ghost Ship",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Blester Metal Gorillas",
                     "access_rules": ["$canDefeatMetalGorillas"],
                     "item_count": 1
                   }
@@ -142,13 +170,42 @@
                     ],
                     "sections": [
                       {
-                        "name": "Passage to Rockbird",
+                        "name": "Seabed Mermaid 9",
                         "item_count": 1
                       },
                       {
-                        "name": "Rockbird (4 Souls & 3 Items)",
-                        "clear_as_group": false,
-                        "item_count": 7
+                        "name": "Angelfish Soul of Shield",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Mermaid Magic Flare",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Herb Chest",
+                        "chest_unopened_img": "images/tracker/chestclosed.png",
+                        "chest_opened_img": "images/tracker/chestopen.png",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "60 Gem Chest",
+                        "chest_unopened_img": "images/tracker/chestclosed.png",
+                        "chest_opened_img": "images/tracker/chestopen.png",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Rockbird Jewel Fairy",
+                        "chest_unopened_img": "images/tracker/jewel.png",
+                        "chest_opened_img": "images/tracker/jewelfairy.png",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Mermaid Tears",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Mermaid Statue Durean",
+                        "item_count": 1
                       }
                     ]
                   },
@@ -167,6 +224,12 @@
                         "name": "Passage to Durean (1 Soul & 1 Item)",
                         "clear_as_group": false,
                         "item_count": 2
+                      },
+                      {
+                        "name": "Jewel Fairy Near Durean",
+                        "chest_unopened_img": "images/tracker/jewel.png",
+                        "chest_opened_img": "images/tracker/jewelfairy.png",
+                        "item_count": 1
                       },
                       {
                         "name": "Durean Accessible Spots (5 Souls & 1 Item)",
@@ -203,9 +266,22 @@
                         "item_count": 3
                       },
                       {
-                        "name": "Ghost Ship (1 Soul & 1 Item)",
-                        "clear_as_group": false,
-                        "item_count": 2
+                        "name": "Power Bracelet Chest",
+                        "chest_unopened_img": "images/tracker/chestclosed.png",
+                        "chest_opened_img": "images/tracker/chestopen.png",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Ghost Ship Chest",
+                        "chest_unopened_img": "images/tracker/chestclosed.png",
+                        "chest_opened_img": "images/tracker/chestopen.png",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Boss: Floating Skull",
+                        "chest_unopened_img": "images/bosses/floatingskull.png",
+                        "chest_opened_img": "images/tracker/monsterlairsealed.png",
+                        "item_count": 1
                       },
                       {
                         "name": "Secret Cove",

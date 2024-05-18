@@ -21,6 +21,9 @@
     },
     "items_skarsnik-map_none": {
       "display_name": "Item (Skarsnik) Only Tracker"
-    }
+    },
+    "archipelago-items_equipment-map_simple": {
+      "display_name": "Archipelago Item (Equipment) & Map Tracker"
+    },
   }
 }

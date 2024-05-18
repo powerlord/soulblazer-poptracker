@@ -200,14 +200,82 @@
         ],
         "sections": [
           {
-            "name": "Outside Water Shrine: 2 Souls",
-            "clear_as_group": false,
-            "item_count": 2
+            "name": "Lostside Marsh: Entrance",
+            "item_count": 1
           },
           {
-            "name": "Inside Water Shrine: 7 Souls & 7 Items",
-            "clear_as_group": false,
-            "item_count": 14
+            "name": "Lostside Marsh: Island West of Water Shrine",
+            "item_count": 1
+          },
+          {
+            "name": "1F Center Island",
+            "item_count": 1
+          },
+          {
+            "name": "B1 Pillars Near Waterfalls",
+            "item_count": 1
+          },
+          {
+            "name": "B1 Behind the Waterfall Chest",
+            "chest_unopened_img": "images/tracker/chestclosed.png",
+            "chest_opened_img": "images/tracker/chestopen.png",
+            "item_count": 1
+          },
+          {
+            "name": "B1 Moving Spike Trap Crystal",
+            "chest_unopened_img": "images/tracker/jewel.png",
+            "chest_opened_img": "images/tracker/jewelfairy.png",
+            "item_count": 1
+          },
+          {
+            "name": "B1 Moving Spike Trap Chest",
+            "chest_unopened_img": "images/tracker/chestclosed.png",
+            "chest_opened_img": "images/tracker/chestopen.png",
+            "item_count": 1
+          },
+          {
+            "name": "B1 Moving Spike Trap Lair",
+            "item_count": 1
+          },
+          {
+            "name": "B2 South-West Chest",
+            "chest_unopened_img": "images/tracker/chestclosed.png",
+            "chest_opened_img": "images/tracker/chestopen.png",
+            "item_count": 1
+          },
+          {
+            "name": "B2 West Side-Room",
+            "item_count": 1
+          },
+          {
+            "name": "B2 Side-Room Secret Tile",
+            "chest_unopened_img": "images/tracker/chestclosed.png",
+            "chest_opened_img": "images/tracker/chestopen.png",
+            "item_count": 1
+          },
+          {
+            "name": "B2 North Hallway",
+            "item_count": 1
+          },
+          {
+            "name": "B2 Statue Room",
+            "item_count": 1
+          },
+          {
+            "name": "B2 South-East Chest",
+            "chest_unopened_img": "images/tracker/chestclosed.png",
+            "chest_opened_img": "images/tracker/chestopen.png",
+            "item_count": 1
+          },
+          {
+            "name": "B2 to 1F Connector",
+            "item_count": 1
+          },
+          {
+            "name": "1F Chest Near Exit",
+            "chest_unopened_img": "images/tracker/chestclosed.png",
+            "chest_opened_img": "images/tracker/chestopen.png",
+            "item_count": 1
           }
         ]
       },
@@ -224,19 +292,97 @@
         ],
         "sections": [
           {
-            "name": "Outside Fire Shrine: 1 Soul",
+            "name": "Lostside Marsh: North of Water Shrine",
             "item_count": 1
           },
           {
-            "name": "Inside Fire Shrine: 10 Souls & 3 Items",
-            "clear_as_group": false,
-            "item_count": 13
+            "name": "1F Second Bridge from the Left",
+            "chest_unopened_img": "images/tracker/chestclosed.png",
+            "chest_opened_img": "images/tracker/chestopen.png",
+            "item_count": 1
           },
           {
-            "name": "Inside Fire Shrine: Metal Monsters: 1 Soul & 2 Items",
-            "clear_as_group": false,
+            "name": "1F Eastmost Lair",
+            "item_count": 1
+          },
+          {
+            "name": "B1 Near the Stairs",
+            "chest_unopened_img": "images/tracker/chestclosed.png",
+            "chest_opened_img": "images/tracker/chestopen.png",
+            "item_count": 1
+          },
+          {
+            "name": "B1 North-West Lair",
+            "item_count": 1
+          },
+          {
+            "name": "B1 South Lair",
+            "item_count": 1
+          },
+          {
+            "name": "B1 South-East Lair",
+            "item_count": 1
+          },
+          {
+            "name": "B2 West of Stairs",
+            "item_count": 1
+          },
+          {
+            "name": "B2 Past First Heated Path",
+            "item_count": 1
+          },
+          {
+            "name": "B2 Heated Path Crystal",
+            "chest_unopened_img": "images/tracker/jewel.png",
+            "chest_opened_img": "images/tracker/jewelfairy.png",
+            "item_count": 1
+          },
+          {
+            "name": "B2 Triple Scorpion Chest",
+            "chest_unopened_img": "images/tracker/chestclosed.png",
+            "chest_opened_img": "images/tracker/chestopen.png",
+            "item_count": 1
+          },
+          {
+            "name": "B2 Heated Circle",
+            "item_count": 1
+          },
+          {
+            "name": "B2 Snaking Path Center",
+            "item_count": 1
+          },
+          {
+            "name": "B2 Snaking Path Bridge",
+            "item_count": 1
+          },
+          {
+            "name": "B2 Chest Near Exit",
+            "chest_unopened_img": "images/tracker/chestclosed.png",
+            "chest_opened_img": "images/tracker/chestopen.png",
+            "item_count": 1
+          },
+          {
+            "name": "B1 Isolated Room",
+            "item_count": 1
+          },
+          {
+            "name": "1F Metal Enemies Crystal",
             "access_rules": ["$canDefeatMetalMonsters"],
-            "item_count": 3
+            "chest_unopened_img": "images/tracker/jewel.png",
+            "chest_opened_img": "images/tracker/jewelfairy.png",
+            "item_count": 1
+          },
+          {
+            "name": "B1 Metal Enemies",
+            "access_rules": ["$canDefeatMetalMonsters"],
+            "chest_unopened_img": "images/tracker/chestclosed.png",
+            "chest_opened_img": "images/tracker/chestopen.png",
+            "item_count": 1
+          },
+          {
+            "name": "B2 Metal Enemies",
+            "access_rules": ["$canDefeatMetalMonsters"],
+            "item_count": 1
           }
         ]
       },
@@ -254,27 +400,48 @@
         ],
         "sections": [
           {
-            "name": "Outside Light Shrine: 2 Souls & 1 Item",
-            "clear_as_group": false,
-            "item_count": 3
-          },
-          {
-            "name": "Light Shrine 1st Floor",
+            "name": "Lostside Marsh: South-West of Light Shrine",
             "item_count": 1
           },
           {
-            "name": "Light Shrine Basement",
-            "clear_as_group": false,
-            "access_rules": ["[soullight]"],
-            "item_count": 3
+            "name": "Lostside Marsh: East of Fire Shrine",
+            "item_count": 1
           },
           {
-            "name": "Light Shrine 1st Floor (Spirit Lair)",
+            "name": "Lostside Marsh: Crystal Near Light Shrine",
+            "chest_unopened_img": "images/tracker/jewel.png",
+            "chest_opened_img": "images/tracker/jewelfairy.png",
+            "item_count": 1
+          },
+          {
+            "name": "1F North Lair",
+            "item_count": 1
+          },
+          {
+            "name": "Basement East Lair",
+            "access_rules": ["[soullight]"],
+            "item_count": 1
+          },
+          {
+            "name": "Basement Lair Near Portal",
+            "access_rules": ["[soullight]"],
+            "item_count": 1
+          },
+          {
+            "name": "Boss: Elemental Statues",
+            "access_rules": ["[soullight]"],
+            "chest_unopened_img": "images/bosses/elementalstatues.png",
+            "item_count": 1
+          },
+          {
+            "name": "1st Floor Spirit Enemies Chest",
+            "chest_unopened_img": "images/tracker/chestclosed.png",
+            "chest_opened_img": "images/tracker/chestopen.png",
             "access_rules": ["$canDefeatSpiritMonsters"],
             "item_count": 1
           },
           {
-            "name": "Light Shrine Basement (Spirit Lair)",
+            "name": "Basement Spirit Lair",
             "access_rules": [
               "$canDefeatSpiritMonsters,[soullight]"
             ],
