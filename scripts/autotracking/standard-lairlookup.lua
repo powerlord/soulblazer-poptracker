@@ -194,7 +194,8 @@ function locateRomLairsFromMemorySegment( segment )
     local coordY = segment:ReadUInt8(address + 2)
 
     if map ~= nil and map > 0 and coordX ~= nil and coordX > 0 and coordY ~= nil and coordY > 0 then
-      local coordinates = tonumber( string.format( "%02x%02x%02x", map, coordX, coordY ), 16 )
+      -- local coordinates = tonumber( string.format( "%02x%02x%02x", map, coordX, coordY ), 16 )
+      local coordinates = (map << 16) + (coordX << 8) + coordY
 
       for other_lair_id, other_coordinates in pairs(VANILLA_LAIRS) do
         if coordinates == other_coordinates then
