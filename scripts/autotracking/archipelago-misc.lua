@@ -41,10 +41,10 @@ function updateArchipelagoMiscRewardsFromMemorySegment( segment )
   updateLocationFromBit( segment, "@Mermaid in Common House Hidden Room/How'd you find me?", 0x7e1b19, 0x20 ) -- 0x35
   updateLocationFromBit( segment, "@Mermaid Queen/To the next act!", 0x7e1b19, 0x40 ) -- 0x36
   updateLocationFromBit( segment, "@Mermaid with Gift/Mermaid with Gift", 0x7e1b19, 0x80 ) -- 0x37
-  updateLocationFromBit( segment, "@Lue the Dolphin/Prison Break!", 0x7e1b20, 0x01 ) -- 0x38
-  updateLocationFromBit( segment, "@Rockbird/Rockbird Jewel Fairy", 0x7e1b20, 0x02 ) -- 0x39
-  updateLocationFromBit( segment, "@Blester/Jewel Fairy Near Blester", 0x7e1b20, 0x04 ) -- 0x3A
-  updateLocationFromBit( segment, "@Durean/Jewel Fairy Near Durean", 0x7e1b20, 0x08 ) -- 0x3B
+  updateLocationFromBit( segment, "@Lue the Dolphin/Prison Break!", 0x7e1b1a, 0x01 ) -- 0x38
+  updateLocationFromBit( segment, "@Rockbird/North-Western Island Jewel Fairy", 0x7e1b1a, 0x02 ) -- 0x39
+  updateLocationFromBit( segment, "@Blester/Seabed North, Jewel Fairy South of the Current", 0x7e1b1a, 0x04 ) -- 0x3A
+  updateLocationFromBit( segment, "@Durean/Jewel Fairy Near Durean", 0x7e1b1a, 0x08 ) -- 0x3B
 
   
 end
