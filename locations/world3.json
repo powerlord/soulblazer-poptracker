@@ -141,10 +141,6 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Dolphin Secret Cave",
-                    "item_count": 1
-                  },
-                  {
                     "name": "Mermaid Statue Ghost Ship",
                     "item_count": 1
                   },
@@ -221,9 +217,8 @@
                     ],
                     "sections": [
                       {
-                        "name": "Passage to Durean (1 Soul & 1 Item)",
-                        "clear_as_group": false,
-                        "item_count": 2
+                        "name": "Seabed Dolphin Pearl",
+                        "item_count": 1
                       },
                       {
                         "name": "Jewel Fairy Near Durean",
@@ -232,9 +227,30 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Durean Accessible Spots (5 Souls & 1 Item)",
-                        "clear_as_group": false,
-                        "item_count": 6
+                        "name": "Mermaid Pearl",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Mermaid 2",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Strange Bottle Chest",
+                        "chest_unopened_img": "images/tracker/chestclosed.png",
+                        "chest_opened_img": "images/tracker/chestopen.png",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Mermaid 3",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Dolphin Saves Lue",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Mermaid Statue Blester",
+                        "item_count": 1
                       },
                       {
                         "name": "Durean Metal Gorillas",
@@ -242,10 +258,21 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Durean Lava Protected (2 Souls & 1 Item)",
+                        "name": "Critical Sword Chest",
                         "access_rules": ["[mermaidtears]"],
-                        "clear_as_group": false,
-                        "item_count": 3
+                        "chest_unopened_img": "images/tracker/chestclosed.png",
+                        "chest_opened_img": "images/tracker/chestopen.png",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Lue",
+                        "access_rules": ["[mermaidtears]"],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Mermaid Nana",
+                        "access_rules": ["[mermaidtears]"],
+                        "item_count": 1
                       }
                     ]
                   },
@@ -261,12 +288,15 @@
                     ],
                     "sections": [
                       {
-                        "name": "Passage to Ghost Ship (2 Souls & 1 Item)",
-                        "clear_as_group": false,
-                        "item_count": 3
+                        "name": "Seabed Dolphin",
+                        "item_count": 1
                       },
                       {
-                        "name": "Power Bracelet Chest",
+                        "name": "Seabed Angelfish 3",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Seabed Power Bracelet Chest",
                         "chest_unopened_img": "images/tracker/chestclosed.png",
                         "chest_opened_img": "images/tracker/chestopen.png",
                         "item_count": 1

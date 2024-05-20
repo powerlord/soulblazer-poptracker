@@ -62,6 +62,38 @@ function updateLairsFromMemorySegment( segment )
   updateLocationFromBit( segment, "@Light Shrine/Basement East Lair", LairAddressLookup( 0x06f ), 0x80 ) -- CROCODILE3
   updateLocationFromBit( segment, "@Light Shrine/Basement Lair Near Portal", LairAddressLookup( 0x072), 0x80 ) -- MONMO
 
+  updateLocationFromBit( segment, "@Ghost Ship/Seabed Dolphin", LairAddressLookup( 0x07c ), 0x80 ) -- DOLPHIN
+  updateLocationFromBit( segment, "@Blester/Seabed Angelfish", LairAddressLookup( 0x083 ), 0x80 ) -- ANGELFISH
+  updateLocationFromBit( segment, "@Blester/Seabed Mermaid", LairAddressLookup( 0x084 ), 0x80 ) -- MERMAID
+  updateLocationFromBit( segment, "@Blester/Seabed Angelfish 2", LairAddressLookup( 0x086 ), 0x80 ) -- ANGELFISH2
+  updateLocationFromBit( segment, "@Durean/Mermaid Pearl", LairAddressLookup( 0x08a ), 0x80 ) -- MERMAID_PEARL
+  updateLocationFromBit( segment, "@Durean/Mermaid 2", LairAddressLookup( 0x08b ), 0x80 ) -- MERMAID2
+  updateLocationFromBit( segment, "@Durean/Dolphin Saves Lue", LairAddressLookup( 0x08c ), 0x80 ) -- DOLPHIN_SAVES_LUE
+  updateLocationFromBit( segment, "@Durean/Mermaid Statue Blester", LairAddressLookup( 0x08d ), 0x80 ) -- MERMAID_STATUE_BLESTER
+  updateLocationFromBit( segment, "@Durean/Durean Metal Gorillas", LairAddressLookup( 0x08e ), 0x80 ) -- MERMAID_RED_HOT_STICK
+  updateLocationFromBit( segment, "@Durean/Lue", LairAddressLookup( 0x08f ), 0x80 ) -- LUE
+  updateLocationFromBit( segment, "@Durean/Mermaid 3", LairAddressLookup( 0x092 ), 0x80 ) -- MERMAID3
+  updateLocationFromBit( segment, "@Durean/Mermaid Nana", LairAddressLookup( 0x095 ), 0x80 ) -- MERMAID_NANA
+  updateLocationFromBit( segment, "@Southerta/Mermaid 4", LairAddressLookup( 0x099 ), 0x80 ) -- MERMAID4
+  updateLocationFromBit( segment, "@Southerta/Dolphin 2", LairAddressLookup( 0x09b ), 0x80 ) -- DOLPHIN2
+  updateLocationFromBit( segment, "@Back of Southerta/One lonely lair...", LairAddressLookup( 0x09d ), 0x80 ) -- MERMAID_STATUE_ROCKBIRD
+  updateLocationFromBit( segment, "@Southerta/Mermaid Bubble Armor", LairAddressLookup( 0x0a1 ), 0x80 ) -- MERMAID_BUBBLE_ARMOR
+  updateLocationFromBit( segment, "@Southerta/Mermaid 5", LairAddressLookup( 0x0a4 ), 0x80 ) -- MERMAID5
+  updateLocationFromBit( segment, "@Southerta/Mermaid 6", LairAddressLookup( 0x0a5 ), 0x80 ) -- MERMAID6
+  updateLocationFromBit( segment, "@Rockbird/Mermaid Tears", LairAddressLookup( 0x0a7 ), 0x80 ) -- MERMAID_TEARS
+  updateLocationFromBit( segment, "@Rockbird/Mermaid Statue Durean", LairAddressLookup( 0x0ab ), 0x80 ) -- MERMAID_STATUE_DUREAN
+  updateLocationFromBit( segment, "@Ghost Ship/Seabed Angelfish 3", LairAddressLookup( 0x0ad ), 0x80 ) -- ANGELFISH3
+  updateLocationFromBit( segment, "@Rockbird/Angelfish Soul of Shield", LairAddressLookup( 0x0b1 ), 0x80 ) -- ANGELFISH_SOUL_OF_SHIELD
+  updateLocationFromBit( segment, "@Rockbird/Mermaid Magic Flare", LairAddressLookup( 0x0b5 ), 0x80 ) -- MERMAID_MAGIC_FLARE
+  updateLocationFromBit( segment, "@Ghost Ship/Boss: Floating Skull", LairAddressLookup( 0x0b6 ), 0x80 ) -- MERMAID_QUEEN
+  updateLocationFromBit( segment, "@Blester/Mermaid Statue Ghost Ship", LairAddressLookup( 0x0b9 ), 0x80 ) -- MERMAID_STATUE_GHOST_SHIP
+  updateLocationFromBit( segment, "@Blester/Blester Metal Gorillas", LairAddressLookup( 0x0bb ), 0x80 ) -- DOLPHIN_SECRET_CAVE
+  updateLocationFromBit( segment, "@Blester/Mermaid 7", LairAddressLookup( 0x0bd ), 0x80 ) -- MERMAID7
+  updateLocationFromBit( segment, "@Blester/Angelfish 4", LairAddressLookup( 0x0be ), 0x80 ) -- ANGELFISH4
+  updateLocationFromBit( segment, "@Blester/Mermaid 8", LairAddressLookup( 0x0c0 ), 0x80 ) -- MERMAID8
+  updateLocationFromBit( segment, "@Durean/Seabed Dolphin Pearl", LairAddressLookup( 0x0c1 ), 0x80 ) -- DOLPHIN_PEARL
+  updateLocationFromBit( segment, "@Rockbird/Seabed Mermaid 9", LairAddressLookup( 0x0c2 ), 0x80 ) -- MERMAID9
+
 end
 
 ScriptHost:AddMemoryWatch( "Soul Blazer Lairs", 0x7f0203, 512, updateLairsFromMemorySegment )

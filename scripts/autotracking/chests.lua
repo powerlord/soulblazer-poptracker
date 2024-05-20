@@ -29,6 +29,16 @@ function UpdateChestsFromMemorySegment( segment )
   updateLocationFromBit( segment, "@Fire Shrine/B2 Chest Near Exit", 0x7e1a80, 0x40 ) -- 0x16
   updateLocationFromBit( segment, "@Light Shrine/1st Floor Spirit Enemies Chest", 0x7e1a86, 0x04 ) -- 0x42
 
+  updateLocationFromBit( segment, "@Secret Chest/Secret Chest", 0x7e1a80, 0x80 ) -- 0x17
+  updateLocationFromBit( segment, "@Southwest Dolphin/Ride the nose", 0x7e1a81, 0x01 ) -- 0x18
+  updateLocationFromMultipleBits( segment, "@Ghost Ship/Secret Cove", {[0x7e1a81] = {0x02, 0x04, 0x08, 0x10}} ) -- 0x19, 0x1A, 0x1B, 0x1C
+  updateLocationFromBit( segment, "@Southerta/Herb Chest", 0x7e1a81, 0x20 ) -- 0x1D
+  updateLocationFromBit( segment, "@Rockbird/Herb Chest", 0x7e1a81, 0x40 ) -- 0x1E
+  updateLocationFromBit( segment, "@Rockbird/60 Gem Chest", 0x7e1a81, 0x80 ) -- 0x1F
+  updateLocationFromBit( segment, "@Durean/Critical Sword Chest", 0x7e1a82, 0x01 ) -- 0x20
+  updateLocationFromBit( segment, "@Durean/Strange Bottle Chest", 0x7e1a82, 0x02 ) -- 0x21
+  updateLocationFromBit( segment, "@Ghost Ship/Ghost Ship Chest", 0x7e1a82, 0x04 ) -- 0x22
+  updateLocationFromBit( segment, "@Ghost Ship/Seabed Power Bracelet Chest", 0x7e1a82, 0x08 ) -- 0x23
 
 end
 
