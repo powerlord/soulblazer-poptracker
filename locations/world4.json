@@ -216,7 +216,7 @@
           },
           {
             "name": "Nome the Snail",
-            "access_rules": ["w4mushroomsouth,w4grandpanome,w4nome"],
+            "access_rules": ["w4mushroomsouth,w4grandpanome,w4nome,w4mountainking"],
             "map_locations": [
               {
                 "map": "world4",
