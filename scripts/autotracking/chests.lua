@@ -32,13 +32,19 @@ function UpdateChestsFromMemorySegment( segment )
   updateLocationFromBit( segment, "@Secret Chest/Secret Chest", 0x7e1a80, 0x80 ) -- 0x17
   updateLocationFromBit( segment, "@Southwest Dolphin/Ride the nose", 0x7e1a81, 0x01 ) -- 0x18
   updateLocationFromMultipleBits( segment, "@Ghost Ship/Secret Cove", {[0x7e1a81] = {0x02, 0x04, 0x08, 0x10}} ) -- 0x19, 0x1A, 0x1B, 0x1C
-  updateLocationFromBit( segment, "@Front of Southerta/Herb Chest", 0x7e1a81, 0x20 ) -- 0x1D
+  updateLocationFromBit( segment, "@Front of Southerta/Tree Maze Chest", 0x7e1a81, 0x20 ) -- 0x1D
   updateLocationFromBit( segment, "@Rockbird/East Lakes Upper Chest", 0x7e1a81, 0x40 ) -- 0x1E
   updateLocationFromBit( segment, "@Rockbird/East Lakes Lower Chest", 0x7e1a81, 0x80 ) -- 0x1F
   updateLocationFromBit( segment, "@Durean/East, Lava River Chest", 0x7e1a82, 0x01 ) -- 0x20
   updateLocationFromBit( segment, "@Durean/East Island Chest", 0x7e1a82, 0x02 ) -- 0x21
   updateLocationFromBit( segment, "@Ghost Ship/Ghost Ship Chest", 0x7e1a82, 0x04 ) -- 0x22
-  updateLocationFromBit( segment, "@Ghost Ship/Seabed, South-East Cove", 0x7e1a82, 0x08 ) -- 0x23
+  updateLocationFromBit( segment, "@Ghost Ship/Seabed North-West, South-East Cove", 0x7e1a82, 0x08 ) -- 0x23
+
+  updateLocationFromBit( segment, "@Laynole Mountain (without Mushroom Shoes)/South, Down the Slide", 0x7e1a82, 0x10 ) -- 0x24
+  updateLocationFromMultipleBits( segment, "@Laynole Mountain (without Mushroom Shoes)/North, Buried Treasure", {[0x7e1a82] = {0x20, 0x40, 0x80}, [0x7e1a83] = {0x01}} ) -- 0x25, 0x26, 0x27, 0x28
+  updateLocationFromBit( segment, "@Laynole Mountain (with Mushroom Shoes)/Laynole, North Invisible Bridge", 0x7e1a83, 0x02 ) -- 0x29
+  updateLocationFromBit( segment, "@Lune/Laynole, Past the Invisible Bridge", 0x7e1a83, 0x04 ) -- 0x2a
+  updateLocationFromBit( segment, "@Lune/Laynole, Past the Second Invisible Bridge", 0x7e1a86, 0x02 ) -- 0x41
 
 end
 

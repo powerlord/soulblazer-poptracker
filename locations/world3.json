@@ -111,19 +111,19 @@
                 ],
                 "sections": [
                   {
-                    "name": "Seabed North, Out in the Open",
+                    "name": "Seabed North-East, Out in the Open",
                     "item_count": 1
                   },
                   {
-                    "name": "Seabed North, West Nook",
+                    "name": "Seabed North-East, West Nook",
                     "item_count": 1
                   },
                   {
-                    "name": "Seabed North, South of the Current",
+                    "name": "Seabed North-East, South of the Current",
                     "item_count": 1
                   },
                   {
-                    "name": "Seabed North, Jewel Fairy South of the Current",
+                    "name": "Seabed North-East, Crystal South of the Current",
                     "chest_unopened_img": "images/tracker/jewel.png",
                     "chest_opened_img": "images/tracker/jewelfairy.png",
                     "item_count": 1
@@ -166,7 +166,7 @@
                     ],
                     "sections": [
                       {
-                        "name": "Seabed South-East Corner",
+                        "name": "Seabed, South-East Corner",
                         "item_count": 1
                       },
                       {
@@ -174,7 +174,7 @@
                         "item_count": 1
                       },
                       {
-                        "name": "North-Western Island Jewel Fairy",
+                        "name": "North-Western Island Crystal",
                         "chest_unopened_img": "images/tracker/jewel.png",
                         "chest_opened_img": "images/tracker/jewelfairy.png",
                         "item_count": 1
@@ -217,11 +217,11 @@
                     ],
                     "sections": [
                       {
-                        "name": "Seabed Cliff",
+                        "name": "Seabed, Cliff",
                         "item_count": 1
                       },
                       {
-                        "name": "Jewel Fairy Near Durean",
+                        "name": "Crystal Near Durean",
                         "chest_unopened_img": "images/tracker/jewel.png",
                         "chest_opened_img": "images/tracker/jewelfairy.png",
                         "item_count": 1
@@ -288,17 +288,17 @@
                     ],
                     "sections": [
                       {
-                        "name": "Seabed, South-East Cove",
+                        "name": "Seabed North-West, South-East Cove",
                         "chest_unopened_img": "images/tracker/chestclosed.png",
                         "chest_opened_img": "images/tracker/chestopen.png",
                         "item_count": 1
                       },
                       {
-                        "name": "Seabed, Seaweed Maze South-West",
+                        "name": "Seabed North-West, Seaweed Maze South-West",
                         "item_count": 1
                       },
                       {
-                        "name": "Seabed, Seaweed Maze East",
+                        "name": "Seabed North-West, Seaweed Maze East",
                         "item_count": 1
                       },
                       {
@@ -439,7 +439,9 @@
             "item_count": 1
           },
           {
-            "name": "Herb Chest",
+            "name": "Tree Maze Chest",
+            "chest_unopened_img": "images/tracker/chestclosed.png",
+            "chest_opened_img": "images/tracker/chestopen.png",
             "item_count": 1
           },
           {

@@ -19,19 +19,44 @@
         ],
         "sections": [
           {
-            "name": "Starting Climb (3 Souls & 1 Item)",
-            "clear_as_group": false,
-            "item_count": 4
+            "name": "South, Mountain Base"
           },
           {
-            "name": "Buried Treasure (4 Souls & 4 Items)",
-            "clear_as_group": false,
-            "item_count": 8
+            "name": "South, Middle Level"
           },
           {
-            "name": "ICE PHYSICS!!! (2 Souls & 1 Item)",
-            "clear_as_group": false,
-            "item_count": 3
+            "name": "South, Down the Slide",
+            "chest_unopened_img": "images/tracker/chestclosed.png",
+            "chest_opened_img": "images/tracker/chestopen.png"
+          },
+          {
+            "name": "South, Up on the Ledge"
+          },
+          {
+            "name": "North, Path through the Snow",
+            "item_count": 2,
+            "clear_as_group": false
+          },
+          {
+            "name": "North, Buried Treasure",
+            "chest_unopened_img": "images/tracker/chestclosed.png",
+            "chest_opened_img": "images/tracker/chestopen.png",
+            "item_count": 4,
+            "clear_as_group": false
+          },
+          {
+            "name": "North, Top of the Slide"
+          },
+          {
+            "name": "Cave, Entrance"
+          },
+          {
+            "name": "Cave, ICE PHYSICS!!!!"
+          },
+          {
+            "name": "Cave, Entrance Shortcut Crystal",
+            "chest_unopened_img": "images/tracker/jewel.png",
+            "chest_opened_img": "images/tracker/jewelfairy.png"
           }
         ]
       },
@@ -39,7 +64,6 @@
         "name": "Laynole Mountain (with Mushroom Shoes)",
         "chest_unopened_img": "images/tracker/monsterlairopen.png",
         "chest_opened_img": "images/tracker/monsterlairsealed.png",
-        "access_rules": ["mushroomshoes"],
         "map_locations": [
           {
             "map": "world4",
@@ -47,22 +71,50 @@
             "y": 65
           }
         ],
+        "access_rules": ["mushroomshoes"],
         "sections": [
           {
-            "name": "ICE PHYSICS!!!",
-            "item_count": 1
+            "name": "Cave, Middle of the Ice"
           },
           {
-            "name": "HILL PHYSICS!!!",
-            "clear_as_group": false,
-            "item_count": 6
+            "name": "Ice Hill, North-East Corner"
           },
           {
-            "name": "INVISIBLE BRIDGES!!! (5 Souls & 1 Item)",
-            "clear_as_group": false,
-            "item_count": 6
+            "name": "Ice Hill, Center Alcove",
+            "item_count": 2,
+            "clear_as_group": false
+          },
+          {
+            "name": "Ice Hill, Middle Icy Slide"
+          },
+          {
+            "name": "Ice Hill, Across the Wall"
+          },
+          {
+            "name": "Ice Hill, South-West Corner"
+          },
+          {
+            "name": "Laynole, Amongst the Ice Flowers"
+          },
+          {
+            "name": "Laynole, North Invisible Bridge",
+            "chest_unopened_img": "images/tracker/chestclosed.png",
+            "chest_opened_img": "images/tracker/chestopen.png"  
+          },
+          {
+            "name": "Laynole, MORE ICE PHYSICS!!!!"
+          },
+          {
+            "name": "Laynole, EVEN MORE ICE PHYSICS!!!!!"
+          },
+          {
+            "name": "Laynole, South Invisible Bridge"
+          },
+          {
+            "name": "Laynole, South-West Corner"
           }
         ]
+
       },
       {
         "name": "Boy with Gift",
@@ -117,27 +169,48 @@
             ],
             "sections": [
               {
-                "name": "Last of Invisible Bridges",
-                "chest_unopened_img": "images/tracker/monsterlairopen.png",
-                "chest_opened_img": "images/tracker/monsterlairsealed.png",
-                "clear_as_group": false,
-                "item_count": 2
+                "name": "Laynole, Past the Invisible Bridge",
+                "chest_unopened_img": "images/tracker/chestclosed.png",
+                "chest_opened_img": "images/tracker/chestopen.png"  
               },
               {
-                "name": "Passage to Lune (2 Souls & 1 Item)",
-                "clear_as_group": false,
-                "item_count": 3
+                "name": "Laynole, Past the Second Invisible Bridge",
+                "chest_unopened_img": "images/tracker/chestclosed.png",
+                "chest_opened_img": "images/tracker/chestopen.png"  
               },
               {
-                "name": "Lune & Boss",
-                "clear_as_group": false,
-                "item_count": 4
+                "name": "Passage, Between Two Cliffs"
               },
               {
-                "name": "Lune (Dreamed Soul and Item)",
-                "clear_as_group": false,
+                "name": "Passage, Under the Waterfall"
+              },
+              {
+                "name": "Passage, Center of the River Crystal",
+                "chest_unopened_img": "images/tracker/jewel.png",
+                "chest_opened_img": "images/tracker/jewelfairy.png"
+              },
+              {
+                "name": "South-East Corner"
+              },
+              {
+                "name": "Cloackwise Gauntlet"
+              },
+              {
+                "name": "Counter-Clockwise Gauntlet"
+              },
+              {
+                "name": "Boss: Poseidon",
+                "chest_unopened_img": "images/bosses/poseidon.png"
+              },
+              {
+                "name": "Dream Lair",
+                "access_rules": ["dreamrod,w4mushroomsouth,w4grandpanome,w4sleepymushroom"]
+              },
+              {
+                "name": "Dream Tile",
                 "access_rules": ["dreamrod,w4mushroomsouth,w4grandpanome,w4sleepymushroom"],
-                "item_count": 2
+                "chest_unopened_img": "images/tracker/chestclosed.png",
+                "chest_opened_img": "images/tracker/chestopen.png"  
               }
             ]
           },

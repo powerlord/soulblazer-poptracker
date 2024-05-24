@@ -62,10 +62,10 @@ function updateLairsFromMemorySegment( segment )
   updateLocationFromBit( segment, "@Light Shrine/Basement East Lair", LairAddressLookup( 0x06f ), 0x80 ) -- CROCODILE3
   updateLocationFromBit( segment, "@Light Shrine/Basement Lair Near Portal", LairAddressLookup( 0x072), 0x80 ) -- MONMO
 
-  updateLocationFromBit( segment, "@Ghost Ship/Seabed, Seaweed Maze East", LairAddressLookup( 0x07c ), 0x80 ) -- DOLPHIN
-  updateLocationFromBit( segment, "@Blester/Seabed North, South of the Current", LairAddressLookup( 0x083 ), 0x80 ) -- ANGELFISH
-  updateLocationFromBit( segment, "@Blester/Seabed North, West Nook", LairAddressLookup( 0x084 ), 0x80 ) -- MERMAID
-  updateLocationFromBit( segment, "@Blester/Seabed North, Out in the Open", LairAddressLookup( 0x086 ), 0x80 ) -- ANGELFISH2
+  updateLocationFromBit( segment, "@Ghost Ship/Seabed North-West, Seaweed Maze East", LairAddressLookup( 0x07c ), 0x80 ) -- DOLPHIN
+  updateLocationFromBit( segment, "@Blester/Seabed North-East, South of the Current", LairAddressLookup( 0x083 ), 0x80 ) -- ANGELFISH
+  updateLocationFromBit( segment, "@Blester/Seabed North-East, West Nook", LairAddressLookup( 0x084 ), 0x80 ) -- MERMAID
+  updateLocationFromBit( segment, "@Blester/Seabed North-East, Out in the Open", LairAddressLookup( 0x086 ), 0x80 ) -- ANGELFISH2
   updateLocationFromBit( segment, "@Durean/Western Penninsula", LairAddressLookup( 0x08a ), 0x80 ) -- MERMAID_PEARL
   updateLocationFromBit( segment, "@Durean/North, Lowest Level", LairAddressLookup( 0x08b ), 0x80 ) -- MERMAID2
   updateLocationFromBit( segment, "@Durean/North, Middle Level", LairAddressLookup( 0x08c ), 0x80 ) -- DOLPHIN_SAVES_LUE
@@ -82,7 +82,7 @@ function updateLairsFromMemorySegment( segment )
   updateLocationFromBit( segment, "@Front of Southerta/Ambushed! South", LairAddressLookup( 0x0a5 ), 0x80 ) -- MERMAID6
   updateLocationFromBit( segment, "@Rockbird/West Center Lake", LairAddressLookup( 0x0a7 ), 0x80 ) -- MERMAID_TEARS
   updateLocationFromBit( segment, "@Rockbird/Center Lake North-East", LairAddressLookup( 0x0ab ), 0x80 ) -- MERMAID_STATUE_DUREAN
-  updateLocationFromBit( segment, "@Ghost Ship/Seabed, Seaweed Maze South-West", LairAddressLookup( 0x0ad ), 0x80 ) -- ANGELFISH3
+  updateLocationFromBit( segment, "@Ghost Ship/Seabed North-West, Seaweed Maze South-West", LairAddressLookup( 0x0ad ), 0x80 ) -- ANGELFISH3
   updateLocationFromBit( segment, "@Rockbird/Center Lake South-West", LairAddressLookup( 0x0b1 ), 0x80 ) -- ANGELFISH_SOUL_OF_SHIELD
   updateLocationFromBit( segment, "@Rockbird/South-West Lake", LairAddressLookup( 0x0b5 ), 0x80 ) -- MERMAID_MAGIC_FLARE
   updateLocationFromBit( segment, "@Ghost Ship/Boss: Floating Skull", LairAddressLookup( 0x0b6 ), 0x80 ) -- MERMAID_QUEEN
@@ -91,8 +91,38 @@ function updateLairsFromMemorySegment( segment )
   updateLocationFromBit( segment, "@Blester/East of the Entrance", LairAddressLookup( 0x0bd ), 0x80 ) -- MERMAID7
   updateLocationFromBit( segment, "@Blester/Farther East", LairAddressLookup( 0x0be ), 0x80 ) -- ANGELFISH4
   updateLocationFromBit( segment, "@Blester/Eastern Pillars", LairAddressLookup( 0x0c0 ), 0x80 ) -- MERMAID8
-  updateLocationFromBit( segment, "@Durean/Seabed Cliff", LairAddressLookup( 0x0c1 ), 0x80 ) -- DOLPHIN_PEARL
-  updateLocationFromBit( segment, "@Rockbird/Seabed South-East Corner", LairAddressLookup( 0x0c2 ), 0x80 ) -- MERMAID9
+  updateLocationFromBit( segment, "@Durean/Seabed, Cliff", LairAddressLookup( 0x0c1 ), 0x80 ) -- DOLPHIN_PEARL
+  updateLocationFromBit( segment, "@Rockbird/Seabed, South-East Corner", LairAddressLookup( 0x0c2 ), 0x80 ) -- MERMAID9
+
+  updateLocationFromBit( segment, "@Laynole Mountain (without Mushroom Shoes)/South, Middle Level", LairAddressLookup( 0x0c9 ), 0x80 ) -- GRANDPA
+  updateLocationFromBit( segment, "@Laynole Mountain (without Mushroom Shoes)/South, Mountain Base", LairAddressLookup( 0x0ca ), 0x80 ) -- GIRL
+  updateLocationFromBit( segment, "@Laynole Mountain (without Mushroom Shoes)/South, Up on the Ledge", LairAddressLookup( 0x0cb ), 0x80 ) -- MUSHROOM
+  updateLocationFromBit( segment, "@Laynole Mountain (without Mushroom Shoes)/North, Top of the Slide", LairAddressLookup( 0x0cc ), 0x80 ) -- BOY
+  updateLocationFromMultipleBits( segment, "@Laynole Mountain (without Mushroom Shoes)/North, Path through the Snow", {[LairAddressLookup(0x0d3 )] = {0x80}, [LairAddressLookup( 0x0d4 )] = {0x80} })
+  updateLocationFromBit( segment, "@Lune/Passage, Under the Waterfall", LairAddressLookup( 0x0d6 ), 0x80 ) -- NOME
+  updateLocationFromBit( segment, "@Lune/Passage, Between Two Cliffs", LairAddressLookup( 0x0d7 ), 0x80 ) -- BOY2
+  updateLocationFromBit( segment, "@Lune/South-East Corner", LairAddressLookup( 0x0dd ), 0x80 ) -- MUSHROOM_EMBLEM_F
+  updateLocationFromBit( segment, "@Lune/Cloackwise Gauntlet", LairAddressLookup( 0x0e1 ), 0x80 ) -- DANCING_GRANDMA
+  updateLocationFromBit( segment, "@Lune/Counter-Clockwise Gauntlet", LairAddressLookup( 0x0e6 ), 0x80 ) -- DANCING_GRANDMA2
+  updateLocationFromBit( segment, "@Lune/Dream Lair", LairAddressLookup( 0x0e8 ), 0x80 ) -- SNAIL_EMBLEM_E
+  updateLocationFromBit( segment, "@Laynole Mountain (without Mushroom Shoes)/Cave, ICE PHYSICS!!!!", LairAddressLookup( 0x0e9 ), 0x80 ) -- BOY_MUSHROOM_SHOES
+  updateLocationFromBit( segment, "@Laynole Mountain (with Mushroom Shoes)/Cave, Middle of the Ice", LairAddressLookup( 0x0ea ), 0x80 ) -- GRANDMA
+  updateLocationFromBit( segment, "@Laynole Mountain (without Mushroom Shoes)/Cave, Entrance", LairAddressLookup( 0x0eb ), 0x80 ) -- GIRL2
+  updateLocationFromBit( segment, "@Laynole Mountain (with Mushroom Shoes)/Ice Hill, North-East Corner", LairAddressLookup( 0x0ee ), 0x80 ) -- MUSHROOM2
+  updateLocationFromMultipleBits( segment, "@Laynole Mountain (with Mushroom Shoes)/Ice Hill, Center Alcove", {[LairAddressLookup( 0x0ef )] = { 0x80 }, [LairAddressLookup( 0x0f0 )] = { 0x80 }} )
+  --updateLocationFromBit( segment, "@Laynole Mountain (with Mushroom Shoes)/Ice Hill, Snail Racer", LairAddressLookup( 0x0ef ), 0x80 ) -- SNAIL_RACER
+  --updateLocationFromBit( segment, "@Laynole Mountain (with Mushroom Shoes)/Ice Hill, Snail Racer 2", LairAddressLookup( 0x0f0 ), 0x80 ) -- SNAIL_RACER2
+  updateLocationFromBit( segment, "@Laynole Mountain (with Mushroom Shoes)/Ice Hill, Middle Icy Slide", LairAddressLookup( 0x0f2 ), 0x80 ) -- GIRL2
+  updateLocationFromBit( segment, "@Laynole Mountain (with Mushroom Shoes)/Ice Hill, Across the Wall", LairAddressLookup( 0x0f6 ), 0x80 ) -- MUSHROOM3
+  updateLocationFromBit( segment, "@Laynole Mountain (with Mushroom Shoes)/Ice Hill, South-West Corner", LairAddressLookup( 0x0f7 ), 0x80 ) -- SNAIL
+  updateLocationFromBit( segment, "@Laynole Mountain (with Mushroom Shoes)/Laynole, Amongst the Ice Flowers", LairAddressLookup( 0x0f8 ), 0x80 ) -- GRANDPA3
+  updateLocationFromBit( segment, "@Laynole Mountain (with Mushroom Shoes)/Laynole, EVEN MORE ICE PHYSICS!!!!!", LairAddressLookup( 0x0fa ), 0x80 ) -- SNAIL2
+  updateLocationFromBit( segment, "@Laynole Mountain (with Mushroom Shoes)/Laynole, MORE ICE PHYSICS!!!!", LairAddressLookup( 0x0fc ), 0x80 ) -- GRANDPA4
+  updateLocationFromBit( segment, "@Laynole Mountain (with Mushroom Shoes)/Laynole, South-West Corner", LairAddressLookup( 0x0fe ), 0x80 ) -- GRANDPA_LUNE
+  updateLocationFromBit( segment, "@Laynole Mountain (with Mushroom Shoes)/Laynole, South Invisible Bridge", LairAddressLookup( 0x0ff ), 0x80 ) -- GRANDPA5
+  updateLocationFromBit( segment, "@Lune/Boss: Poseidon", LairAddressLookup( 0x103 ), 0x80 ) -- MOUNTAIN_KING
+
+
 
 end
 

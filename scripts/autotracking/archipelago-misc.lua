@@ -20,7 +20,7 @@ function updateArchipelagoMiscRewardsFromMemorySegment( segment )
   updateLocationFromBit( segment, "@Trial Room/Magician" , 0x7e1b13, 0x80 ) -- 0x07
   updateLocationFromBit( segment, "@Hideout Crystal/Nice view at least...", 0x7e1b14, 0x01 ) -- 0x08
   updateLocationFromBit( segment, "@Chest Cave/Crystal", 0x7e1b14, 0x02 ) -- 0x09
-  updateLocationFromBit( segment, "@Underground Castle West/Crystal", 0x7e1b14, 0x04)
+  updateLocationFromBit( segment, "@Underground Castle West/Crystal on Ledge", 0x7e1b14, 0x04)
 
   updateLocationFromBit( segment, "@Flying Bird/Sneak carefully...", 0x7e1b14, 0x08 ) -- 0x0B
   updateLocationFromBit( segment, "@Master Crystal/All 8 Emblems...", 0x7e1b14, 0x10 ) -- 0x0C
@@ -42,9 +42,20 @@ function updateArchipelagoMiscRewardsFromMemorySegment( segment )
   updateLocationFromBit( segment, "@Mermaid Queen/To the next act!", 0x7e1b19, 0x40 ) -- 0x36
   updateLocationFromBit( segment, "@Mermaid with Gift/Mermaid with Gift", 0x7e1b19, 0x80 ) -- 0x37
   updateLocationFromBit( segment, "@Lue the Dolphin/Prison Break!", 0x7e1b1a, 0x01 ) -- 0x38
-  updateLocationFromBit( segment, "@Rockbird/North-Western Island Jewel Fairy", 0x7e1b1a, 0x02 ) -- 0x39
-  updateLocationFromBit( segment, "@Blester/Seabed North, Jewel Fairy South of the Current", 0x7e1b1a, 0x04 ) -- 0x3A
-  updateLocationFromBit( segment, "@Durean/Jewel Fairy Near Durean", 0x7e1b1a, 0x08 ) -- 0x3B
+  updateLocationFromBit( segment, "@Rockbird/North-Western Island Crystal", 0x7e1b1a, 0x02 ) -- 0x39
+  updateLocationFromBit( segment, "@Blester/Seabed North-East, Crystal South of the Current", 0x7e1b1a, 0x04 ) -- 0x3A
+  updateLocationFromBit( segment, "@Durean/Crystal Near Durean", 0x7e1b1a, 0x08 ) -- 0x3B
+
+  updateLocationFromBit( segment, "@Mountain King/DANCING GRANDMAS!", 0x7e1b16, 0x01 ) -- 0x18
+  updateLocationFromBit( segment, "@Boy with Gift/Hope this helps!", 0x7e1b16, 0x02 ) -- 0x19
+  updateLocationFromBit( segment, "@Nome the Snail/Free the snail!", 0x7e1b16, 0x04 ) -- 0x1A
+  updateLocationFromBit( segment, "@Secret Snail/Fake Northern Wall", 0x7e1b16, 0x08 ) -- 0x1B
+  updateLocationFromBit( segment, "@Lune/Dream Tile", 0x7e1b16, 0x10 ) -- 0x1C
+  updateLocationFromBit( segment, "@Laynole Mountain (without Mushroom Shoes)/Cave, Entrance Shortcut Crystal", 0x7e1b16, 0x20 ) -- 0x1D
+  updateLocationFromBit( segment, "@Lune/Passage, Center of the River Crystal", 0x7e1b16, 0x40 ) -- 0x1E
+  
+
+
 
   
 end
