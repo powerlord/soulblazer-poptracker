@@ -43,8 +43,39 @@ function UpdateChestsFromMemorySegment( segment )
   updateLocationFromBit( segment, "@Laynole Mountain (without Mushroom Shoes)/South, Down the Slide", 0x7e1a82, 0x10 ) -- 0x24
   updateLocationFromMultipleBits( segment, "@Laynole Mountain (without Mushroom Shoes)/North, Buried Treasure", {[0x7e1a82] = {0x20, 0x40, 0x80}, [0x7e1a83] = {0x01}} ) -- 0x25, 0x26, 0x27, 0x28
   updateLocationFromBit( segment, "@Laynole Mountain (with Mushroom Shoes)/Laynole, North Invisible Bridge", 0x7e1a83, 0x02 ) -- 0x29
-  updateLocationFromBit( segment, "@Lune/Laynole, Past the Invisible Bridge", 0x7e1a83, 0x04 ) -- 0x2a
+  updateLocationFromBit( segment, "@Lune/Laynole, Past the Invisible Bridge", 0x7e1a83, 0x04 ) -- 0x2A
   updateLocationFromBit( segment, "@Lune/Laynole, Past the Second Invisible Bridge", 0x7e1a86, 0x02 ) -- 0x41
+
+  updateLocationFromBit( segment, "@Free Chest/No strings attached", 0x7e1a85, 0x80 ) -- 0x3F
+  updateLocationFromBit( segment, "@Power Plant/Chest Near Start", 0x7e1a83, 0x08 ) -- 0x2B
+  updateLocationFromBit( segment, "@Left Model Town/House Maze Chest", 0x7e1a83, 0x10 ) -- 0x2C
+  updateLocationFromMultipleBits( segment, "@Left Model Town/North Hidden Enemies Chests", {[0x7e1a83] = {0x20, 0x40}} )
+  --updateLocationFromBit( segment, "@Left Model Town/North-West Chest", 0x7e1a83, 0x20 ) -- 0x2D
+  --updateLocationFromBit( segment, "@Left Model Town/North-East Chest", 0x7e1a83, 0x40 ) -- 0x2E
+  updateLocationFromMultipleBits( segment, "@Right Model Town/Center, Chests hidden among the houses", {[0x7e1a83] = {0x80}, [0x7e1a84] = {0x01}} ) -- 0x2F, 0x30
+  --updateLocationFromBit( segment, "@Right Model Town/North Chest", 0x7e1a83, 0x80 ) -- 0x2F
+  --updateLocationFromBit( segment, "@Right Model Town/South Chest", 0x7e1a84, 0x01 ) -- 0x30
+
+  updateLocationFromBit( segment, "@Magridd Dungeon/B1 West Chest", 0x7e1a84, 0x02 ) --0x31
+  updateLocationFromBit( segment, "@Magridd Dungeon/B1 North-East Corner Chest", 0x7e1a86, 0x01 ) --0x40
+  updateLocationFromBit( segment, "@Magridd Dungeon/B2 Hidden Chest in North Room South-West Corner", 0x7e1a84, 0x04 ) --0x32
+  updateLocationFromBit( segment, "@Magridd Dungeon/B2 Hidden Chest North-East of B3 stairs", 0x7e1a84, 0x08 ) --0x33
+  updateLocationFromBit( segment, "@Magridd Dungeon/B2 Hidden Chest at Fake Dead End", 0x7e1a86, 0x08 ) --0x43
+  updateLocationFromBit( segment, "@Magridd Dungeon/B3 Hidden Chest, North-West Corner", 0x7e1a84, 0x10 ) --0x34
+  updateLocationFromMultipleBits( segment, "@Right Tower/2F East Chests", {[0x7e1a85] = {0x20, 0x40}} ) -- 0x3D, 0x3E
+  --updateLocationFromBit( segment, "@Right Tower/2F Left Chest", 0x7e1a85, 0x20 ) --0x3D
+  --updateLocationFromBit( segment, "@Right Tower/2F Right Chest", 0x7e1a85, 0x40 ) --0x3E
+  updateLocationFromMultipleBits( segment, "@Right Tower/3F South-West Chests" , {[0x7e1a84] = {0x20, 0x40}} ) -- 0x35, 0x36
+  --updateLocationFromBit( segment, "@Right Tower/3F North-West Chest", 0x7e1a84, 0x20 ) --0x35
+  --updateLocationFromBit( segment, "@Right Tower/3F South-East Chest", 0x7e1a84, 0x40 ) --0x36
+
+  updateLocationFromBit( segment, "@World of Evil/South, South-East Chest/Clear the South-East Lair first", 0x7e1a84, 0x80 ) --0x37
+  updateLocationFromBit( segment, "@World of Evil/South, South-West Chest/Clear the South-West Lair first", 0x7e1a85, 0x01 ) --0x38
+  updateLocationFromBit( segment, "@World of Evil/West Warp Chest/Warp unlocked by a nearby lair", 0x7e1a85, 0x02 ) --0x39
+  updateLocationFromBit( segment, "@World of Evil/Middle, Past the Exit/Dodge the spinning rectangles", 0x7e1a85, 0x04 ) --0x3A
+  updateLocationFromBit( segment, "@World of Evil/Dazzling Space, Left of Entrance/This one is easy...", 0x7e1a85, 0x08 ) --0x3B
+  updateLocationFromBit( segment, "@World of Evil/Dazzling Space, Through the Rectangles/This one is less easy", 0x7e1a85, 0x10 ) --0x3C
+
 
 end
 

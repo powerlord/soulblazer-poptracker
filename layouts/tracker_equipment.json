@@ -640,6 +640,13 @@
                   }
                 ]
               }
+            },
+            {
+              "title": "World of Evil",
+              "content": {
+                "type": "map",
+                "maps": ["world7"]
+              }
             }
           ]
         }

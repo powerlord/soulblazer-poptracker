@@ -426,12 +426,9 @@
             "item_count": 1
           },
           {
-            "name": "Ambushed! North",
-            "item_count": 1
-          },
-          {
-            "name": "Ambushed! South",
-            "item_count": 1
+            "name": "Ambushed!",
+            "item_count": 2,
+            "clear_as_group": false
           },
           {
             "name": "Tree Maze Chest",

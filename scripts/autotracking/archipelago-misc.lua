@@ -20,7 +20,7 @@ function updateArchipelagoMiscRewardsFromMemorySegment( segment )
   updateLocationFromBit( segment, "@Trial Room/Magician" , 0x7e1b13, 0x80 ) -- 0x07
   updateLocationFromBit( segment, "@Hideout Crystal/Nice view at least...", 0x7e1b14, 0x01 ) -- 0x08
   updateLocationFromBit( segment, "@Chest Cave/Crystal", 0x7e1b14, 0x02 ) -- 0x09
-  updateLocationFromBit( segment, "@Underground Castle West/Crystal on Ledge", 0x7e1b14, 0x04)
+  updateLocationFromBit( segment, "@Underground Castle West/Crystal on Ledge", 0x7e1b14, 0x04 ) -- 0x0A
 
   updateLocationFromBit( segment, "@Flying Bird/Sneak carefully...", 0x7e1b14, 0x08 ) -- 0x0B
   updateLocationFromBit( segment, "@Master Crystal/All 8 Emblems...", 0x7e1b14, 0x10 ) -- 0x0C
@@ -53,11 +53,29 @@ function updateArchipelagoMiscRewardsFromMemorySegment( segment )
   updateLocationFromBit( segment, "@Lune/Dream Tile", 0x7e1b16, 0x10 ) -- 0x1C
   updateLocationFromBit( segment, "@Laynole Mountain (without Mushroom Shoes)/Cave, Entrance Shortcut Crystal", 0x7e1b16, 0x20 ) -- 0x1D
   updateLocationFromBit( segment, "@Lune/Passage, Center of the River Crystal", 0x7e1b16, 0x40 ) -- 0x1E
-  
 
+  updateLocationFromBit( segment, "@Chest of Drawers/Push the Drawers", 0x7e1b16, 0x80 ) -- 0x1F
+  updateLocationFromBit( segment, "@Chest of Drawers/Open the Drawers", 0x7e1b17, 0x01 ) -- 0x20
+  updateLocationFromBit( segment, "@Dancing Plant/Dance, plant, dance!", 0x7e1b17, 0x02 ) -- 0x21
+  updateLocationFromBit( segment, "@Sleepy Cat/Where's the fish...ZZZZZZ", 0x7e1b17, 0x04 ) -- 0x22
+  updateLocationFromBit( segment, "@Dancing Plant (2nd Floor)/Dance, plant, dance!", 0x7e1b17, 0x08 ) -- 0x23
+  updateLocationFromBit( segment, "@Attic/Chest of Drawers", 0x7e1b17, 0x10 ) -- 0x24
+  updateLocationFromBit( segment, "@Attic/Marie the Doll", 0x7e1b17, 0x20 ) -- 0x25
+  updateLocationFromBit( segment, "@Mouse's Reward/Mouse in Hallway", 0x7e1b17, 0x40 ) -- 0x26
+  updateLocationFromBit( segment, "@Factory/B2 South-West Crystal", 0x7e1b17, 0x80 ) -- 0x27
+  updateLocationFromBit( segment, "@Left Model Town/North-East Crystal", 0x7e1b18, 0x01 ) -- 0x28
+  updateLocationFromBit( segment, "@Power Plant/Crystal", 0x7e1b18, 0x02 ) -- 0x29
 
+  updateLocationFromBit( segment, "@Sleepy Soldier/Wake up please", 0x7e1b18, 0x04 ) -- 0x2A
+  updateLocationFromBit( segment, "@The Queen/RIP the Queen (post Leo's Death)", 0x7e1b18, 0x08 ) -- 0x2B
+  updateLocationFromBit( segment, "@The Queen/Meet the Queen (never major)", 0x7e1b18, 0x10 ) -- 0x2C
+  updateLocationFromBit( segment, "@Concert Hall/Nice music. Go to where the soldier stood.", 0x7e1b18, 0x20 ) -- 0x2D
+  updateLocationFromBit( segment, "@Maid at the Bar/Recharging", 0x7e1b18, 0x40 ) -- 0x2E
+  updateLocationFromBit( segment, "@Item on the Grounds/Please be a good one", 0x7e1b18, 0x80 ) -- 0x2F
+  updateLocationFromBit( segment, "@King Magridd/Long live...", 0x7e1b19, 0x01 ) -- 0x30
+  updateToggleItemFromBit( segment, "ripleo", 0x7e1b19, 0x02 ) -- 0x31
+  updateLocationFromBit( segment, "@Magridd Dungeon/B1 Skeleton next to North-East Chest", 0x7e1b19, 0x04 ) -- 0x32
 
-  
 end
 
 ScriptHost:AddMemoryWatch( "Soul Blazer Archipelago Misc Rewards", 0x7e1b13, 8, updateArchipelagoMiscRewardsFromMemorySegment )

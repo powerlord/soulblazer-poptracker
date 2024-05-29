@@ -34,5 +34,11 @@
     "img": "images/maps/world6.png",
     "location_size": 30,
     "location_border_thickness": 2
+  },
+  {
+    "name": "world7",
+    "img": "images/maps/world7.png",
+    "location_size": 30,
+    "location_border_thickness": 2
   }
 ]

@@ -191,6 +191,11 @@ function updateStoneHoldersFromMemorySegment( segment )
     updateToggleItemFromBit( segment, "marie", 0x7e1a79, 0x10 )
     updateToggleItemFromBit( segment, "king", 0x7e1a79, 0x20 )
   end
+
+  -- Not strictly an item, but falls in this memory block
+  if AUTOTRACKER_ENABLE_LOCATION_TRACKING then
+    updateToggleItemFromBit( segment, "stonesconsumed", 0x7e1a7d, 0x10 )
+  end
 end
 
 function updateSoulsFromSkyFromMemorySegment( segment )

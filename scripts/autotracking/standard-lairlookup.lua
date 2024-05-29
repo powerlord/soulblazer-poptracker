@@ -2,7 +2,8 @@ local LAIR_ROM_OFFSET = 0xba0d
 local LAIR_ROM_DATA_SIZE = 0x20
 local LAIR_COORDINATE_OFFSET = 0x0b
 
-local VANILLA_LAIRS = {
+-- [lair_id] = map x y (each is one byte)
+local VANILLA_LAIR_LOCATIONS = {
   [0x002] = 0x051937,
   [0x006] = 0x05140b,
   [0x007] = 0x051f06,
@@ -187,7 +188,7 @@ function locateRomLairsFromMemorySegment( segment )
     return
   end
 
-  for lair_id, _ in pairs(VANILLA_LAIRS) do
+  for lair_id, _ in pairs(VANILLA_LAIR_LOCATIONS) do
     local address = convertAddressToAbus(LAIR_ROM_OFFSET + (lair_id * LAIR_ROM_DATA_SIZE) + LAIR_COORDINATE_OFFSET)
     local map = segment:ReadUInt8(address)
     local coordX = segment:ReadUInt8(address + 1)
@@ -197,7 +198,7 @@ function locateRomLairsFromMemorySegment( segment )
       -- local coordinates = tonumber( string.format( "%02x%02x%02x", map, coordX, coordY ), 16 )
       local coordinates = (map << 16) + (coordX << 8) + coordY
 
-      for other_lair_id, other_coordinates in pairs(VANILLA_LAIRS) do
+      for other_lair_id, other_coordinates in pairs(VANILLA_LAIR_LOCATIONS) do
         if coordinates == other_coordinates then
           lairs[other_lair_id] = lair_id
         end

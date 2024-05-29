@@ -17,23 +17,66 @@
         ],
         "chest_unopened_img": "images/tracker/monsterlairopen.png",
         "chest_opened_img": "images/tracker/monsterlairsealed.png",
-        "access_rules": ["[$canDefeatMetalMonsters]"],
         "sections": [
           {
-            "name": "1st Level",
-            "clear_as_group": false,
-            "item_count": 8
+            "name": "B1 North then East from the Entrance"
           },
           {
-            "name": "2nd Level (5 Souls & 1 Item)",
-            "access_rules": ["[icearmor]"],
-            "clear_as_group": false,
-            "item_count": 6
+            "name": "B1 South-West Blocked Pipe"
+          },
+          {
+            "name": "B1 Platform North of Big Pipe"
+          },
+          {
+            "name": "B1 North-West Platform",
+            "access_rules": ["$canDefeatMetalMonsters"]
+          },
+          {
+            "name": "B1 South-East Platform off Small Pipes",
+            "access_rules": ["$canDefeatMetalMonsters"]
+          },
+          {
+            "name": "B1 South-East Small Pipe Gauntlet",
+            "access_rules": ["$canDefeatMetalMonsters"],
+            "item_count": 2,
+            "clear_as_group": false
+          },
+          {
+            "name": "B1 North-West Triple Pipe Platform",
+            "access_rules": ["$canDefeatMetalMonsters"]
+          },
+          {
+            "name": "B2 Second Flame Pit from the Left",
+            "access_rules": ["$canDefeatMetalMonsters,[icearmor]"]
+          },
+          {
+            "name": "B2 Inside the Big Pipe",
+            "access_rules": ["$canDefeatMetalMonsters,[icearmor]"]
+          },
+          {
+            "name": "B2 South-West Crystal",
+            "access_rules": ["$canDefeatMetalMonsters,[icearmor]"],
+            "chest_unopened_img": "images/tracker/jewel.png",
+            "chest_opened_img": "images/tracker/jewelfairy.png"
+          },
+          {
+            "name": "B2 Past the Double Fire Pits",
+            "access_rules": ["$canDefeatMetalMonsters,[icearmor]"]
+          },
+          {
+            "name": "B2 Inverted T Platform",
+            "access_rules": ["$canDefeatMetalMonsters,[icearmor]"]
+          },
+          {
+            "name": "B2 One Last Fire Pit...",
+            "access_rules": ["$canDefeatMetalMonsters,[icearmor]"]
           }
         ]
       },
       {
         "name": "Power Plant",
+        "chest_unopened_img": "images/tracker/monsterlairopen.png",
+        "chest_opened_img": "images/tracker/monsterlairsealed.png",
         "map_locations": [
           {
             "map": "world5",
@@ -44,23 +87,24 @@
         "access_rules": ["w5stepsbasement,[$canDefeatMetalMonsters]"],
         "sections": [
           {
-            "name": "Before Fire Section",
-            "item_count": 1
+            "name": "Chest Near Start",
+            "chest_unopened_img": "images/tracker/chestclosed.png",
+            "chest_opened_img": "images/tracker/chestopen.png"
           },
           {
-            "name": "After Fire Section (1 Soul & 1 Item)",
+            "name": "South-East Gauntlet",
+            "access_rules": ["[icearmor]"]
+          },
+          {
+            "name": "Crystal",
             "access_rules": ["[icearmor]"],
-            "chest_unopened_img": "images/tracker/monsterlairopen.png",
-            "chest_opened_img": "images/tracker/monsterlairsealed.png",
-            "clear_as_group": false,
-            "item_count": 2
+            "chest_unopened_img": "images/tracker/jewel.png",
+            "chest_opened_img": "images/tracker/jewelfairy.png"
           },
           {
-            "name": "Boss",
-            "chest_unopened_img": "images/tracker/monsterlairopen.png",
-            "chest_opened_img": "images/tracker/monsterlairsealed.png",
+            "name": "Boss: Tin Doll",
             "access_rules": ["$canDefeatMetalMonsters,[icearmor]"],
-            "item_count": 1
+            "chest_unopened_img": "images/bosses/tindoll.png"
           }
         ]
       },
@@ -79,7 +123,7 @@
             ],
             "sections": [
               {
-                "name": "No strings attached.",
+                "name": "No strings attached",
                 "item_count": 1
               }
             ]
@@ -238,14 +282,52 @@
                     "y": 250
                   }
                 ],
-                "access_rules": ["w5model1,[souldetection]"],
+                "access_rules": ["w5model1"],
                 "chest_unopened_img": "images/tracker/monsterlairopen.png",
                 "chest_opened_img": "images/tracker/monsterlairsealed.png",
                 "sections": [
                   {
-                    "name": "Go to town. (9 Souls & 4 Items)",
+                    "name": "South-West near the River"
+                  },
+                  {
+                    "name": "West, House on the Left Hill"
+                  },
+                  {
+                    "name": "West, House on the Middle Hill"
+                  },
+                  {
+                    "name": "West, Small Field"
+                  },
+                  {
+                    "name": "Western Outskirts"
+                  },
+                  {
+                    "name": "Center, West of River"
+                  },
+                  {
+                    "name": "North-East Crystal",
+                    "chest_unopened_img": "images/tracker/jewel.png",
+                    "chest_opened_img": "images/tracker/jewelfairy.png"
+                  },
+                  {
+                    "name": "North Hidden Enemies Chests",
+                    "access_rules": "[souldetection]",
+                    "chest_unopened_img": "images/tracker/chestclosed.png",
+                    "chest_opened_img": "images/tracker/chestopen.png"
+                  },
+                  {
+                    "name": "East, Hidden Enemies Lairs",
+                    "access_rules": "[souldetection]",
                     "clear_as_group": false,
-                    "item_count": 13
+                    "item_count": 2
+                  },
+                  {
+                    "name": "House Maze Lair"
+                  },
+                  {
+                    "name": "House Maze Chest",
+                    "chest_unopened_img": "images/tracker/chestclosed.png",
+                    "chest_opened_img": "images/tracker/chestopen.png"
                   }
                 ]
               },
@@ -258,14 +340,33 @@
                     "y": 250
                   }
                 ],
-                "access_rules": ["w5model2,[souldetection]"],
+                "access_rules": ["w5model2"],
                 "chest_unopened_img": "images/tracker/monsterlairopen.png",
                 "chest_opened_img": "images/tracker/monsterlairsealed.png",
                 "sections": [
                   {
-                    "name": "Go to town. (3 Souls & 2 Items)",
+                    "name": "South-West Fenced Lair"
+                  },
+                  {
+                    "name": "Shrinking Houses",
+                    "access_rules": "[souldetection]"
+                  },
+                  {
+                    "name": "North-West Purple Pools"
+                  },
+                  {
+                    "name": "North-East Tree-lined Path"
+                  },
+                  {
+                    "name": "South-East Hidden Enemies",
+                    "access_rules": "[souldetection]"
+                  },
+                  {
+                    "name": "Center, Chests hidden among the houses",
+                    "chest_unopened_img": "images/tracker/chestclosed.png",
+                    "chest_opened_img": "images/tracker/chestopen.png",
                     "clear_as_group": false,
-                    "item_count": 5
+                    "item_count": 2
                   }
                 ]
               }
