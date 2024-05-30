@@ -141,16 +141,20 @@ function canSummonDeathtoll()
     return 0
   end
 
-  if Tracker:ProviderCountForCode( "redhotball" ) <= 0 then
-    return 0
-  end
+  local grandmas = Tracker:FindObjectForCode("@Mountain King/DANCING GRANDMAS!")
 
-  if Tracker:ProviderCountForCode( "redhotmirror" ) <= 0 then
-    return 0
-  end
-
-  if Tracker:ProviderCountForCode( "redhotrod" ) <= 0 then
-    return 0
+  if grandmas.AvailableChestCount > 0 then
+    if Tracker:ProviderCountForCode( "redhotball" ) <= 0 then
+      return 0
+    end
+  
+    if Tracker:ProviderCountForCode( "redhotmirror" ) <= 0 then
+      return 0
+    end
+  
+    if Tracker:ProviderCountForCode( "redhotrod" ) <= 0 then
+      return 0
+    end
   end
 
   if Tracker:ProviderCountForCode( "phoenix" ) <= 0 then
