@@ -194,7 +194,7 @@ function updateStoneHoldersFromMemorySegment( segment )
 
   -- Not strictly an item, but falls in this memory block
   if AUTOTRACKER_ENABLE_LOCATION_TRACKING then
-    updateToggleItemFromBit( segment, "stonesconsumed", 0x7e1a7d, 0x10 )
+    updateToggleItemFromBit( segment, "w7stones", 0x7e1a7d, 0x10 )
   end
 end
 

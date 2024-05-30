@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Stones Used",
+    "type": "toggle",
+    "img": "images/labels/world7/stones.png",
+    "codes": "w7stones"
+  }
+]

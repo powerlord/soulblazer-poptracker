@@ -92,11 +92,6 @@
               {
                 "name": "South-East Island Lair",
                 "item_count": 1
-              },
-              {
-                "name": "Above the Elevator",
-                "access_rules": ["w1bridgeguard,w1watermillkeeper"],
-                "item_count": 1
               }
             ]
           },
@@ -114,20 +109,19 @@
             "chest_opened_img": "images/tracker/monsterlairsealed.png",
             "sections": [
               {
-                "name": "Entrance",
-                "item_count": 1
+                "name": "Above the Elevator"
               },
               {
-                "name": "Southern U",
-                "item_count": 1
+                "name": "Entrance"
               },
               {
-                "name": "Northern U",
-                "item_count": 1
+                "name": "Southern U"
               },
               {
-                "name": "Stone Garden",
-                "item_count": 1
+                "name": "Northern U"
+              },
+              {
+                "name": "Stone Garden"
               },
               {
                 "name": "Conveyor Dead End",
@@ -135,30 +129,25 @@
                 "clear_as_group": false
               },
               {
-                "name": "4 Lair Gauntlet",
-                "item_count": 1
+                "name": "4 Lair Gauntlet"
               },
               {
-                "name": "Narrow Bridge",
-                "item_count": 1
+                "name": "Narrow Bridge"
               },
               {
-                "name": "Near Jewel Fairy",
-                "item_count": 1
+                "name": "Near Jewel Fairy"
               },
               {
-                "name": "Dream Gate Chest",
+                "name": "South-West, Lisa's Chest",
                 "chest_unopened_img": "images/tracker/chestclosed.png",
                 "chest_opened_img": "images/tracker/chestopen.png",
-                "item_count": 1,
                 "access_rules": [
                   "dreamlisa",
                   "w1bridgeguard,w1watermillkeeper,w1lisa,dreamrod"
                 ]
               },
               {
-                "name": "Beyond Dream Gate",
-                "item_count": 1,
+                "name": "South-West, Lisa's Lair",
                 "access_rules": [
                   "dreamlisa",
                   "w1bridgeguard,w1watermillkeeper,w1lisa,dreamrod"

@@ -34,10 +34,5 @@
     "type": "toggle",
     "img": "images/stones/blackstone.png",
     "codes": "blackstone"
-  },
-  {
-    "name": "Stones Consumed",
-    "type": "toggle",
-    "codes": "stonesconsumed"
-  }
+  } 
 ]

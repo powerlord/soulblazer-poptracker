@@ -40,8 +40,8 @@ function updateLairsFromMemorySegment( segment )
   updateLairLocationFromBit( segment, "@Leo's Painting/Room 3 North-East Birds" , 0x022 ) -- TULIP_PASS
   updateLairLocationFromBit( segment, "@Leo's Painting/Room 3 South-East Blocks" , 0x023 ) -- BOY_CABIN
   updateLairLocationFromBit( segment, "@Leo's Painting/Room 4 Torch Guards" , 0x025 ) -- BOY_CAVE
-  updateLairLocationFromBit( segment, "@Underground Castle East/Beyond Dream Gate" , 0x028 ) -- OLD_MAN
-  updateLairLocationFromBit( segment, "@Underground Castle West/Above the Elevator" , 0x029 ) -- OLD_MAN2
+  updateLairLocationFromBit( segment, "@Underground Castle East/South-West, Lisa's Lair" , 0x028 ) -- OLD_MAN
+  updateLairLocationFromBit( segment, "@Underground Castle East/Above the Elevator" , 0x029 ) -- OLD_MAN2
   updateLairLocationFromBit( segment, "@Leo's Painting/Room 3 Metal Enemies" , 0x02b ) -- IVY_EMBLEM_A
   updateLairLocationFromBit( segment, "@Leo's Painting/Room 4 Metal Enemies" , 0x02c ) -- IVY_RECOVERY_SWORD
   updateLairLocationFromBit( segment, "@Leo's Painting/Room 1 Entrance" , 0x02e ) -- TULIP4

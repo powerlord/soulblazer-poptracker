@@ -10,7 +10,7 @@ function UpdateChestsFromMemorySegment( segment )
   updateLocationFromBit( segment, "@Underground Castle West/Triangle Torch Chest", 0x7e1a7e, 0x02 ) -- 0x01
   updateLocationFromBit( segment, "@Underground Castle West/Triangle Pillar Chest", 0x7e1a7e, 0x04 ) -- 0x02
   updateLocationFromBit( segment, "@Underground Castle West/North-East Island Chest", 0x7e1a7e, 0x08 ) -- 0x03
-  updateLocationFromBit( segment, "@Underground Castle East/Dream Gate Chest", 0x7e1a7e, 0x10 ) -- 0x04
+  updateLocationFromBit( segment, "@Underground Castle East/South-West, Lisa's Chest", 0x7e1a7e, 0x10 ) -- 0x04
   updateLocationFromMultipleBits( segment, "@Chest Cave/Chests", {[0x7e1a7e] = {0x20, 0x40}} ) -- 0x05 and 0x06
   updateLocationFromBit( segment, "@Leo's Painting/Room 2 Chest", 0x7e1a7f, 0x02 ) -- 0x09
   updateLocationFromBit( segment, "@Leo's Painting/Room 2 Metal Enemies Chest", 0x7e1a7f, 0x04 ) -- 0x0A
@@ -73,8 +73,8 @@ function UpdateChestsFromMemorySegment( segment )
   updateLocationFromBit( segment, "@World of Evil/South, South-West Chest/Clear the South-West Lair first", 0x7e1a85, 0x01 ) --0x38
   updateLocationFromBit( segment, "@World of Evil/West Warp Chest/Warp unlocked by a nearby lair", 0x7e1a85, 0x02 ) --0x39
   updateLocationFromBit( segment, "@World of Evil/Middle, Past the Exit/Dodge the spinning rectangles", 0x7e1a85, 0x04 ) --0x3A
-  updateLocationFromBit( segment, "@World of Evil/Dazzling Space, Left of Entrance/This one is easy...", 0x7e1a85, 0x08 ) --0x3B
-  updateLocationFromBit( segment, "@World of Evil/Dazzling Space, Through the Rectangles/This one is less easy", 0x7e1a85, 0x10 ) --0x3C
+  updateLocationFromBit( segment, "@Dazzling Space/Dazzling Space, Through the Rectangles/This one is less easy", 0x7e1a85, 0x08 ) --0x3B
+  updateLocationFromBit( segment, "@Dazzling Space/Dazzling Space, Left of Entrance/This one is easy...", 0x7e1a85, 0x10 ) --0x3C
 
 
 end

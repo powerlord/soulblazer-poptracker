@@ -644,8 +644,25 @@
             {
               "title": "World of Evil",
               "content": {
-                "type": "map",
-                "maps": ["world7"]
+                "type": "array",
+                "orientation": "horizontal",
+                "content": [
+                  {
+                    "type": "map",
+                    "maps": ["world7"]
+                  },
+                  {
+                    "type": "array",
+                    "orientation": "vertical",
+                    "h_alignment": "center",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "w7stones"
+                      }
+                    ]
+                  }
+                ]
               }
             }
           ]
