@@ -26,10 +26,14 @@
                 "item_count": 1
               },
               {
-                "name": "Magician",
+                "name": "Magician Item",
                 "item_count": 1,
                 "chest_unopened_img": "images/tracker/monsterlairopen.png",
                 "chest_opened_img": "images/tracker/monsterlairsealed.png"
+              },
+              {
+                "name": "Magician Soul",
+                "hosted_item": "soulmagicianitem"
               }
             ]
           },

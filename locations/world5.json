@@ -208,7 +208,7 @@
             "sections": [
               {
                 "name": "Enemies, reveal yourselves!",
-                "hosted_item": "souldetection"
+                "hosted_item": "souldetectionitem"
               }
             ]
           },

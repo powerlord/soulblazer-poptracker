@@ -10,4 +10,4 @@ Tracker:AddItems( "items/randomizersettings.json" )
 Tracker:AddMaps( "maps/maps.json" )
 
 Tracker:AddLayouts( "layouts/tracker_archipelago.json" )
-Tracker:AddLayouts( "layouts/broadcast_equipment.json" )
+Tracker:AddLayouts( "layouts/broadcast_archipelago.json" )

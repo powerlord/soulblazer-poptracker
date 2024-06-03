@@ -36,28 +36,64 @@
     "codes": "king"
   },
   {
-    "name": "Soul of Light",
+    "name": "Soul of Magician",
     "type": "toggle",
-    "img": "images/tracker/soullight.png",
-    "codes": "soullight"
+    "img": "images/souls/magician.png",
+    "codes": "soulmagician"
   },
   {
-    "name": "Soul of Detection",
+    "name": "Soul of Light",
     "type": "toggle",
-    "img": "images/tracker/soullight.png",
-    "codes": "souldetection"
+    "img": "images/souls/mole.png",
+    "codes": "soullight"
   },
   {
     "name": "Soul of Shield",
     "type": "toggle",
-    "img": "images/tracker/soullight.png",
+    "img": "images/souls/angelfish.png",
     "codes": "soulshield"
+  },
+  {
+    "name": "Soul of Detection",
+    "type": "toggle",
+    "img": "images/souls/greatdoor.png",
+    "codes": "souldetection"
   },
   {
     "name": "Soul of Reality",
     "type": "toggle",
-    "img": "images/tracker/soullight.png",
+    "img": "images/souls/soldier.png",
     "codes": "soulreality"
+  },
+  {
+    "name": "Soul of Magician Item",
+    "type": "toggle",
+    "img": "images/tracker/soullight.png",
+    "codes": "soulmagicianitem"
+  },
+  {
+    "name": "Soul of Light Item",
+    "type": "toggle",
+    "img": "images/tracker/soullight.png",
+    "codes": "soullightitem"
+  },
+  {
+    "name": "Soul of Shield Item",
+    "type": "toggle",
+    "img": "images/tracker/soullight.png",
+    "codes": "soulshielditem"
+  },
+  {
+    "name": "Soul of Detection Item",
+    "type": "toggle",
+    "img": "images/tracker/soullight.png",
+    "codes": "souldetectionitem"
+  },
+  {
+    "name": "Soul of Reality Item",
+    "type": "toggle",
+    "img": "images/tracker/soullight.png",
+    "codes": "soulrealityitem"
   },
   {
     "name": "RIP Leo",

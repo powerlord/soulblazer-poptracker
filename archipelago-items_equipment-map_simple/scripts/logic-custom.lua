@@ -138,7 +138,11 @@ function canSummonDeathtoll()
       end
     end
   end
-  
+
+  if Tracker:ProviderCountForCode( "soulmagician" ) <= 0 then
+    return 0
+  end
+
   if Tracker:ProviderCountForCode( "phoenix" ) <= 0 then
     return 0
   end

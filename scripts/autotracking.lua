@@ -207,7 +207,9 @@ function updateSoulsFromSkyFromMemorySegment( segment )
   InvalidateReadCaches()
 
   if AUTOTRACKER_ENABLE_ITEM_TRACKING then
+    updateToggleItemFromBit( segment, "soulmagician", 0x7e1b82, 0x01 )
     updateToggleItemFromBit( segment, "soullight", 0x7e1b82, 0x02 )
+    updateToggleItemFromBit( segment, "soulshield", 0x7e1b82, 0x04 )
     updateToggleItemFromBit( segment, "souldetection", 0x7e1b82, 0x08 )
     updateToggleItemFromBit( segment, "soulreality", 0x7e1b82, 0x10 )
   end
