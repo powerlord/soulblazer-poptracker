@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Goal",
+    "type": "toggle",
+    "img": "images/emblems/emblema.png",
+    "disabled_img": "images/bosses/deathtolldemon.png",
+    "codes": "goal"
+  },
+  {
+    "name": "Open Progression",
+    "type": "toggle",
+    "img": "images/souls/chief.png",
+    "codes": "openprogression"
+  },
+  {
+    "name": "Required Stone Count",
+    "type": "consumable",
+    "min_quantity": 0,
+    "max_quantity": 6,
+    "initial_quantity": 6,
+    "img": "images/stones/bluestone.png",
+    "codes": "requiredstonecount"
+  },
+  {
+    "name": "Open Deathtoll",
+    "type": "toggle",
+    "img": "images/bosses/deathtollhuman.png",
+    "codes": "opendeathtoll"
+  }
+]

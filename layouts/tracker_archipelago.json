@@ -1,0 +1,702 @@
+{
+    "shared_item_grid": {
+      "type": "itemgrid",
+      "h_alignment": "center",
+      "item_margin": "1,2",
+      "rows": [
+        [
+          "lifesword",
+          "psychosword",
+          "criticalsword",
+          "luckyblade",
+          "zantetsu",
+          "spirit",
+          "recoverysword",
+          "soulblade"
+        ],
+        [
+          "ironarmor",
+          "icearmor",
+          "bubblearmor",
+          "magicarmor",
+          "mysticarmor",
+          "lightarmor",
+          "elementalmail",
+          "soularmor"
+        ],
+        [
+          "flameball",
+          "lightarrow",
+          "magicflare",
+          "rotator",
+          "sparkbomb",
+          "flamepillar",
+          "tornado",
+          "phoenix"
+        ],
+        [
+          "brownstone",
+          "greenstone",
+          "bluestone",
+          "silverstone",
+          "purplestone",
+          "blackstone",
+          "pass",
+          "redhotball"
+        ],
+        [
+          "leobrush",
+          "seeds",
+          "greenleaves",
+          "moleribbon",
+          "thunderring",
+          "mermaidtears",
+          "bigpearl",
+          "redhotmirror"
+        ],
+        [
+          "mushroomshoes",
+          "doorkey",
+          "actleaves",
+          "harpstring",
+          "platinumcard",
+          "vipcard",
+          "mobilekey",
+          "redhotrod"
+        ],
+        [
+          "medicalherb",
+          "chief",
+          "guardian",
+          "mermaid",
+          "nome",
+          "marie",
+          "king",
+          "dreamrod"
+        ],
+        [
+          "emblema",
+          "emblemb",
+          "emblemc",
+          "emblemd",
+          "embleme",
+          "emblemf",
+          "emblemg",
+          "emblemh"
+        ]
+      ]
+    },
+    "settings_grid": {
+      "type": "itemgrid",
+      "h_alignment": "center",
+      "item_margin": "1,2",
+      "rows": [
+        [
+          "goal",
+          "openprogression",
+          "requiredstonecount",
+          "opendeathtoll"
+        ]
+      ]
+    },
+      "tracker_capture_item": {
+      "type": "container",
+      "content": {
+        "type": "layout",
+        "key": "shared_item_grid"
+      }
+    },
+    "tracker_default": {
+      "type": "container",
+      "background": "#212121",
+      "content": {
+        "type": "dock",
+        "dropshadow": true,
+        "content": [
+          {
+            "type": "dock",
+            "dock": "bottom",
+            "h_alignment": "stretch",
+            "content": [
+              {
+                "type": "dock",
+                "dock": "left",
+                "content": [
+                  {
+                    "type": "group",
+                    "header": "Items",
+                    "dock": "top",
+                    "content": {
+                      "type": "layout",
+                      "key": "shared_item_grid"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "dock",
+                "dock": "left",
+                "content": [
+                  {
+                    "type": "group",
+                    "header": "Settings",
+                    "dock": "top",
+                    "content": {
+                      "type": "layout",
+                      "key": "settings_grid"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "group",
+                "header": "Pinned Locations",
+                "content": {
+                  "type": "recentpins",
+                  "style": "wrap",
+                  "h_alignment": "stretch",
+                  "v_alignment": "stretch",
+                  "orientation": "horizontal",
+                  "compact": true
+                }
+              }
+            ]
+          },
+          {
+            "type": "tabbed",
+            "tabs": [
+              {
+                "title": "Grass Valley",
+                "content": {
+                  "type": "array",
+                  "orientation": "horizontal",
+                  "content": [
+                    {
+                      "type": "map",
+                      "maps": ["world1"]
+                    },
+                    {
+                      "type": "array",
+                      "orientation": "vertical",
+                      "h_alignment": "center",
+                      "content": [
+                        {
+                          "type": "item",
+                          "item": "w1architect"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w1boyguardinghideout"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w1bridgeguard"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w1goatpen"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w1ivyemblema"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w1ivyhideoutcrystal"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w1ivysoutheast"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w1ivytwochests"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w1leoshouse"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w1lisa"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w1sleepytulip"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w1toolshopowner"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w1teddy"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w1villagechief"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w1villagechiefhouse"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w1watermillkeeper"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "Woods of Greenwood",
+                "content": {
+                  "type": "array",
+                  "orientation": "horizontal",
+                  "content": [
+                    {
+                      "type": "map",
+                      "maps": ["world2"]
+                    },
+                    {
+                      "type": "array",
+                      "orientation": "vertical",
+                      "h_alignment": "center",
+                      "content": [
+                        {
+                          "type": "item",
+                          "item": "w2bird"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w2crocodiledeer"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w2crocodilegraveyard"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w2crocodileisland"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w2deer"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w2guardian"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w2holesleepystump"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w2moleoutside"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w2holeoutside"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w2molesoul"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w2monmo"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w2sleepybird"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w2squirrelhungry"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w2squirrelroommate"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w2squirrelsleepy"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w2woodstindeer"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w2woodstindog"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w2woodstinsquirrel"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "Seabed Sanctuary",
+                "content": {
+                  "type": "array",
+                  "orientation": "horizontal",
+                  "content": [
+                    {
+                      "type": "map",
+                      "maps": ["world3"]
+                    },
+                    {
+                      "type": "array",
+                      "orientation": "vertical",
+                      "h_alignment": "center",
+                      "content": [
+                        {
+                          "type": "item",
+                          "item": "w3dolphinnortheast"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w3dolphinprisonbreak"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w3dolphinsleepy"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w3dolphinwest"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w3lue"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w3mermaidgift"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w3mermaidhouse"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w3mermaidnortheast"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w3mermaidqueen"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w3mermaidwestguard"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w3mermaidwesthouse"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w3statueblester"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w3statuedurean"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w3statueghostship"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w3statuerockbird"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "Mountain of Souls",
+                "content": {
+                  "type": "array",
+                  "orientation": "horizontal",
+                  "content": [
+                    {
+                      "type": "map",
+                      "maps": ["world4"]
+                    },
+                    {
+                      "type": "array",
+                      "orientation": "vertical",
+                      "h_alignment": "center",
+                      "content": [
+                        {
+                          "type": "item",
+                          "item": "w4boygift"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w4boywest"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w4dancinggrandma1"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w4dancinggrandma2"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w4girl"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w4grandpanorthwest"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w4grandpalake"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w4grandpalune"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w4grandpanome"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w4grandpasouthwest"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w4mountainking"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w4mushroomsouth"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w4nome"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w4sleepymushroom"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w4snail"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "Dr. Leo's Lab",
+                "content": {
+                  "type": "array",
+                  "orientation": "horizontal",
+                  "content": [
+                    {
+                      "type": "map",
+                      "maps": ["world5"]
+                    },
+                    {
+                      "type": "array",
+                      "orientation": "vertical",
+                      "h_alignment": "center",
+                      "content": [
+                        {
+                          "type": "item",
+                          "item": "w5cat1"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w5cat2"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w5doorentry"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w5doormodel"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w5doorsoul"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w5doorsouthwest"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w5drawers1st"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w5drawersattic"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w5marie"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w5model1"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w5model2"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w5mouseinside"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w5mouseoutside"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w5plantmice"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w5plantmodel"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w5sleepycat"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w5steps2nd"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w5stepsattic"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w5stepsbasement"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "Magridd Castle",
+                "content": {
+                  "type": "array",
+                  "orientation": "horizontal",
+                  "content": [
+                    {
+                      "type": "map",
+                      "maps": ["world6"]
+                    },
+                    {
+                      "type": "array",
+                      "orientation": "vertical",
+                      "h_alignment": "center",
+                      "content": [
+                        {
+                          "type": "item",
+                          "item": "w6king"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w6leo"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w6maid"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w6queen"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w6singer"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w6sleepysoldier"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w6soldiercastle"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w6soldiersoul"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w6soldierconcert"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w6soldierdok"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w6soldierleft"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w6soldieroct"
+                        },
+                        {
+                          "type": "item",
+                          "item": "w6soldierright"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "World of Evil",
+                "content": {
+                  "type": "array",
+                  "orientation": "horizontal",
+                  "content": [
+                    {
+                      "type": "map",
+                      "maps": ["world7"]
+                    },
+                    {
+                      "type": "array",
+                      "orientation": "vertical",
+                      "h_alignment": "center",
+                      "content": [
+                        {
+                          "type": "item",
+                          "item": "w7stones"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+  

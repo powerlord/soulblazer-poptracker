@@ -1,3 +1,5 @@
+--These functions can be overridden
+
 function hasAllEmblems()
   -- TODO: Find a way to loop this.
   if Tracker:ProviderCountForCode( "emblema" ) <= 0 then
@@ -47,5 +49,3 @@ function canDefeatSpiritMonsters()
   end
   return Tracker:ProviderCountForCode( "soulblade" )
 end
-
-ScriptHost:LoadScript("scripts/logic-custom.lua")
