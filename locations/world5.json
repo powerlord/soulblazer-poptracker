@@ -311,13 +311,13 @@
                   },
                   {
                     "name": "North Hidden Enemies Chests",
-                    "access_rules": "[souldetection]",
+                    "access_rules": ["[souldetection]"],
                     "chest_unopened_img": "images/tracker/chestclosed.png",
                     "chest_opened_img": "images/tracker/chestopen.png"
                   },
                   {
                     "name": "East, Hidden Enemies Lairs",
-                    "access_rules": "[souldetection]",
+                    "access_rules": ["[souldetection]"],
                     "clear_as_group": false,
                     "item_count": 2
                   },
@@ -349,7 +349,7 @@
                   },
                   {
                     "name": "Shrinking Houses",
-                    "access_rules": "[souldetection]"
+                    "access_rules": ["[souldetection]"]
                   },
                   {
                     "name": "North-West Purple Pools"
@@ -359,7 +359,7 @@
                   },
                   {
                     "name": "South-East Hidden Enemies",
-                    "access_rules": "[souldetection]"
+                    "access_rules": ["[souldetection]"]
                   },
                   {
                     "name": "Center, Chests hidden among the houses",

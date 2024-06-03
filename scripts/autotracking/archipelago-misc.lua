@@ -17,7 +17,7 @@ function updateArchipelagoMiscRewardsFromMemorySegment( segment )
   updateLocationFromBit( segment, "@Sleepy Tulip/Push Left", 0x7e1b13, 0x10 ) -- 0x04
   updateLocationFromBit( segment, "@Hideout Tile/Lower-right most outlook", 0x7e1b13, 0x20 ) -- 0x05
   updateLocationFromBit( segment, "@Chief's House/Chief", 0x7e1b13, 0x40 ) -- 0x06
-  updateLocationFromBit( segment, "@Trial Room/Magician's Item" , 0x7e1b13, 0x80 ) -- 0x07
+  updateLocationFromBit( segment, "@Trial Room/Magician Item" , 0x7e1b13, 0x80 ) -- 0x07
   updateLocationFromBit( segment, "@Hideout Crystal/Nice view at least...", 0x7e1b14, 0x01 ) -- 0x08
   updateLocationFromBit( segment, "@Chest Cave/Crystal", 0x7e1b14, 0x02 ) -- 0x09
   updateLocationFromBit( segment, "@Underground Castle West/Crystal on Ledge", 0x7e1b14, 0x04 ) -- 0x0A
