@@ -88,5 +88,11 @@
     "type": "toggle",
     "img": "images/labels/world3/statuerockbird.png",
     "codes": "w3statuerockbird"
+  },
+  {
+    "name": "Angelfish (Soul of Shield)",
+    "type": "toggle",
+    "img": "images/labels/world3/angelfishsoul.png",
+    "codes": "w3angelfishsoul"
   }
 ]

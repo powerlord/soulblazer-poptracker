@@ -78,6 +78,23 @@
             ]
           },
           {
+            "name": "Angelfish (Soul of Shield)",
+            "access_rules": ["w3angelfishsoul"],
+            "map_locations": [
+              {
+                "map": "world3",
+                "x": 956,
+                "y": 815
+              }
+            ],
+            "sections": [
+              {
+                "name": "Shield from magma...",
+                "hosted_item": "soulshield"
+              }
+            ]
+          },
+          {
             "name": "Underwater...",
             "access_rules": ["[bubblearmor]"],
             "chest_unopened_img": "images/tracker/monsterlairopen.png",

@@ -48,6 +48,12 @@
     "codes": "souldetection"
   },
   {
+    "name": "Soul of Shield",
+    "type": "toggle",
+    "img": "images/tracker/soullight.png",
+    "codes": "soulshield"
+  },
+  {
     "name": "Soul of Reality",
     "type": "toggle",
     "img": "images/tracker/soullight.png",
