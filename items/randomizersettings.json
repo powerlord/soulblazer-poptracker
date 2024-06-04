@@ -7,12 +7,6 @@
     "codes": "goal"
   },
   {
-    "name": "Open Progression",
-    "type": "toggle",
-    "img": "images/souls/chief.png",
-    "codes": "openprogression"
-  },
-  {
     "name": "Required Stone Count",
     "type": "consumable",
     "min_quantity": 0,

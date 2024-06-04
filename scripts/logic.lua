@@ -27,6 +27,38 @@ function hasAllEmblems()
   return 1
 end
 
+function canEnterArea2()
+  return Tracker:ProviderCountForCode( "chief" )
+end
+
+function canEnterArea3()
+  if canEnterArea2() <= 0 then
+    return 0
+  end
+  return Tracker:ProviderCountForCode( "guardian" )
+end
+
+function canEnterArea4()
+  if canEnterArea3() <= 0 then
+    return 0
+  end
+  return Tracker:ProviderCountForCode( "mermaid" )
+end
+
+function canEnterArea5()
+  if canEnterArea4() <= 0 then
+    return 0
+  end
+  return Tracker:ProviderCountForCode( "nome" )
+end
+
+function canEnterArea6()
+  if canEnterArea5() <= 0 then
+    return 0
+  end
+  return Tracker:ProviderCountForCode( "marie" )
+end
+
 function canDefeatMetalMonsters()
   if Tracker:ProviderCountForCode( "zantetsu" ) > 0 then
     return 1
