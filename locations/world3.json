@@ -18,8 +18,7 @@
         "access_rules": ["w3mermaidqueen"],
         "sections": [
           {
-            "name": "To the next act!",
-            "hosted_item": "mermaid"
+            "name": "To the next act!"
           }
         ]
       },

@@ -268,8 +268,7 @@
                   },
                   {
                     "name": "Marie the Doll",
-                    "access_rules": ["w5marie"],
-                    "hosted_item": "marie"
+                    "access_rules": ["w5marie"]
                   }
                 ]
               },

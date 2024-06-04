@@ -18,8 +18,7 @@
         "access_rules": ["w2guardian"],
         "sections": [
           {
-            "name": "Guardian's item",
-            "hosted_item": "guardian"
+            "name": "Guardian's item"
           }
         ]
       },

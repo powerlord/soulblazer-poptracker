@@ -173,8 +173,7 @@
                 "name": "Chief",
                 "access_rules": [
                   "w1villagechief,w1villagechiefhouse"
-                ],
-                "hosted_item": "chief"
+                ]
               }
             ]
           },
