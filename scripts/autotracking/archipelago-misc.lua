@@ -84,4 +84,4 @@ function updateArchipelagoMiscRewardsFromMemorySegment( segment )
 
 end
 
-ScriptHost:AddMemoryWatch( "Soul Blazer Archipelago Misc Rewards", 0x7e1b13, 8, updateArchipelagoMiscRewardsFromMemorySegment )
+ScriptHost:AddMemoryWatch( "Soul Blazer Archipelago Misc Rewards", 0x7e1b13, 9, updateArchipelagoMiscRewardsFromMemorySegment )
