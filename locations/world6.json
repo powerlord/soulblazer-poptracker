@@ -242,7 +242,10 @@
           },
           {
             "name": "Left Tower",
-            "access_rules": ["w6soldierleft,platinumcard"],
+            "access_rules": [
+              "w6soldierleft,platinumcard",
+              "w6soldierleft,ripleo"
+            ],
             "map_locations": [
               {
                 "map": "world6",

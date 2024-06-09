@@ -80,4 +80,63 @@ function canDefeatSpiritMonsters()
   return Tracker:ProviderCountForCode( "soulblade" )
 end
 
+-- This function isn't needed yet, but may be in the future
+function CanUsePhoenix()
+
+  if Tracker:ProviderCountForCode( "phoenix" ) <= 0 then
+    return 0
+  end
+
+  if Tracker:ProviderCountForCode( "soulblade" ) <= 0 then
+    return 0
+  end
+
+  if Tracker:ProviderCountForCode( "soularmor" ) <= 0 then
+    return 0
+  end
+
+  return 1
+end
+
+function CanUseMagic()
+  if Tracker:ProviderCountForCode( "soulmagician" ) <= 0 then
+    return 0
+  end
+
+  if Tracker:ProviderCountForCode( "flameball" ) > 0 then
+    return 1
+  end
+
+  if Tracker:ProviderCountForCode( "lightarrow" ) > 0 then
+    return 1
+  end
+
+  if Tracker:ProviderCountForCode( "magicflare" ) > 0 then
+    return 1
+  end
+
+  if Tracker:ProviderCountForCode( "rotator" ) > 0 then
+    return 1
+  end
+
+  if Tracker:ProviderCountForCode( "sparkbomb" ) > 0 then
+    return 1
+  end
+
+  if Tracker:ProviderCountForCode( "flamepillar" ) > 0 then
+    return 1
+  end
+
+  if Tracker:ProviderCountForCode( "tornado" ) > 0 then
+    return 1
+  end
+
+  if CanUsePhoenix() > 0 then
+    return 1
+  end
+
+  return 0
+
+end
+
 ScriptHost:LoadScript("scripts/logic-custom.lua")

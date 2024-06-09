@@ -77,17 +77,5 @@ function canSummonDeathtoll()
     end
   end
 
-  if Tracker:ProviderCountForCode( "phoenix" ) <= 0 then
-    return 0
-  end
-
-  if Tracker:ProviderCountForCode( "soulblade" ) <= 0 then
-    return 0
-  end
-
-  if Tracker:ProviderCountForCode( "soularmor" ) <= 0 then
-    return 0
-  end
-
-  return 1
+  return CanUsePhoenix()
 end

@@ -1,26 +1,47 @@
 {
     "json.schemas": [
-    
         {
             "fileMatch": [
-                "*/items/*.json",
-                "*/*.items.json",
+                "*/manifest.json"
             ],
-            "url": "https://emotracker.net/developers/schemas/items.json"
+            "url": "https://poptracker.github.io/schema/packs/strict/manifest.json"
         },
         {
             "fileMatch": [
-                "*/layouts/*.json",
-                "*/*.layouts.json",
+                "*/items/*.json"
             ],
-            "url": "https://emotracker.net/developers/schemas/layouts.json"
+            "url": "https://poptracker.github.io/schema/packs/strict/items.json"
         },
         {
             "fileMatch": [
-                "*/locations/*.json",
-                "*/*.locations.json"
+                "*/locations/*.json"
             ],
-            "url": "https://emotracker.net/developers/schemas/locations.json"
-        }                                   
+            "url": "https://poptracker.github.io/schema/packs/strict/locations.json"
+        },
+        {
+            "fileMatch": [
+                "*/layouts/*.json"
+            ],
+            "url": "https://poptracker.github.io/schema/packs/strict/layouts.json"
+        },
+        {
+            "fileMatch": [
+                "*/maps/*.json"
+            ],
+            "url": "https://poptracker.github.io/schema/packs/strict/maps.json"
+        },
+        {
+            "fileMatch": [
+                "/settings.json"
+            ],
+            "url": "https://poptracker.github.io/schema/packs/strict/settings.json"
+        },
+        {
+            "fileMatch": [
+                "/versions.json"
+            ],
+            "url": "https://raw.githubusercontent.com/black-sliver/PopTracker/packlist/schema/versions.schema.json"
+        }
+
     ]
 }

@@ -286,10 +286,12 @@
                 "chest_opened_img": "images/tracker/monsterlairsealed.png",
                 "sections": [
                   {
-                    "name": "South-West near the River"
+                    "name": "South-West near the River",
+                    "access_rules": ["[$CanUseMagic]"]
                   },
                   {
-                    "name": "West, House on the Left Hill"
+                    "name": "West, House on the Left Hill",
+                    "access_rules": ["[$CanUseMagic]"]
                   },
                   {
                     "name": "West, House on the Middle Hill"
@@ -316,12 +318,13 @@
                   },
                   {
                     "name": "East, Hidden Enemies Lairs",
-                    "access_rules": ["[souldetection]"],
+                    "access_rules": ["[souldetection],[$CanUseMagic]"],
                     "clear_as_group": false,
                     "item_count": 2
                   },
                   {
-                    "name": "House Maze Lair"
+                    "name": "House Maze Lair",
+                    "access_rules": ["[$CanUseMagic]"]
                   },
                   {
                     "name": "House Maze Chest",
