@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "2.2.0.5",
+            "download_url": "https://github.com/powerlord/soulblazer-poptracker/releases/download/2.2.0.5/soulblazer-poptracker-2.2.0.5.zip",
+            "sha256": "249A493511BBD50CAED3A9F3047C5FF35DA4617051B2CEBC9C271519E45F9A47",
+            "changelog": [
+                "Enable auto-updating"
+            ]
+        },
+        {
             "package_version": "2.2.0.4",
             "download_url": "https://github.com/powerlord/soulblazer-poptracker/releases/download/2.2.0.4/soulblazer-poptracker-2.2.0.4.zip",
             "sha256": "874382D4523B3E471DC1C880B782F13F50000BA98892AB99B4D92FC7BE27559A",
@@ -11,7 +19,6 @@
                 "Certain Left Model Town and World of Evil locations now check if you have magic",
                 "Various internal fixes and future proofing"
             ]
-
         },
         {
             "package_version": "2.2.0.0-beta3",
@@ -23,7 +30,6 @@
                 "Decouple leaders from their checks; auto-tracking was already designed with this in mind",
                 "Bugfix for the Soul of Reality check not being auto-tracked"
             ]
-
         },
         {
             "package_version": "2.2.0.0-beta2",
