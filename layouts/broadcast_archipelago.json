@@ -1,0 +1,111 @@
+{
+    "tracker_broadcast": {
+      "type": "array",
+      "dropshadow": true,
+      "margin": "10",
+      "content": [
+        {
+          "type": "array",
+          "orientation": "vertical",
+          "content": [
+            {
+              "type": "itemgrid",
+              "h_alignment": "center",
+              "item_margin": "1,2",
+              "rows": [
+                [
+                  "lifesword",
+                  "psychosword",
+                  "criticalsword",
+                  "luckyblade",
+                  "zantetsu",
+                  "spirit",
+                  "recoverysword",
+                  "soulblade",
+                  ""
+                ],
+                [
+                  "ironarmor",
+                  "icearmor",
+                  "bubblearmor",
+                  "magicarmor",
+                  "mysticarmor",
+                  "lightarmor",
+                  "elementalmail",
+                  "soularmor",
+                  "soulmagician"
+                ],
+                [
+                  "flameball",
+                  "lightarrow",
+                  "magicflare",
+                  "rotator",
+                  "sparkbomb",
+                  "flamepillar",
+                  "tornado",
+                  "phoenix",
+                  "soullight"
+                ],
+                [
+                  "brownstone",
+                  "greenstone",
+                  "bluestone",
+                  "silverstone",
+                  "purplestone",
+                  "blackstone",
+                  "pass",
+                  "redhotball",
+                  "soulshield"
+                ],
+                [
+                  "leobrush",
+                  "seeds",
+                  "greenleaves",
+                  "moleribbon",
+                  "thunderring",
+                  "mermaidtears",
+                  "bigpearl",
+                  "redhotmirror",
+                  "souldetection"
+                ],
+                [
+                  "mushroomshoes",
+                  "doorkey",
+                  "actleaves",
+                  "harpstring",
+                  "platinumcard",
+                  "vipcard",
+                  "mobilekey",
+                  "redhotrod",
+                  "soulreality"
+                ],
+                [
+                  "medicalherb",
+                  "chief",
+                  "guardian",
+                  "mermaid",
+                  "nome",
+                  "marie",
+                  "king",
+                  "dreamrod",
+                  ""
+                ],
+                [
+                  "emblema",
+                  "emblemb",
+                  "emblemc",
+                  "emblemd",
+                  "embleme",
+                  "emblemf",
+                  "emblemg",
+                  "emblemh",
+                  ""
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+  

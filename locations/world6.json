@@ -4,7 +4,7 @@
     "chest_unopened_img": "images/tracker/chestclosed.png",
     "chest_opened_img": "images/tracker/chestopen.png",
     "color": "#000000",
-    "access_rules": ["marie"],
+    "access_rules": ["$canEnterArea6"],
     "children": [
       {
         "name": "Sleepy Soldier",
@@ -18,7 +18,7 @@
         "access_rules": ["dreamrod,w6sleepysoldier"],
         "sections": [
           {
-            "name": "Wake up please.",
+            "name": "Wake up please",
             "capture_item": true,
             "item_count": 1
           }
@@ -85,7 +85,7 @@
         "access_rules": ["w6soldiercastle"],
         "children": [
           {
-            "name": "King Maggrid",
+            "name": "King Magridd",
             "access_rules": ["w6king"],
             "map_locations": [
               {
@@ -96,8 +96,7 @@
             ],
             "sections": [
               {
-                "name": "Long live...",
-                "hosted_item": "king"
+                "name": "Long live..."
               }
             ]
           },
@@ -112,7 +111,7 @@
             ],
             "sections": [
               {
-                "name": "Please be a good one.",
+                "name": "Please be a good one",
                 "item_count": 1
               }
             ]
@@ -132,13 +131,12 @@
         "sections": [
           {
             "name": "Secrets of the Castle...",
-            "hosted_item": "soulreality"
+            "hosted_item": "soulrealityitem"
           }
         ]
       },
       {
         "name": "Lairs",
-        "access_rules": ["[$canDefeatSpiritMonsters]"],
         "chest_unopened_img": "images/tracker/monsterlairopen.png",
         "chest_opened_img": "images/tracker/monsterlairsealed.png",
         "children": [
@@ -153,34 +151,92 @@
             ],
             "sections": [
               {
-                "name": "1st Level (2 Souls & 3 Items)",
-                "clear_as_group": false,
-                "item_count": 5
-              },
-              {
-                "name": "2nd Level Souls",
-                "clear_as_group": false,
-                "item_count": 6
-              },
-              {
-                "name": "2nd Level Secret Items",
-                "clear_as_group": false,
-                "access_rules": ["[soulreality]"],
+                "name": "B1 West Chest",
                 "chest_unopened_img": "images/tracker/chestclosed.png",
-                "chest_opened_img": "images/tracker/chestopen.png",
-                "item_count": 3
+                "chest_opened_img": "images/tracker/chestopen.png"
               },
               {
-                "name": "3rd Level Souls",
-                "clear_as_group": false,
-                "item_count": 4
+                "name": "B1 North-West Corner"
               },
               {
-                "name": "3rd Level Secret Item",
-                "access_rules": ["[soulreality]"],
+                "name": "B1 North-East Corner Chest",
                 "chest_unopened_img": "images/tracker/chestclosed.png",
-                "chest_opened_img": "images/tracker/chestopen.png",
-                "item_count": 1
+                "chest_opened_img": "images/tracker/chestopen.png"
+              },
+              {
+                "name": "B1 Skeleton next to North-East Chest",
+                "chest_unopened_img": "images/tracker/chestclosed.png",
+                "chest_opened_img": "images/tracker/chestopen.png"
+              },
+              {
+                "name": "B1 Lower Level Center",
+                "access_rules": ["$canDefeatSpiritMonsters"]
+              },
+              {
+                "name": "B2 Remove the Right Column",
+                "access_rules": ["$canDefeatSpiritMonsters"]
+              },
+              {
+                "name": "B2 Remove the Left Column North",
+                "access_rules": ["$canDefeatSpiritMonsters"]
+              },
+              {
+                "name": "B2 Remove the Left Column South",
+                "access_rules": ["$canDefeatSpiritMonsters"]
+              },
+              {
+                "name": "B2 Hidden Chest in North Room South-West Corner",
+                "access_rules": ["$canDefeatSpiritMonsters,[soulreality]"],
+                "chest_unopened_img": "images/tracker/chestclosed.png",
+                "chest_opened_img": "images/tracker/chestopen.png"
+              },
+              {
+                "name": "B2 Snake Crossing",
+                "access_rules": ["$canDefeatSpiritMonsters"]
+              },
+              {
+                "name": "B2 Spirit Crossing",
+                "access_rules": ["$canDefeatSpiritMonsters"],
+                "item_count": 2,
+                "clear_as_group": false
+              },
+              {
+                "name": "B2 Hidden Chest North-East of B3 stairs",
+                "access_rules": ["$canDefeatSpiritMonsters,[soulreality]"],
+                "chest_unopened_img": "images/tracker/chestclosed.png",
+                "chest_opened_img": "images/tracker/chestopen.png"
+              },
+              {
+                "name": "B2 Hidden Chest at Fake Dead End",
+                "access_rules": ["$canDefeatSpiritMonsters,[soulreality]"],
+                "chest_unopened_img": "images/tracker/chestclosed.png",
+                "chest_opened_img": "images/tracker/chestopen.png"
+              },
+              {
+                "name": "B3 Dodge the 3 Spears",
+                "access_rules": ["$canDefeatSpiritMonsters"]
+              },
+              {
+                "name": "B3 Hidden Chest, North-West Corner",
+                "access_rules": ["$canDefeatSpiritMonsters,[soulreality]"],
+                "chest_unopened_img": "images/tracker/chestclosed.png",
+                "chest_opened_img": "images/tracker/chestopen.png"
+              },
+              {
+                "name": "B3 East, Weren't there spikes here?",
+                "access_rules": ["$canDefeatSpiritMonsters"]
+              },
+              {
+                "name": "B3 South-East, Spikes From Nowhere",
+                "access_rules": ["$canDefeatSpiritMonsters"]
+              },
+              {
+                "name": "B3 Center, Double Spears",
+                "access_rules": ["$canDefeatSpiritMonsters"]
+              },
+              {
+                "name": "B3 Center, Right Lair",
+                "access_rules": ["$canDefeatSpiritMonsters"]
               }
             ]
           },
@@ -196,19 +252,28 @@
             ],
             "sections": [
               {
-                "name": "1st Floor",
+                "name": "1F North-East Corner",
                 "item_count": 1
               },
               {
-                "name": "2nd Floor",
-                "access_rules": ["[soulreality]"],
-                "clear_as_group": false,
-                "item_count": 2
+                "name": "2F North-West Room",
+                "access_rules": ["[soulreality]"]
               },
               {
-                "name": "3rd Floor (4 Souls & 1 Item)",
-                "clear_as_group": false,
-                "item_count": 5
+                "name": "2F South-East Room",
+                "access_rules": ["[soulreality]"]
+              },
+              {
+                "name": "3F South-East Corner"
+              },
+              {
+                "name": "3F Cells, South-West"
+              },
+              {
+                "name": "3F Cells, North-West"
+              },
+              {
+                "name": "3F Cells, North-East"
               }
             ]
           },
@@ -224,31 +289,53 @@
             ],
             "sections": [
               {
-                "name": "1st Floor",
-                "clear_as_group": false,
-                "item_count": 3
+                "name": "1F North-West Corner"
               },
               {
-                "name": "2nd Floor (2 Souls & 2 Items)",
-                "clear_as_group": false,
-                "item_count": 4
+                "name": "1F South-East Corner"
               },
               {
-                "name": "3rd Floor (1 Soul & 2 Items)",
+                "name": "1F Center Gauntlet"
+              },
+              {
+                "name": "2F East Chests",
+                "chest_unopened_img": "images/tracker/chestclosed.png",
+                "chest_opened_img": "images/tracker/chestopen.png",
+                "access_rules": ["[soulreality]"],
                 "clear_as_group": false,
-                "item_count": 3
+                "item_count": 2
+              },
+              {
+                "name": "2F East, below Chests",
+                "access_rules": ["[soulreality]"]
+              },
+              {
+                "name": "2F Hidden Lair in Center",
+                "access_rules": ["[soulreality]"]
+              },
+              {
+                "name": "3F Between Fireball Shooters",
+                "access_rules": ["[soulreality]"]
+              },
+              {
+                "name": "3F South-West Chests",
+                "chest_unopened_img": "images/tracker/chestclosed.png",
+                "chest_opened_img": "images/tracker/chestopen.png",
+                "access_rules": ["[soulreality]"],
+                "clear_as_group": false,
+                "item_count": 2
               },
               {
                 "name": "Dr. Leo",
                 "chest_unopened_img": "images/tracker/monsterlairopen.png",
                 "chest_opened_img": "images/tracker/monsterlairsealed.png",
-                "access_rules": ["w6leo,w6soldierdok,w6soldieroct"],
+                "access_rules": ["[soulreality],w6leo,w6soldierdok,w6soldieroct"],
                 "hosted_item": "ripleo"
               },
               {
-                "name": "Magridd Boss",
-                "access_rules": ["w6leo,w6soldierdok,w6soldieroct,mobilekey"],
-                "item_count": 1
+                "name": "Boss: Demon Falcon",
+                "access_rules": ["[soulreality],w6leo,w6soldierdok,w6soldieroct,mobilekey"],
+                "chest_unopened_img": "images/bosses/demonfalcon.png"
               }
             ]
           }

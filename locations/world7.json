@@ -1,0 +1,125 @@
+[
+  {
+    "name": "World of Evil",
+    "chest_unopened_img": "images/tracker/chestclosed.png",
+    "chest_opened_img": "images/tracker/chestopen.png",
+    "color": "#000000",
+    "access_rules": ["$canEnterArea7"],
+    "children": [
+      {
+        "name": "South, South-East Chest",
+        "map_locations": [
+          {
+            "map": "world7",
+            "x": 325,
+            "y": 750
+          }
+        ],
+        "sections": [
+          {
+            "name": "Clear the South-East Lair first"
+          }
+        ]
+      },
+      {
+        "name": "South, South-West Chest",
+        "map_locations": [
+          {
+            "map": "world7",
+            "x": 185,
+            "y": 750
+          }
+        ],
+        "sections": [
+          {
+            "name": "Clear the South-West Lair first"
+          }
+        ]
+      },
+      {
+        "name": "West Warp Chest",
+        "map_locations": [
+          {
+            "map": "world7",
+            "x": 302,
+            "y": 335
+          }
+        ],
+        "sections": [
+          {
+            "name": "Warp unlocked by a nearby lair"
+          }
+        ]
+      },
+      {
+        "name": "Middle, Past the Exit",
+        "map_locations": [
+          {
+            "map": "world7",
+            "x": 815,
+            "y": 708
+          }
+        ],
+        "sections": [
+          {
+            "name": "Dodge the spinning rectangles"
+          }
+        ]
+      },
+      {
+        "name": "Dazzling Space",
+        "access_rules": ["soularmor"],
+        "children": [
+          {
+            "name": "Dazzling Space, Left of Entrance",
+            "map_locations": [
+              {
+                "map": "world7",
+                "x": 888,
+                "y": 985
+              }
+            ],
+            "sections": [
+              {
+                "name": "This one is easy..."
+              }
+            ]
+          },
+          {
+            "name": "Dazzling Space, Through the Rectangles",
+            "map_locations": [
+              {
+                "map": "world7",
+                "x": 1158,
+                "y": 985
+              }
+            ],
+            "sections": [
+              {
+                "name": "This one is less easy"
+              }
+            ]
+          },
+          {
+            "name": "Deathtoll",
+            "map_locations": [
+              {
+                "map": "world7",
+                "x": 1022,
+                "y": 450
+              }
+            ],
+            "chest_unopened_img": "images/bosses/deathtollhuman.png",
+            "chest_opened_img": "images/bosses/deathtolldemon.png",
+            "access_rules": ["$canSummonDeathtoll"],
+            "sections": [
+              {
+                "name": "One final fight"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

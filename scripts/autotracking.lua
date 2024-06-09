@@ -8,6 +8,12 @@ end
 U8_READ_CACHE = 0
 U8_READ_CACHE_ADDRESS = 0
 
+LAIR_WRAM_OFFSET = 0x7f0203
+
+local function isValidTarget( target )
+  return ( target and ( not target.Owner.ModifiedByUser ) )
+end
+
 function isInGame()
   return true -- Need to eventually fix this.
 end
@@ -27,12 +33,8 @@ end
 
 function updateToggleItemFromBit( segment, code, address, offset )
   local item = Tracker:FindObjectForCode( code )
-  if item then
-    -- Do not auto-track this the user has manually modified it
-    if item.Owner.ModifiedByUser then
-      return
-    end
 
+  if isValidTarget( item ) then
     local value = ReadU8( segment, address )
     if ( value & offset ) > 0 then
       item.Active = true
@@ -44,12 +46,8 @@ end
 
 function updateToggleItemFromByte( segment, code, address )
   local item = Tracker:FindObjectForCode( code )
-  if item then
-    -- Do not auto-track this the user has manually modified it
-    if item.Owner.ModifiedByUser then
-      return
-    end
 
+  if isValidTarget( item ) then
     local value = ReadU8( segment, address )
     -- local hasItem = ( value - 0x80 ) > 0
     if value > 0 then
@@ -57,6 +55,41 @@ function updateToggleItemFromByte( segment, code, address )
     else
       item.Active = false
     end
+  end
+end
+
+function updateLocationFromBit( segment, code, address, offset )
+  local location = Tracker:FindObjectForCode( code )
+
+  if isValidTarget( location ) then
+    local value = ReadU8( segment, address )
+    if ( value & offset ) > 0 then
+      location.AvailableChestCount = 0
+    else
+      location.AvailableChestCount = location.ChestCount
+    end
+  end
+end
+
+-- This is used for multiple checks that are the same location section
+-- address_offsets example syntax: {[0x7e1234] = {0x01, 0x02}, [0x7e1235] = {0x02}}
+function updateLocationFromMultipleBits( segment, code, address_offsets )
+  local location = Tracker:FindObjectForCode( code )
+
+  if isValidTarget( location ) then
+    local count = 0
+
+    for address, offsets in pairs( address_offsets ) do
+      local value = ReadU8( segment, address )
+
+      for i, offset in ipairs( offsets ) do
+        if ( value & offset ) == 0 then
+          count = count + 1
+        end
+      end
+    end
+
+    location.AvailableChestCount = count
   end
 end
 
@@ -158,6 +191,11 @@ function updateStoneHoldersFromMemorySegment( segment )
     updateToggleItemFromBit( segment, "marie", 0x7e1a79, 0x10 )
     updateToggleItemFromBit( segment, "king", 0x7e1a79, 0x20 )
   end
+
+  -- Not strictly an item, but falls in this memory block
+  if AUTOTRACKER_ENABLE_LOCATION_TRACKING then
+    updateToggleItemFromBit( segment, "w7stones", 0x7e1a7d, 0x10 )
+  end
 end
 
 function updateSoulsFromSkyFromMemorySegment( segment )
@@ -169,7 +207,9 @@ function updateSoulsFromSkyFromMemorySegment( segment )
   InvalidateReadCaches()
 
   if AUTOTRACKER_ENABLE_ITEM_TRACKING then
+    updateToggleItemFromBit( segment, "soulmagician", 0x7e1b82, 0x01 )
     updateToggleItemFromBit( segment, "soullight", 0x7e1b82, 0x02 )
+    updateToggleItemFromBit( segment, "soulshield", 0x7e1b82, 0x04 )
     updateToggleItemFromBit( segment, "souldetection", 0x7e1b82, 0x08 )
     updateToggleItemFromBit( segment, "soulreality", 0x7e1b82, 0x10 )
   end
@@ -241,6 +281,7 @@ function updateReleasedSoulsFromMemorySegment( segment )
     updateToggleItemFromBit( segment, "w3statueblester", 0x7e1aef, 0x20 )
     updateToggleItemFromBit( segment, "w3statueghostship", 0x7e1af5, 0x02 )
     updateToggleItemFromBit( segment, "w3statuerockbird", 0x7e1af1, 0x20 )
+    updateToggleItemFromBit( segment, "w3angelfishsoul", 0x7e1af4, 0x02 )
 
     updateToggleItemFromBit( segment, "dreamdolphin", 0x7e1aed, 0x02 )
 
@@ -301,3 +342,5 @@ ScriptHost:AddMemoryWatch( "Soul Blazer Item Data", 0x7e1b1e, 64, updateItemsFro
 ScriptHost:AddMemoryWatch( "Soul Blazer Stone Holders", 0x7e1a79, 64, updateStoneHoldersFromMemorySegment )
 ScriptHost:AddMemoryWatch( "Soul Blazer Souls from the Sky", 0x7e1b82, 64, updateSoulsFromSkyFromMemorySegment )
 ScriptHost:AddMemoryWatch( "Soul Blazer Soul Reveals from Lairs", 0x7e1ade, 64, updateReleasedSoulsFromMemorySegment )
+
+ScriptHost:LoadScript( "scripts/autotracking-custom.lua" )

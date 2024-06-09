@@ -9,7 +9,36 @@
         "name": "West Grass Valley",
         "children": [
           {
-            "name": "Underground Castle",
+            "name": "Trial Room",
+            "map_locations": [
+              {
+                "map": "world1",
+                "x": 330,
+                "y": 615
+              }
+
+            ],
+            "chest_unopened_img": "images/tracker/chestclosed.png",
+            "chest_opened_img": "images/tracker/chestopen.png",
+            "sections": [
+              {
+                "name": "Trial Room Chest",
+                "item_count": 1
+              },
+              {
+                "name": "Magician Item",
+                "item_count": 1,
+                "chest_unopened_img": "images/tracker/monsterlairopen.png",
+                "chest_opened_img": "images/tracker/monsterlairsealed.png"
+              },
+              {
+                "name": "Magician Soul",
+                "hosted_item": "soulmagicianitem"
+              }
+            ]
+          },
+          {
+            "name": "Underground Castle West",
             "map_locations": [
               {
                 "map": "world1",
@@ -20,25 +49,113 @@
             "chest_unopened_img": "images/tracker/monsterlairopen.png",
             "chest_opened_img": "images/tracker/monsterlairsealed.png",
             "sections": [
-              {
-                "name": "Pre-Elevator Souls (6) & Items (4)",
-                "clear_as_group": false,
-                "item_count": 10
+              { 
+                "name": "Lair East of Entrance",
+                "item_count": 1
               },
               {
-                "name": "Post-Elevator Souls",
-                "clear_as_group": false,
-                "access_rules": ["w1bridgeguard,w1watermillkeeper"],
-                "item_count": 10
+                "name": "Triangle Pillar Chest",
+                "chest_unopened_img": "images/tracker/chestclosed.png",
+                "chest_opened_img": "images/tracker/chestopen.png",
+                "item_count": 1
               },
               {
-                "name": "Lisa's Dream Soul and Item",
-                "clear_as_group": false,
+                "name": "Crystal on Ledge",
+                "chest_unopened_img": "images/tracker/jewel.png",
+                "chest_opened_img": "images/tracker/jewelfairy.png",
+                "item_count": 1
+              },
+              {
+                "name": "West Bridge Lair",
+                "item_count": 1
+              },
+              {
+                "name": "Triangle Torch Chest",
+                "chest_unopened_img": "images/tracker/chestclosed.png",
+                "chest_opened_img": "images/tracker/chestopen.png",
+                "item_count": 1
+              },
+              {
+                "name": "Lair North of Triangle Torch Chest",
+                "item_count": 1
+              },
+              {
+                "name": "North-East Lair",
+                "item_count": 1
+              },
+              {
+                "name": "North-East Island Chest",
+                "chest_unopened_img": "images/tracker/chestclosed.png",
+                "chest_opened_img": "images/tracker/chestopen.png",
+                "item_count": 1
+              },
+              {
+                "name": "Plant Cage",
+                "item_count": 1
+              },
+              {
+                "name": "South-East Island Lair",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Underground Castle East",
+            "access_rules": ["w1bridgeguard,w1watermillkeeper"],
+            "map_locations": [
+              {
+                "map": "world1",
+                "x": 345,
+                "y": 940
+              }
+            ],
+            "chest_unopened_img": "images/tracker/monsterlairopen.png",
+            "chest_opened_img": "images/tracker/monsterlairsealed.png",
+            "sections": [
+              {
+                "name": "Above the Elevator"
+              },
+              {
+                "name": "Entrance"
+              },
+              {
+                "name": "Southern U"
+              },
+              {
+                "name": "Northern U"
+              },
+              {
+                "name": "Stone Garden"
+              },
+              {
+                "name": "Conveyor Dead End",
+                "item_count": 2,
+                "clear_as_group": false
+              },
+              {
+                "name": "4 Lair Gauntlet"
+              },
+              {
+                "name": "Narrow Bridge"
+              },
+              {
+                "name": "Near Jewel Fairy"
+              },
+              {
+                "name": "South-West, Lisa's Chest",
+                "chest_unopened_img": "images/tracker/chestclosed.png",
+                "chest_opened_img": "images/tracker/chestopen.png",
                 "access_rules": [
                   "dreamlisa",
                   "w1bridgeguard,w1watermillkeeper,w1lisa,dreamrod"
-                ],
-                "item_count": 2
+                ]
+              },
+              {
+                "name": "South-West, Lisa's Lair",
+                "access_rules": [
+                  "dreamlisa",
+                  "w1bridgeguard,w1watermillkeeper,w1lisa,dreamrod"
+                ]
               }
             ]
           },
@@ -56,8 +173,7 @@
                 "name": "Chief",
                 "access_rules": [
                   "w1villagechief,w1villagechiefhouse"
-                ],
-                "hosted_item": "chief"
+                ]
               }
             ]
           },
@@ -74,7 +190,6 @@
             "sections": [
               {
                 "name": "Tool Shop Owner",
-                "access_rules": [],
                 "item_count": 1
               },
               {
@@ -120,13 +235,22 @@
                 "y": 940
               }
             ],
+            "access_rules": [
+              "w1ivytwochests"
+            ],
+            "chest_unopened_img": "images/tracker/chestclosed.png",
+            "chest_opened_img": "images/tracker/chestopen.png",
             "sections": [
               {
-                "name": "Chest Cave (& Crystal)",
-                "access_rules": [
-                  "w1ivytwochests"
-                ],
-                "item_count": 3
+                "name": "Chests",
+                "item_count": 2,
+                "clear_as_group": false
+              },
+              {
+                "name": "Crystal",
+                "chest_unopened_img": "images/tracker/jewel.png",
+                "chest_opened_img": "images/tracker/jewelfairy.png",
+                "item_count": 1
               }
             ]
           },
@@ -190,7 +314,6 @@
                 "sections": [
                   {
                     "name": "Lower-right most outlook",
-                    "access_rules": [],
                     "item_count": 1
                   }
                 ]
@@ -207,9 +330,9 @@
                 "sections": [
                   {
                     "name": "Nice view at least...",
-                    "access_rules": [
-                      "w1ivyhideoutcrystal"
-                    ],
+                    "access_rules": ["w1ivyhideoutcrystal"],
+                    "chest_unopened_img": "images/tracker/jewel.png",
+                    "chest_opened_img": "images/tracker/jewelfairy.png",
                     "item_count": 1
                   }
                 ]
@@ -230,15 +353,59 @@
             ],
             "sections": [
               {
-                "name": "Accessible Souls (8)",
-                "clear_as_group": false,
-                "item_count": 8
+                "name": "Room 1 Entrance",
+                "item_count": 1
               },
               {
-                "name": "Metal Monster Souls (2) and Item",
-                "clear_as_group": false,
+                "name": "Room 1 Exit",
+                "item_count": 1
+              },
+              {
+                "name": "Room 2 North of Entrance",
+                "item_count": 1
+              },
+              {
+                "name": "Room 2 Chest",
+                "chest_unopened_img": "images/tracker/chestclosed.png",
+                "chest_opened_img": "images/tracker/chestopen.png",
+                "item_count": 1
+              },
+              {
+                "name": "Room 3 Entrance",
+                "item_count": 1
+              },
+              {
+                "name": "Room 3 North-East Birds",
+                "item_count": 1
+              },
+              {
+                "name": "Room 3 South-East Blocks",
+                "item_count": 1
+              },
+              {
+                "name": "Room 4 Torch Guards",
+                "item_count": 1
+              },
+              {
+                "name": "Boss: Solid Arm",
+                "item_count": 1
+              },
+              {
+                "name": "Room 2 Metal Enemies Chest",
                 "access_rules": ["$canDefeatMetalMonsters"],
-                "item_count": 3
+                "chest_unopened_img": "images/tracker/chestclosed.png",
+                "chest_opened_img": "images/tracker/chestopen.png",
+                "item_count": 1
+              },
+              {
+                "name": "Room 3 Metal Enemies",
+                "access_rules": ["$canDefeatMetalMonsters"],
+                "item_count": 1
+              },
+              {
+                "name": "Room 4 Metal Enemies",
+                "access_rules": ["$canDefeatMetalMonsters"],
+                "item_count": 1
               }
             ]
           }

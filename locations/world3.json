@@ -18,8 +18,7 @@
         "access_rules": ["w3mermaidqueen"],
         "sections": [
           {
-            "name": "To the next act!",
-            "hosted_item": "mermaid"
+            "name": "To the next act!"
           }
         ]
       },
@@ -38,7 +37,7 @@
             ],
             "sections": [
               {
-                "name": "Thanks for the house.",
+                "name": "Thanks for the house",
                 "capture_item": true,
                 "item_count": 1
               }
@@ -78,6 +77,23 @@
             ]
           },
           {
+            "name": "Angelfish (Soul of Shield)",
+            "access_rules": ["w3angelfishsoul"],
+            "map_locations": [
+              {
+                "map": "world3",
+                "x": 956,
+                "y": 815
+              }
+            ],
+            "sections": [
+              {
+                "name": "Shield from magma...",
+                "hosted_item": "soulshielditem"
+              }
+            ]
+          },
+          {
             "name": "Underwater...",
             "access_rules": ["[bubblearmor]"],
             "chest_unopened_img": "images/tracker/monsterlairopen.png",
@@ -111,111 +127,214 @@
                 ],
                 "sections": [
                   {
-                    "name": "Passage to Blester (3 Souls & 1 Item)",
-                    "clear_as_group": false,
-                    "item_count": 4
+                    "name": "Seabed North-East, Out in the Open",
+                    "item_count": 1
                   },
                   {
-                    "name": "Blester (non metal creatures)",
-                    "clear_as_group": false,
-                    "item_count": 5
+                    "name": "Seabed North-East, West Nook",
+                    "item_count": 1
                   },
                   {
-                    "name": "Blester Metal Gorrilas",
+                    "name": "Seabed North-East, South of the Current",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Seabed North-East, Crystal South of the Current",
+                    "chest_unopened_img": "images/tracker/jewel.png",
+                    "chest_opened_img": "images/tracker/jewelfairy.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "East of the Entrance",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Farther East",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Western Pillars",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Eastern Pillars",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Metal Gorillas",
                     "access_rules": ["$canDefeatMetalGorillas"],
                     "item_count": 1
                   }
                 ]
               },
               {
-                "name": "Rockbird Gate",
+                "name": "Rockbird",
                 "access_rules": ["w3statuerockbird"],
-                "children": [
+                "map_locations": [
                   {
-                    "name": "Rockbird",
-                    "map_locations": [
-                      {
-                        "map": "world3",
-                        "x": 555,
-                        "y": 535
-                      }
-                    ],
-                    "sections": [
-                      {
-                        "name": "Passage to Rockbird",
-                        "item_count": 1
-                      },
-                      {
-                        "name": "Rockbird (4 Souls & 3 Items)",
-                        "clear_as_group": false,
-                        "item_count": 7
-                      }
-                    ]
+                    "map": "world3",
+                    "x": 555,
+                    "y": 535
+                  }
+                ],
+                "sections": [
+                  {
+                    "name": "Seabed, South-East Corner",
+                    "item_count": 1
                   },
                   {
-                    "name": "Durean",
-                    "access_rules": ["w3statuedurean"],
-                    "map_locations": [
-                      {
-                        "map": "world3",
-                        "x": 455,
-                        "y": 535
-                      }
-                    ],
-                    "sections": [
-                      {
-                        "name": "Passage to Durean (1 Soul & 1 Item)",
-                        "clear_as_group": false,
-                        "item_count": 2
-                      },
-                      {
-                        "name": "Durean Accessible Spots (5 Souls & 1 Item)",
-                        "clear_as_group": false,
-                        "item_count": 6
-                      },
-                      {
-                        "name": "Durean Metal Gorillas",
-                        "access_rules": ["$canDefeatMetalMonsters"],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "Durean Lava Protected (2 Souls & 1 Item)",
-                        "access_rules": ["[mermaidtears]"],
-                        "clear_as_group": false,
-                        "item_count": 3
-                      }
-                    ]
+                    "name": "West Center Lake",
+                    "item_count": 1
                   },
                   {
-                    "name": "Ghost Ship",
-                    "access_rules": ["w3statueghostship"],
-                    "map_locations": [
-                      {
-                        "map": "world3",
-                        "x": 455,
-                        "y": 440
-                      }
+                    "name": "North-Western Island Crystal",
+                    "chest_unopened_img": "images/tracker/jewel.png",
+                    "chest_opened_img": "images/tracker/jewelfairy.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "South-West Lake",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Center Lake South-West",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Center Lake North-East",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "East Lakes Upper Chest",
+                    "chest_unopened_img": "images/tracker/chestclosed.png",
+                    "chest_opened_img": "images/tracker/chestopen.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "East Lakes Lower Chest",
+                    "chest_unopened_img": "images/tracker/chestclosed.png",
+                    "chest_opened_img": "images/tracker/chestopen.png",
+                    "item_count": 1
+                  }
+                ]
+              },
+              {
+                "name": "Durean",
+                "access_rules": ["w3statuedurean"],
+                "map_locations": [
+                  {
+                    "map": "world3",
+                    "x": 455,
+                    "y": 535
+                  }
+                ],
+                "sections": [
+                  {
+                    "name": "Seabed, Cliff",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Crystal Near Durean",
+                    "chest_unopened_img": "images/tracker/jewel.png",
+                    "chest_opened_img": "images/tracker/jewelfairy.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "West of Entrance",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Western Penninsula",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "North, Lowest Level",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "North-East Island",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "East Island Chest",
+                    "chest_unopened_img": "images/tracker/chestclosed.png",
+                    "chest_opened_img": "images/tracker/chestopen.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "North, Middle Level",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "North, Middle Level Lava Pool",
+                    "access_rules": ["[mermaidtears]"],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "North, Upper Level Lava Pool",
+                    "access_rules": ["[mermaidtears]"],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "East, Lava River Chest",
+                    "access_rules": ["[mermaidtears]"],
+                    "chest_unopened_img": "images/tracker/chestclosed.png",
+                    "chest_opened_img": "images/tracker/chestopen.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Metal Gorillas",
+                    "access_rules": ["$canDefeatMetalMonsters"],
+                    "item_count": 1
+                  }
+                ]
+              },
+              {
+                "name": "Ghost Ship",
+                "access_rules": ["w3statueghostship"],
+                "map_locations": [
+                  {
+                    "map": "world3",
+                    "x": 455,
+                    "y": 440
+                  }
+                ],
+                "sections": [
+                  {
+                    "name": "Seabed North-West, South-East Cove",
+                    "chest_unopened_img": "images/tracker/chestclosed.png",
+                    "chest_opened_img": "images/tracker/chestopen.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Seabed North-West, Seaweed Maze South-West",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Seabed North-West, Seaweed Maze East",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Ghost Ship Chest",
+                    "chest_unopened_img": "images/tracker/chestclosed.png",
+                    "chest_opened_img": "images/tracker/chestopen.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Boss: Floating Skull",
+                    "chest_unopened_img": "images/bosses/floatingskull.png",
+                    "chest_opened_img": "images/tracker/monsterlairsealed.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Secret Cove",
+                    "access_rules": [
+                      "dreamdolphin",
+                      "dreamrod,bigpearl,w3mermaidwestguard,w3dolphinsleepy"
                     ],
-                    "sections": [
-                      {
-                        "name": "Passage to Ghost Ship (2 Souls & 1 Item)",
-                        "clear_as_group": false,
-                        "item_count": 3
-                      },
-                      {
-                        "name": "Ghost Ship (1 Soul & 1 Item)",
-                        "clear_as_group": false,
-                        "item_count": 2
-                      },
-                      {
-                        "name": "Secret Cove",
-                        "access_rules": [
-                          "dreamdolphin",
-                          "dreamrod,bigpearl,w3mermaidwestguard,w3dolphinsleepy"
-                        ],
-                        "item_count": 4
-                      }
-                    ]
+                    "chest_unopened_img": "images/tracker/chestclosed.png",
+                    "chest_opened_img": "images/tracker/chestopen.png",
+                    "item_count": 4
                   }
                 ]
               }
@@ -315,9 +434,27 @@
         ],
         "sections": [
           {
-            "name": "5 Souls, 1 Item",
-            "clear_as_group": false,
-            "item_count": 6
+            "name": "North of Warp",
+            "item_count": 1
+          },
+          {
+            "name": "Tree Island",
+            "item_count": 1
+          },
+          {
+            "name": "Ambushed!",
+            "item_count": 2,
+            "clear_as_group": false
+          },
+          {
+            "name": "Tree Maze Chest",
+            "chest_unopened_img": "images/tracker/chestclosed.png",
+            "chest_opened_img": "images/tracker/chestopen.png",
+            "item_count": 1
+          },
+          {
+            "name": "Wasn't there a lake here?",
+            "item_count": 1
           }
         ]
       }

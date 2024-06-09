@@ -1,3 +1,32 @@
+function hasAllEmblems()
+  -- TODO: Find a way to loop this.
+  if Tracker:ProviderCountForCode( "emblema" ) <= 0 then
+    return 0
+  end
+  if Tracker:ProviderCountForCode( "emblemb" ) <= 0 then
+    return 0
+  end
+  if Tracker:ProviderCountForCode( "emblemc" ) <= 0 then
+    return 0
+  end
+  if Tracker:ProviderCountForCode( "emblemd" ) <= 0 then
+    return 0
+  end
+  if Tracker:ProviderCountForCode( "embleme" ) <= 0 then
+    return 0
+  end
+  if Tracker:ProviderCountForCode( "emblemf" ) <= 0 then
+    return 0
+  end
+  if Tracker:ProviderCountForCode( "emblemg" ) <= 0 then
+    return 0
+  end
+  if Tracker:ProviderCountForCode( "emblemh" ) <= 0 then
+    return 0
+  end
+  return 1
+end
+
 function canEnterArea2()
   return Tracker:ProviderCountForCode( "chief" )
 end
@@ -30,42 +59,6 @@ function canEnterArea6()
   return Tracker:ProviderCountForCode( "marie" )
 end
 
-function canEnterArea7()
-  if canEnterArea6() <= 0 then
-    return 0
-  end
-  return Tracker:ProviderCountForCode( "king" )
-end
-
-function hasAllEmblems()
-  -- TODO: Find a way to loop this.
-  if Tracker:ProviderCountForCode( "emblema" ) <= 0 then
-    return 0
-  end
-  if Tracker:ProviderCountForCode( "emblemb" ) <= 0 then
-    return 0
-  end
-  if Tracker:ProviderCountForCode( "emblemc" ) <= 0 then
-    return 0
-  end
-  if Tracker:ProviderCountForCode( "emblemd" ) <= 0 then
-    return 0
-  end
-  if Tracker:ProviderCountForCode( "embleme" ) <= 0 then
-    return 0
-  end
-  if Tracker:ProviderCountForCode( "emblemf" ) <= 0 then
-    return 0
-  end
-  if Tracker:ProviderCountForCode( "emblemg" ) <= 0 then
-    return 0
-  end
-  if Tracker:ProviderCountForCode( "emblemh" ) <= 0 then
-    return 0
-  end
-  return 1
-end
-
 function canDefeatMetalMonsters()
   if Tracker:ProviderCountForCode( "zantetsu" ) > 0 then
     return 1
@@ -86,3 +79,5 @@ function canDefeatSpiritMonsters()
   end
   return Tracker:ProviderCountForCode( "soulblade" )
 end
+
+ScriptHost:LoadScript("scripts/logic-custom.lua")

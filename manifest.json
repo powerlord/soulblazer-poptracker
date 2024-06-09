@@ -1,11 +1,11 @@
 {
-  "name": "Soul Blazer Rando Tracker",
+  "name": "Soul Blazer Rando Tracker Beta",
   "game_name": "Soul Blazer Randomizer",
   "game_variant": "yes",
   "platform": "snes",
-  "package_version": "2.1.0.0",
-  "package_uid": "soulblazer-wolfman",
-  "author": "Wolfman2000",
+  "package_version": "2.2.0.0-beta2",
+  "package_uid": "soulblazer-wolfman-beta",
+  "author": "Wolfman2000 and Powerlord",
   "variants": {
     "items_minimal-map_simple": {
       "display_name": "Item (Minimal) & Map Tracker"
@@ -21,6 +21,9 @@
     },
     "items_skarsnik-map_none": {
       "display_name": "Item (Skarsnik) Only Tracker"
+    },
+    "archipelago-items_equipment-map_simple": {
+      "display_name": "Archipelago Item (Equipment) & Map Tracker"
     }
   }
 }
