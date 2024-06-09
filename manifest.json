@@ -3,9 +3,10 @@
   "game_name": "Soul Blazer Randomizer",
   "game_variant": "yes",
   "platform": "snes",
-  "package_version": "2.2.0.4",
+  "package_version": "2.2.0.5",
   "package_uid": "soulblazer-wolfman",
   "author": "Wolfman2000 and Powerlord",
+  "versions_url": "https://raw.githubusercontent.com/powerlord/soulblazer-poptracker/master/versions.json",
   "variants": {
     "items_minimal-map_simple": {
       "display_name": "Item (Minimal) & Map Tracker",
