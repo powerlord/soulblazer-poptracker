@@ -2,13 +2,49 @@
     "versions": [
         {
             "package_version": "2.2.0.4",
-            "download_url": "",
-            "sha256": "",
+            "download_url": "https://github.com/powerlord/soulblazer-poptracker/releases/download/2.2.0.4/soulblazer-poptracker-2.2.0.4.zip",
+            "sha256": "874382D4523B3E471DC1C880B782F13F50000BA98892AB99B4D92FC7BE27559A",
             "changelog": [
-                "",
-                ""
+                "Renamed Pack to soulblazer-poptracker",
+                "Officially ended supprt for EmoTracker for this pack",
+                "Update the Magridd Left Tower requirements; Now opened when the queen's guards die",
+                "Certain Left Model Town and World of Evil locations now check if you have magic",
+                "Various internal fixes and future proofing"
             ]
 
+        },
+        {
+            "package_version": "2.2.0.0-beta3",
+            "download_url": "https://github.com/powerlord/soulblazer-poptracker/releases/download/2.2.0.0-beta3/soulblazer-emotracker.zip",
+            "sha256": "E63709801CAF04701395831FFD5A3CB0EF967A9BBF0EA23A21DD56383A94B6E3",
+            "changelog": [
+                "Removed the Settings icon for Open Act Progression, it was unnecessary",
+                "Add new locations and autotracking for Soul of Magician and Soul of Shield",
+                "Decouple leaders from their checks; auto-tracking was already designed with this in mind",
+                "Bugfix for the Soul of Reality check not being auto-tracked"
+            ]
+
+        },
+        {
+            "package_version": "2.2.0.0-beta2",
+            "download_url": "https://github.com/powerlord/soulblazer-poptracker/releases/download/2.2.0.0-beta2/soulblazer-emotracker.zip",
+            "sha256": "339140A847B577C654409706E895711B5B0674F61BEE23FE2D877F080151722F",
+            "changelog": [
+                "Archipelago variant now supports 4 new settings: Goal, Act Progression, Stones Count, and Open Deathtoll",
+                "Note 1: Goal doesn't do anything in the track, but is reserved for future auto-tracking",
+                "Note 2: I didn't add any new icons for these settings, but rather re-used existing settings"
+            ]
+        },
+        {
+            "package_version": "2.2.0.0-beta1",
+            "download_url": "https://github.com/powerlord/soulblazer-poptracker/releases/download/2.2.0-beta1/soulblazer-emotracker.zip",
+            "sha256": "F11F9C9554DB6722431B1DFF2B1C0B2AF153F6BA624E4A79921AAAB70E6353E8",
+            "changelog": [
+                "Implement variant-specific scripts",
+                "Add Archipelago Simple Map Equipment tracker",
+                "Add Archipelago map auto-tracking for all locations",
+                "Add standalone map auto-tracking for lairs and chests; miscellaneous rewards may be added at a later date"
+            ]
         }
     ]
 }
