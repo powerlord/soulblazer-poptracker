@@ -84,7 +84,7 @@
             "y": 925
           }
         ],
-        "access_rules": ["w5stepsbasement,[$canDefeatMetalMonsters]"],
+        "access_rules": ["w5stepsbasement"],
         "sections": [
           {
             "name": "Chest Near Start",
@@ -93,11 +93,11 @@
           },
           {
             "name": "South-East Gauntlet",
-            "access_rules": ["[icearmor]"]
+            "access_rules": ["$canDefeatMetalMonsters,[icearmor]"]
           },
           {
             "name": "Crystal",
-            "access_rules": ["[icearmor]"],
+            "access_rules": ["$canDefeatMetalMonsters,[icearmor]"],
             "chest_unopened_img": "images/tracker/jewel.png",
             "chest_opened_img": "images/tracker/jewelfairy.png"
           },

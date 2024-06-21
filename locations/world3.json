@@ -344,7 +344,10 @@
       },
       {
         "name": "West Prison Entrance",
-        "access_rules": ["w3mermaidwestguard"],
+        "access_rules": [
+          "w3mermaidhouse,w3mermaidwestguard",
+          "w3mermaiddanceleader,w3mermaidwestguard"
+        ],
         "children": [
           {
             "name": "Lue the Dolphin",

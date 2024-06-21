@@ -266,6 +266,7 @@ function updateReleasedSoulsFromMemorySegment( segment )
     updateToggleItemFromBit( segment, "dreambird", 0x7e1aec, 0x10 )
     updateToggleItemFromBit( segment, "dreamstump", 0x7e1aec, 0x20 )
 
+    updateToggleItemFromBit( segment, "w3mermaiddanceleader", 0x7e1af1, 0x02 )
     updateToggleItemFromBit( segment, "w3dolphinnortheast", 0x7e1af1, 0x08 )
     updateToggleItemFromBit( segment, "w3dolphinprisonbreak", 0x7e1aef, 0x10 )
     updateToggleItemFromBit( segment, "w3dolphinsleepy", 0x7e1af5, 0x08 )

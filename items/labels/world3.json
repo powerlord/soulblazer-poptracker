@@ -1,5 +1,11 @@
 [
   {
+    "name": "Mermaid Dance Troupe Leader",
+    "type": "toggle",
+    "img": "images/labels/world3/mermaiddanceleader.png",
+    "codes": "w3mermaiddanceleader"
+  },
+  {
     "name": "Dolphin to Northeast",
     "type": "toggle",
     "img": "images/labels/world3/dolphinnortheast.png",
