@@ -3,7 +3,6 @@
     "name": "Goal",
     "type": "toggle",
     "img": "images/emblems/emblema.png",
-    "disabled_img": "images/bosses/deathtolldemon.png",
     "codes": "goal"
   },
   {
