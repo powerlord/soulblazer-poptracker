@@ -19,5 +19,12 @@
     "type": "toggle",
     "img": "images/bosses/deathtollhuman.png",
     "codes": "opendeathtoll"
+  },
+  {
+    "name": "Automatic Map Switching",
+    "type": "toggle",
+    "img": "images/inventory/pass.png",
+    "initial_active_state": true,
+    "codes": "automapswitch"
   }
 ]

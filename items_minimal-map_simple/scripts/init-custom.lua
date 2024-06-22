@@ -5,6 +5,8 @@ for j=1,7 do
   Tracker:AddLocations( "locations/world" .. j .. ".json" )
 end
 
+Tracker:AddItems( "items/randomizersettings.json" )
+
 Tracker:AddMaps( "maps/maps.json" )
 
 Tracker:AddLayouts( "layouts/tracker.json" )

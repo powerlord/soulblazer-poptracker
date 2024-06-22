@@ -103,6 +103,9 @@
           "goal",
           "requiredstonecount",
           "opendeathtoll"
+        ],
+        [
+          "automapswitch"
         ]
       ]
     },

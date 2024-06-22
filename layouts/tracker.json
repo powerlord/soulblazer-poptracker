@@ -66,6 +66,16 @@
       ]
     ]
   },
+  "settings_grid": {
+    "type": "itemgrid",
+    "h_alignment": "center",
+    "item_margin": "1,2",
+    "rows": [
+      [
+        "automapswitch"
+      ]
+    ]
+  },
   "tracker_capture_item": {
     "type": "container",
     "content": {
@@ -96,6 +106,21 @@
                   "content": {
                     "type": "layout",
                     "key": "shared_item_grid"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "left",
+              "content": [
+                {
+                  "type": "group",
+                  "header": "Settings",
+                  "dock": "top",
+                  "content": {
+                    "type": "layout",
+                    "key": "settings_grid"
                   }
                 }
               ]

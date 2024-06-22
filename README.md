@@ -1,13 +1,26 @@
-# lisa
-Soul Blazer Randomizer tracker using the EmoTracker program.
+# Soul Blazer PopTracker Pack
+Soul Blazer Randomizer tracker using the PopTracker program.  Supports both the standalone and Archipelago versions.
+
+Note: Autotracking support is currently better for the Archipelago veresion, although I intend to work on this later.
 
 ## Usage
 
-Upon installing this tracker, use standard operations similar to EmoSaru's ALTTPR tracker: left click items to turn them on, right click to turn them off.
+Upon installing this tracker, use standard PopTracker operations: left click items to turn them on, right click to turn them off.
+Auto-tracking will override most of the things you can click, though.
+
+The Settings section exists for the map-enabled variants, you toggle these like you would any other checks.
 
 More features are planned for this tracker, and issues can be raised as usual.
 
-## Credits
+## PopTrack Pack Credits
+
+These are listed in roughly alphabetical order.
+
+* Black Sliver for making [PopTracker](https://github.com/black-sliver/PopTracker)
+* Tranquilite0 for making the [Archipelago version of the randomizer](https://github.com/Tranquilite0/Archipelago-SoulBlazer)
+* Wolfman2000 for creating the EmoTracker pack this pack is based on. They also helped locate some memory addresses used for auto-tracking.
+
+## Original EmoTracker Pack Credits
 
 These are listed in roughly alphabetical order.
 
