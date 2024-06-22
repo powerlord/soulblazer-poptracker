@@ -1,6 +1,18 @@
 {
     "versions": [
         {
+            "package_version": "2.2.1.0",
+            "download_url": "https://github.com/powerlord/soulblazer-poptracker/releases/download/2.2.1.0/soulblazer-poptracker-2.2.1.0.zip",
+            "sha256": "984EDCAE5B896579E5DAC31AEF54EB75A2449B880614F321FD0E4827362247B5",
+            "changelog": [
+                "Added Map Auto-switching.  There is a new icon in the Settings section to disable this behavior",
+                "Added tracking for the Mermaid Dance Troupe Leader",
+                "Updated the Readme so it's an actual readme for this version rather than the EmoTracker version",
+                "Fixed the access rules for Lue's Prison.  Now requires the West Prison Guard plus either the Common House Mermaid or Mermaid Dance Troupe Leader",
+                "Fixed the access rules for Dr. Leo's Lab Power Plant.  Now correctly shows which check is available when you don't have the Zantetsu Sword or Soul Blade"
+            ]
+        },
+        {
             "package_version": "2.2.0.5",
             "download_url": "https://github.com/powerlord/soulblazer-poptracker/releases/download/2.2.0.5/soulblazer-poptracker-2.2.0.5.zip",
             "sha256": "249A493511BBD50CAED3A9F3047C5FF35DA4617051B2CEBC9C271519E45F9A47",
