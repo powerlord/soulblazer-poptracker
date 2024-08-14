@@ -20,32 +20,32 @@ function updateLairsFromMemorySegment( segment )
 
   InvalidateReadCaches()
 
-  updateLairLocationFromBit( segment, "@Underground Castle West/Lair East of Entrance", 0x002 )
-  updateLairLocationFromBit( segment, "@Underground Castle West/West Bridge Lair", 0x006 )
-  updateLairLocationFromBit( segment, "@Underground Castle West/Lair North of Triangle Torch Chest", 0x007 )
-  updateLairLocationFromBit( segment, "@Underground Castle West/North-East Lair", 0x008 )
-  updateLairLocationFromBit( segment, "@Leo's Painting/Boss: Solid Arm", 0x009 )
-  updateLairLocationFromBit( segment, "@Underground Castle West/Plant Cage", 0x00d )
-  updateLairLocationFromBit( segment, "@Underground Castle West/South-East Island Lair", 0x00e )
-  updateLairLocationFromBit( segment, "@Underground Castle East/Entrance" , 0x00f )
-  updateLairLocationFromBit( segment, "@Underground Castle East/Southern U" , 0x010 )
-  updateLairLocationFromBit( segment, "@Underground Castle East/Northern U" , 0x011 )
-  updateLairLocationFromBit( segment, "@Underground Castle East/Stone Garden" , 0x012 )
-  updateLairLocationFromBit( segment, "@Leo's Painting/Room 2 North of Entrance" , 0x013 )
-  updateLairLocationFromBit( segment, "@Underground Castle East/4 Lair Gauntlet" , 0x015 )
-  updateLairLocationFromMultipleBits( segment, "@Underground Castle East/Conveyor Dead End" , {0x016, 0x02a} )
-  updateLairLocationFromBit( segment, "@Underground Castle East/Narrow Bridge" , 0x018 )
-  updateLairLocationFromBit( segment, "@Underground Castle East/Near Jewel Fairy" , 0x01a )
-  updateLairLocationFromBit( segment, "@Leo's Painting/Room 1 Exit" , 0x01d ) -- LONELY_GOAT
-  updateLairLocationFromBit( segment, "@Leo's Painting/Room 3 North-East Birds" , 0x022 ) -- TULIP_PASS
-  updateLairLocationFromBit( segment, "@Leo's Painting/Room 3 South-East Blocks" , 0x023 ) -- BOY_CABIN
-  updateLairLocationFromBit( segment, "@Leo's Painting/Room 4 Torch Guards" , 0x025 ) -- BOY_CAVE
-  updateLairLocationFromBit( segment, "@Underground Castle East/South-West, Lisa's Lair" , 0x028 ) -- OLD_MAN
-  updateLairLocationFromBit( segment, "@Underground Castle East/Above the Elevator" , 0x029 ) -- OLD_MAN2
-  updateLairLocationFromBit( segment, "@Leo's Painting/Room 3 Metal Enemies" , 0x02b ) -- IVY_EMBLEM_A
-  updateLairLocationFromBit( segment, "@Leo's Painting/Room 4 Metal Enemies" , 0x02c ) -- IVY_RECOVERY_SWORD
-  updateLairLocationFromBit( segment, "@Leo's Painting/Room 1 Entrance" , 0x02e ) -- TULIP4
-  updateLairLocationFromBit( segment, "@Leo's Painting/Room 3 Entrance" , 0x02f ) -- GOAT2
+  updateLairLocationFromBit( segment, "@Underground Castle West/Lair East of Entrance", 0x002 ) -- OLD_WOMAN
+  updateLairLocationFromBit( segment, "@Underground Castle West/West Bridge Lair", 0x006 ) --TOOL_SHOP_OWNER
+  updateLairLocationFromBit( segment, "@Underground Castle West/Lair North of Triangle Torch Chest", 0x007 ) -- TULIP
+  updateLairLocationFromBit( segment, "@Underground Castle West/North-East Lair", 0x008 ) -- BRIDGE_GUARD
+  updateLairLocationFromBit( segment, "@Leo's Painting/Boss: Solid Arm", 0x009 ) --VILLAGE_CHIEF
+  updateLairLocationFromBit( segment, "@Underground Castle West/Plant Cage", 0x00d ) --IVY_CHEST_ROOM
+  updateLairLocationFromBit( segment, "@Underground Castle West/South-East Island Lair", 0x00e ) -- WATER_MILL
+  updateLairLocationFromBit( segment, "@Underground Castle East/Entrance", 0x00f ) -- GOAT_HERB
+  updateLairLocationFromBit( segment, "@Underground Castle East/Southern U", 0x010 ) -- LISA
+  updateLairLocationFromBit( segment, "@Underground Castle East/Northern U", 0x011 ) -- TULIP2
+  updateLairLocationFromBit( segment, "@Underground Castle East/Stone Garden", 0x012 ) -- ARCHITECT
+  updateLairLocationFromBit( segment, "@Leo's Painting/Room 2 North of Entrance", 0x013 ) -- IVY
+  updateLairLocationFromBit( segment, "@Underground Castle East/4 Lair Gauntlet", 0x015 ) -- GOAT
+  updateLairLocationFromMultipleBits( segment, "@Underground Castle East/Conveyor Dead End", {0x016, 0x02a} ) -- TEDDY, IVY2
+  updateLairLocationFromBit( segment, "@Underground Castle East/Narrow Bridge", 0x018 ) -- TULIP3
+  updateLairLocationFromBit( segment, "@Underground Castle East/Near Jewel Fairy", 0x01a ) -- LEOS_HOUSE
+  updateLairLocationFromBit( segment, "@Leo's Painting/Room 1 Exit", 0x01d ) -- LONELY_GOAT
+  updateLairLocationFromBit( segment, "@Leo's Painting/Room 3 North-East Birds", 0x022 ) -- TULIP_PASS
+  updateLairLocationFromBit( segment, "@Leo's Painting/Room 3 South-East Blocks", 0x023 ) -- BOY_CABIN
+  updateLairLocationFromBit( segment, "@Leo's Painting/Room 4 Torch Guards", 0x025 ) -- BOY_CAVE
+  updateLairLocationFromBit( segment, "@Underground Castle East/South-West, Lisa's Lair", 0x028 ) -- OLD_MAN
+  updateLairLocationFromBit( segment, "@Underground Castle East/Above the Elevator", 0x029 ) -- OLD_MAN2
+  updateLairLocationFromBit( segment, "@Leo's Painting/Room 3 Metal Enemies", 0x02b ) -- IVY_EMBLEM_A
+  updateLairLocationFromBit( segment, "@Leo's Painting/Room 4 Metal Enemies", 0x02c ) -- IVY_RECOVERY_SWORD
+  updateLairLocationFromBit( segment, "@Leo's Painting/Room 1 Entrance", 0x02e ) -- TULIP4
+  updateLairLocationFromBit( segment, "@Leo's Painting/Room 3 Entrance", 0x02f ) -- GOAT2
 
   updateLairLocationFromBit( segment, "@Light Shrine/Basement Spirit Lair", 0x037 ) -- BIRD_RED_HOT_MIRROR
   updateLairLocationFromBit( segment, "@Water Shrine/Lostside Marsh: Entrance", 0x038 ) -- BIRD
@@ -92,9 +92,7 @@ function updateLairsFromMemorySegment( segment )
   updateLairLocationFromBit( segment, "@Front of Southerta/North of Warp", 0x09b ) -- DOLPHIN2
   updateLairLocationFromBit( segment, "@Back of Southerta/One lonely lair...", 0x09d ) -- MERMAID_STATUE_ROCKBIRD
   updateLairLocationFromBit( segment, "@Front of Southerta/Wasn't there a lake here?", 0x0a1 ) -- MERMAID_BUBBLE_ARMOR
-  updateLairLocationFromMultipleBits( segment, "@Front of Southerta/Ambushed!", {0x0a4, 0x0a5} )
-  --updateLairLocationFromBit( segment, "@Front of Southerta/Ambushed! North", 0x0a4 ) -- MERMAID5
-  --updateLairLocationFromBit( segment, "@Front of Southerta/Ambushed! South", 0x0a5 ) -- MERMAID6
+  updateLairLocationFromMultipleBits( segment, "@Front of Southerta/Ambushed!", {0x0a4, 0x0a5} ) -- MERMAID5, MERMAID6
   updateLairLocationFromBit( segment, "@Rockbird/West Center Lake", 0x0a7 ) -- MERMAID_TEARS
   updateLairLocationFromBit( segment, "@Rockbird/Center Lake North-East", 0x0ab ) -- MERMAID_STATUE_DUREAN
   updateLairLocationFromBit( segment, "@Ghost Ship/Seabed North-West, Seaweed Maze South-West", 0x0ad ) -- ANGELFISH3
@@ -141,9 +139,7 @@ function updateLairsFromMemorySegment( segment )
   updateLairLocationFromBit( segment, "@Factory/B1 Platform North of Big Pipe", 0x10d ) -- CAT
   updateLairLocationFromBit( segment, "@Factory/B1 North then East from the Entrance", 0x112 ) -- GREAT_DOOR_ZANTETSU_SWORD
   updateLairLocationFromBit( segment, "@Factory/B1 South-East Platform off Small Pipes", 0x114 ) -- CAT2
-  updateLairLocationFromMultipleBits( segment, "@Factory/B1 South-East Small Pipe Gauntlet" , {0x11a, 0x11b} ) -- GREAT_DOOR, CAT3
-  --updateLairLocationFromBit( segment, "@Factory/B1 Great Door", 0x11a ) -- GREAT_DOOR
-  --updateLairLocationFromBit( segment, "@Factory/B1 Cat 3", 0x11b ) -- CAT3
+  updateLairLocationFromMultipleBits( segment, "@Factory/B1 South-East Small Pipe Gauntlet", {0x11a, 0x11b} ) -- GREAT_DOOR, CAT3
   updateLairLocationFromBit( segment, "@Factory/B2 One Last Fire Pit...", 0x11e ) -- MODEL_TOWN1
   updateLairLocationFromBit( segment, "@Factory/B2 Inverted T Platform", 0x120 ) -- GREAT_DOOR_MODEL_TOWNS
   updateLairLocationFromBit( segment, "@Factory/B2 Past the Double Fire Pits", 0x122 ) -- STEPS_UPSTAIRS
@@ -159,8 +155,6 @@ function updateLairsFromMemorySegment( segment )
   updateLairLocationFromBit( segment, "@Left Model Town/Center, West of River", 0x142 ) -- GREAT_DOOR_SOUL_OF_DETECTION
   updateLairLocationFromBit( segment, "@Left Model Town/House Maze Lair", 0x145 ) -- MODEL_TOWN2
   updateLairLocationFromMultipleBits( segment, "@Left Model Town/East, Hidden Enemies Lairs", {0x14a, 0x14b} ) -- MOUSE4, STEPS_MARIE
-  --updateLairLocationFromBit( segment, "@Left Model Town/Mouse 4", 0x14a ) -- MOUSE4
-  --updateLairLocationFromBit( segment, "@Left Model Town/Steps Marie", 0x14b ) -- STEPS_MARIE
   updateLairLocationFromBit( segment, "@Right Model Town/Shrinking Houses", 0x14c ) -- CHEST_OF_DRAWERS2
   updateLairLocationFromBit( segment, "@Right Model Town/North-West Purple Pools", 0x14d ) -- PLANT_ACTINIDIA_LEAVES
   updateLairLocationFromBit( segment, "@Right Model Town/South-West Fenced Lair", 0x152 ) -- MOUSE5
@@ -171,8 +165,6 @@ function updateLairsFromMemorySegment( segment )
   updateLairLocationFromBit( segment, "@Magridd Dungeon/B1 Lower Level Center", 0x15a ) -- SOLDIER2
   updateLairLocationFromBit( segment, "@Magridd Dungeon/B2 Snake Crossing", 0x15f ) -- SOLDIER3
   updateLairLocationFromMultipleBits( segment, "@Magridd Dungeon/B2 Spirit Crossing", { 0x161, 0x162 } ) -- SOLDIER_ELEMENTAL_MAIL, SOLDIER4
-  --updateLairLocationFromBit( segment, "@Magridd Dungeon/B2 Soldier Elemental Mail", 0x161 ) -- SOLDIER_ELEMENTAL_MAIL
-  --updateLairLocationFromBit( segment, "@Magridd Dungeon/B2 Soldier 4", 0x162 ) -- SOLDIER4
   updateLairLocationFromBit( segment, "@Magridd Dungeon/B2 Remove the Left Column North", 0x166 ) -- SOLDIER5
   updateLairLocationFromBit( segment, "@Magridd Dungeon/B2 Remove the Left Column South", 0x167 ) -- SINGER_CONCERT_HALL
   updateLairLocationFromBit( segment, "@Magridd Dungeon/B2 Remove the Right Column", 0x168 ) -- SOLDIER6

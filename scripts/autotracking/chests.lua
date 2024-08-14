@@ -7,24 +7,24 @@ function UpdateChestsFromMemorySegment( segment )
   InvalidateReadCaches()
 
   updateLocationFromBit( segment, "@Trial Room/Trial Room Chest", 0x7e1a7e, 0x01) -- 0x00
+  updateLocationFromMultipleBits( segment, "@Chest Cave/Chests", {[0x7e1a7e] = {0x20, 0x40}} ) -- 0x05 and 0x06
   updateLocationFromBit( segment, "@Underground Castle West/Triangle Torch Chest", 0x7e1a7e, 0x02 ) -- 0x01
   updateLocationFromBit( segment, "@Underground Castle West/Triangle Pillar Chest", 0x7e1a7e, 0x04 ) -- 0x02
   updateLocationFromBit( segment, "@Underground Castle West/North-East Island Chest", 0x7e1a7e, 0x08 ) -- 0x03
   updateLocationFromBit( segment, "@Underground Castle East/South-West, Lisa's Chest", 0x7e1a7e, 0x10 ) -- 0x04
-  updateLocationFromMultipleBits( segment, "@Chest Cave/Chests", {[0x7e1a7e] = {0x20, 0x40}} ) -- 0x05 and 0x06
   updateLocationFromBit( segment, "@Leo's Painting/Room 2 Chest", 0x7e1a7f, 0x02 ) -- 0x09
   updateLocationFromBit( segment, "@Leo's Painting/Room 2 Metal Enemies Chest", 0x7e1a7f, 0x04 ) -- 0x0A
 
-  updateLocationFromBit( segment, "@Water Shrine/1F Chest Near Exit", 0x7e1a7f, 0x08 ) -- 0x0B
   updateLocationFromBit( segment, "@Sleepy Stump Chest/I believe I can fly...", 0x7e1a7f, 0x10 ) -- 0x0C
   updateLocationFromBit( segment, "@Mole Outside/Guide them home", 0x7e1a7f, 0x20 ) -- 0x0D
+  updateLocationFromBit( segment, "@Water Shrine/1F Chest Near Exit", 0x7e1a7f, 0x08 ) -- 0x0B
   updateLocationFromBit( segment, "@Water Shrine/B1 Behind the Waterfall Chest", 0x7e1a7f, 0x40 ) -- 0x0E
   updateLocationFromBit( segment, "@Water Shrine/B1 Moving Spike Trap Chest", 0x7e1a7f, 0x80 ) -- 0x0F
   updateLocationFromBit( segment, "@Water Shrine/B2 South-West Chest", 0x7e1a80, 0x01 ) -- 0x10
   updateLocationFromBit( segment, "@Water Shrine/B2 South-East Chest", 0x7e1a80, 0x02 ) -- 0x11
   updateLocationFromBit( segment, "@Fire Shrine/1F Second Bridge from the Left", 0x7e1a80, 0x04 ) -- 0x12
-  updateLocationFromBit( segment, "@Fire Shrine/B1 Metal Enemies", 0x7e1a80, 0x08 ) -- 0x13
   updateLocationFromBit( segment, "@Fire Shrine/B1 Near the Stairs", 0x7e1a80, 0x10 ) -- 0x14
+  updateLocationFromBit( segment, "@Fire Shrine/B1 Metal Enemies", 0x7e1a80, 0x08 ) -- 0x13
   updateLocationFromBit( segment, "@Fire Shrine/B2 Triple Scorpion Chest", 0x7e1a80, 0x20 ) -- 0x15
   updateLocationFromBit( segment, "@Fire Shrine/B2 Chest Near Exit", 0x7e1a80, 0x40 ) -- 0x16
   updateLocationFromBit( segment, "@Light Shrine/1st Floor Spirit Enemies Chest", 0x7e1a86, 0x04 ) -- 0x42
@@ -49,12 +49,8 @@ function UpdateChestsFromMemorySegment( segment )
   updateLocationFromBit( segment, "@Free Chest/No strings attached", 0x7e1a85, 0x80 ) -- 0x3F
   updateLocationFromBit( segment, "@Power Plant/Chest Near Start", 0x7e1a83, 0x08 ) -- 0x2B
   updateLocationFromBit( segment, "@Left Model Town/House Maze Chest", 0x7e1a83, 0x10 ) -- 0x2C
-  updateLocationFromMultipleBits( segment, "@Left Model Town/North Hidden Enemies Chests", {[0x7e1a83] = {0x20, 0x40}} )
-  --updateLocationFromBit( segment, "@Left Model Town/North-West Chest", 0x7e1a83, 0x20 ) -- 0x2D
-  --updateLocationFromBit( segment, "@Left Model Town/North-East Chest", 0x7e1a83, 0x40 ) -- 0x2E
+  updateLocationFromMultipleBits( segment, "@Left Model Town/North Hidden Enemies Chests", {[0x7e1a83] = {0x20, 0x40}} ) -- 0x2D, 0x2E 
   updateLocationFromMultipleBits( segment, "@Right Model Town/Center, Chests hidden among the houses", {[0x7e1a83] = {0x80}, [0x7e1a84] = {0x01}} ) -- 0x2F, 0x30
-  --updateLocationFromBit( segment, "@Right Model Town/North Chest", 0x7e1a83, 0x80 ) -- 0x2F
-  --updateLocationFromBit( segment, "@Right Model Town/South Chest", 0x7e1a84, 0x01 ) -- 0x30
 
   updateLocationFromBit( segment, "@Magridd Dungeon/B1 West Chest", 0x7e1a84, 0x02 ) --0x31
   updateLocationFromBit( segment, "@Magridd Dungeon/B1 North-East Corner Chest", 0x7e1a86, 0x01 ) --0x40
@@ -63,11 +59,7 @@ function UpdateChestsFromMemorySegment( segment )
   updateLocationFromBit( segment, "@Magridd Dungeon/B2 Hidden Chest at Fake Dead End", 0x7e1a86, 0x08 ) --0x43
   updateLocationFromBit( segment, "@Magridd Dungeon/B3 Hidden Chest, North-West Corner", 0x7e1a84, 0x10 ) --0x34
   updateLocationFromMultipleBits( segment, "@Right Tower/2F East Chests", {[0x7e1a85] = {0x20, 0x40}} ) -- 0x3D, 0x3E
-  --updateLocationFromBit( segment, "@Right Tower/2F Left Chest", 0x7e1a85, 0x20 ) --0x3D
-  --updateLocationFromBit( segment, "@Right Tower/2F Right Chest", 0x7e1a85, 0x40 ) --0x3E
   updateLocationFromMultipleBits( segment, "@Right Tower/3F South-West Chests" , {[0x7e1a84] = {0x20, 0x40}} ) -- 0x35, 0x36
-  --updateLocationFromBit( segment, "@Right Tower/3F North-West Chest", 0x7e1a84, 0x20 ) --0x35
-  --updateLocationFromBit( segment, "@Right Tower/3F South-East Chest", 0x7e1a84, 0x40 ) --0x36
 
   updateLocationFromBit( segment, "@World of Evil/South, South-East Chest/Clear the South-East Lair first", 0x7e1a84, 0x80 ) --0x37
   updateLocationFromBit( segment, "@World of Evil/South, South-West Chest/Clear the South-West Lair first", 0x7e1a85, 0x01 ) --0x38

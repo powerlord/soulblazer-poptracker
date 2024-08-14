@@ -335,7 +335,8 @@ function updateReleasedSoulsFromMemorySegment( segment )
     updateToggleItemFromBit( segment, "w6soldierleft", 0x7e1b0b, 0x20 )
     updateToggleItemFromBit( segment, "w6soldieroct", 0x7e1b0e, 0x02 )
     updateToggleItemFromBit( segment, "w6soldierright", 0x7e1b0e, 0x04 )
-    updateToggleItemFromBit( segment, "w6soldierconcert", 0x7e1b0b, 0x01 )
+--    updateToggleItemFromBit( segment, "w6soldierconcert", 0x7e1b0b, 0x01 )
+    updateToggleItemFromBit( segment, "w6soldierconcert", 0x7e1b0c, 0x01 )
   end
 end
 
