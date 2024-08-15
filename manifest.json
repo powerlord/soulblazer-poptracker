@@ -3,7 +3,7 @@
   "game_name": "Soul Blazer Randomizer",
   "game_variant": "yes",
   "platform": "snes",
-  "package_version": "2.3.0.0",
+  "package_version": "2.3.0.1",
   "package_uid": "soulblazer-wolfman",
   "author": "Wolfman2000 and Powerlord",
   "versions_url": "https://raw.githubusercontent.com/powerlord/soulblazer-poptracker/master/versions.json",

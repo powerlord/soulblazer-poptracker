@@ -89,6 +89,30 @@ function onClear(slot_data)
                 opendeathtoll.Active = false
             end
         end
+
+        if SLOT_DATA["act_progression"] ~= nil then
+            local leader
+            if SLOT_DATA["act_progression"] == 1 then
+                leader = Tracker:FindObjectForCode("chief")
+                leader.Active = true
+
+                leader = Tracker:FindObjectForCode("guardian")
+                leader.Active = true
+
+                leader = Tracker:FindObjectForCode("mermaid")
+                leader.Active = true
+
+                leader = Tracker:FindObjectForCode("nome")
+                leader.Active = true
+
+                leader = Tracker:FindObjectForCode("marie")
+                leader.Active = true
+
+                leader = Tracker:FindObjectForCode("king")
+                leader.Active = true
+            end
+        end
+
     end
 end
 
