@@ -1,8 +1,6 @@
 # Soul Blazer PopTracker Pack
 Soul Blazer Randomizer tracker using the PopTracker program.  Supports both the standalone and Archipelago versions.
 
-Note: Autotracking support is currently better for the Archipelago veresion, although I intend to work on this later.
-
 ## Usage
 
 Upon installing this tracker, use standard PopTracker operations: left click items to turn them on, right click to turn them off.
@@ -11,6 +9,25 @@ Auto-tracking will override most of the things you can click, though.
 The Settings section exists for the map-enabled variants, you toggle these like you would any other checks.
 
 More features are planned for this tracker, and issues can be raised as usual.
+
+## Version differences
+
+This pack assumes you are using one of the following two randomizers:
+
+* [RandoBlazer](https://github.com/randoblazer/RandoBlazer) 0.5d or newer, as featured on the [RandoBlazer](https://randoblazer.com/) website
+* Soul Blazer Archpielago 0.3.2 or newer
+
+**If you are running an older RandoBlazer version**, some Act 3 checks will appear in logic when they actually aren't.  This is because RandoBlazer 0.5d moved the Rockbird blocking stone so that it doesn't block the path to Durean and the Ghost Ship.  Archipelago's Soul Blazer world also incorporates this change.
+
+## Known Issues
+
+At present, the standalone version doesn't auto-track the following:
+
+* Rewards from Jewel Fairies
+* Rewards from NPCs
+* Rewards from tiles you walk over
+
+I plan on working on this later.
 
 ## PopTrack Pack Credits
 
