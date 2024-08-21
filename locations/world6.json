@@ -337,7 +337,7 @@
               },
               {
                 "name": "Boss: Demon Falcon",
-                "access_rules": ["[soulreality],w6leo,w6soldierdok,w6soldieroct,mobilekey"],
+                "access_rules": ["[soulreality],mobilekey"],
                 "chest_unopened_img": "images/bosses/demonfalcon.png"
               }
             ]
