@@ -1,6 +1,9 @@
 -- Load settings early.
 ScriptHost:LoadScript( "scripts/settings.lua" )
 
+-- Utility Script for helper functions etc.
+ScriptHost:LoadScript("scripts/utils.lua")
+
 -- Load the items
 Tracker:AddItems( "items/equipment.json" )
 Tracker:AddItems( "items/dreams.json" )
