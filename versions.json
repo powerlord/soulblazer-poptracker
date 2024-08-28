@@ -1,6 +1,17 @@
 {
     "versions": [
         {
+            "package_version": "2.3.0.2",
+            "download_url": "https://github.com/powerlord/soulblazer-poptracker/releases/download/2.3.0.2/soulblazer-poptracker-2.3.0.2.zip",
+            "sha256": "C701FB0D80ADEB3BB85B600572B11A7D9B2A097F294A33DF4DA6B36E136260F4",
+            "changelog": [
+                "Fix the Concert Hall checking the wrong Soldier",
+                "Fix the Act 6 boss having Dr. Leo and the soldiers as a requirement",
+                "Adds Archipelago server-side tracking. This also automatically sets certain settings based on data from the server such as Goal, Open Act Progression, Required Stone Count, and Open Deathtoll.",
+                "Updated the readme with some additional information about what this tracker doesn't support and version differences in RandoBlazer."
+            ]
+        },
+        {
             "package_version": "2.2.1.0",
             "download_url": "https://github.com/powerlord/soulblazer-poptracker/releases/download/2.2.1.0/soulblazer-poptracker-2.2.1.0.zip",
             "sha256": "984EDCAE5B896579E5DAC31AEF54EB75A2449B880614F321FD0E4827362247B5",
