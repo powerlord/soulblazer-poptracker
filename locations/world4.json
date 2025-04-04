@@ -13,7 +13,7 @@
         "map_locations": [
           {
             "map": "world4",
-            "x": 450,
+            "x": 460,
             "y": 65
           }
         ],
@@ -67,7 +67,7 @@
         "map_locations": [
           {
             "map": "world4",
-            "x": 490,
+            "x": 500,
             "y": 65
           }
         ],
@@ -129,8 +129,7 @@
         "sections": [
           {
             "name": "Hope this helps!",
-            "capture_item": true,
-            "item_count": 1
+            "capture_item": true
           }
         ]
       },
@@ -146,8 +145,7 @@
         ],
         "sections": [
           {
-            "name": "Fake Northern Wall",
-            "item_count": 1
+            "name": "Fake Northern Wall"
           }
         ]
       },
@@ -163,8 +161,8 @@
             "map_locations": [
               {
                 "map": "world4",
-                "x": 880,
-                "y": 390
+                "x": 895,
+                "y": 370
               }
             ],
             "sections": [
@@ -204,29 +202,60 @@
               },
               {
                 "name": "Dream Lair",
-                "access_rules": ["dreamrod,w4mushroomsouth,w4grandpanome,w4sleepymushroom"]
+                "access_rules": [
+                  "dreammushroom",
+                  "dreamrod,w4mushroomsouth,w4grandpanome,w4sleepymushroom"
+                ]
               },
               {
                 "name": "Dream Tile",
-                "access_rules": ["dreamrod,w4mushroomsouth,w4grandpanome,w4sleepymushroom"],
+                "access_rules": [
+                  "dreammushroom",
+                  "dreamrod,w4mushroomsouth,w4grandpanome,w4sleepymushroom"
+                ],
                 "chest_unopened_img": "images/tracker/chestclosed.png",
                 "chest_opened_img": "images/tracker/chestopen.png"  
               }
             ]
           },
           {
-            "name": "Nome the Snail",
-            "access_rules": ["w4mushroomsouth,w4grandpanome,w4nome,w4mountainking"],
-            "map_locations": [
+            "name": "Mountain Prison",
+            "access_rules": ["w4mushroomsouth,w4grandpanome"],
+            "children":
+            [
               {
-                "map": "world4",
-                "x": 510,
-                "y": 710
-              }
-            ],
-            "sections": [
+                "name": "Nome the Snail",
+                "access_rules": ["w4nome,w4mountainking"],
+                "map_locations": [
+                  {
+                    "map": "world4",
+                    "x": 510,
+                    "y": 710
+                  }
+                ],
+                "sections": [
+                  {
+                    "name": "Free the snail!"
+                  }
+                ]
+              },
               {
-                "name": "Free the snail!"
+                "name": "Sleepy Mushroom",
+                "access_rules": ["dreamrod,w4sleepymushroom"],
+                "map_locations": [
+                  {
+                    "map": "world4",
+                    "x": 310,
+                    "y": 710
+                  }
+                ],
+                "sections": [
+                  {
+                    "name": "Dream of the lake",
+                    "hosted_item": "dreammushroom"
+                  }
+                ]
+
               }
             ]
           }
@@ -247,14 +276,13 @@
             "map_locations": [
               {
                 "map": "world4",
-                "x": 260,
+                "x": 265,
                 "y": 860
               }
             ],
             "sections": [
               {
-                "name": "DANCING GRANDMAS!",
-                "item_count": 1
+                "name": "DANCING GRANDMAS!"
               }
             ]
           }

@@ -1,9 +1,16 @@
--- Additional configuration
-AUTOTRACKER_ENABLE_DEBUG_LOGGING = false
+-- Constants for AutoTracker:GetConnectionState
+CONNECTIONSTATE_DISABLED = 1
+CONNECTIONSTATE_UNAVAILABLE = 1
+CONNECTIONSTATE_NOTREADY = 2
+CONNECTIONSTATE_ACTIVE = 3
 
 function autotracker_started()
   -- Run this when activated.
 end
+
+-- Used to calculate AP IDs in item_mapping and location_mapping
+AP_BASE_ID = 374518970000
+AP_ID_OFFSET_LAIR = 1000
 
 U8_READ_CACHE = 0
 U8_READ_CACHE_ADDRESS = 0
@@ -95,7 +102,7 @@ end
 
 function updateItemsFromMemorySegment( segment )
   -- check if we're in the game.
-  if not isInGame() then
+  if not isInGame() or AutoTracker:GetConnectionState("AP") == CONNECTIONSTATE_ACTIVE then
     return false
   end
 
@@ -177,7 +184,7 @@ end
 
 function updateStoneHoldersFromMemorySegment( segment )
   -- check if we're in the game.
-  if not isInGame() then
+  if not isInGame() or AutoTracker:GetConnectionState("AP") == CONNECTIONSTATE_ACTIVE then
     return false
   end
 
@@ -200,7 +207,7 @@ end
 
 function updateSoulsFromSkyFromMemorySegment( segment )
   -- check if we're in the game.
-  if not isInGame() then
+  if not isInGame() or AutoTracker:GetConnectionState("AP") == CONNECTIONSTATE_ACTIVE then
     return false
   end
 
@@ -217,7 +224,7 @@ end
 
 function updateReleasedSoulsFromMemorySegment( segment )
   -- check if we're in the game.
-  if not isInGame() then
+  if not isInGame() or AutoTracker:GetConnectionState("AP") == CONNECTIONSTATE_ACTIVE then
     return false
   end
 

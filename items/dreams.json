@@ -1,5 +1,11 @@
 [
   {
+    "name": "Water Mill",
+    "type": "toggle",
+    "img": "images/tracker/soullight.png",
+    "codes": "watermill"
+  },
+  {
     "name": "Lisa's Dream",
     "type": "toggle",
     "img": "images/tracker/soullight.png",
@@ -22,5 +28,11 @@
     "type": "toggle",
     "img": "images/tracker/soullight.png",
     "codes": "dreamdolphin"
+  },
+  {
+    "name": "Sleepy Mushroom's Dream",
+    "type": "toggle",
+    "img": "images/tracker/soullight.png",
+    "codes": "dreammushroom"
   }
 ]

@@ -15,7 +15,7 @@ function UpdateChestsFromMemorySegment( segment )
   updateLocationFromBit( segment, "@Leo's Painting/Room 2 Chest", 0x7e1a7f, 0x02 ) -- 0x09
   updateLocationFromBit( segment, "@Leo's Painting/Room 2 Metal Enemies Chest", 0x7e1a7f, 0x04 ) -- 0x0A
 
-  updateLocationFromBit( segment, "@Sleepy Stump Chest/I believe I can fly...", 0x7e1a7f, 0x10 ) -- 0x0C
+  updateLocationFromBit( segment, "@Sleepy Stump Chest/In the garbage", 0x7e1a7f, 0x10 ) -- 0x0C
   updateLocationFromBit( segment, "@Mole Outside/Guide them home", 0x7e1a7f, 0x20 ) -- 0x0D
   updateLocationFromBit( segment, "@Water Shrine/1F Chest Near Exit", 0x7e1a7f, 0x08 ) -- 0x0B
   updateLocationFromBit( segment, "@Water Shrine/B1 Behind the Waterfall Chest", 0x7e1a7f, 0x40 ) -- 0x0E

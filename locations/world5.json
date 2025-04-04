@@ -11,8 +11,8 @@
         "map_locations": [
           {
             "map": "world5",
-            "x": 240,
-            "y": 800
+            "x": 250,
+            "y": 820
           }
         ],
         "chest_unopened_img": "images/tracker/monsterlairopen.png",
@@ -80,8 +80,8 @@
         "map_locations": [
           {
             "map": "world5",
-            "x": 300,
-            "y": 925
+            "x": 310,
+            "y": 945
           }
         ],
         "access_rules": ["w5stepsbasement"],
@@ -123,8 +123,7 @@
             ],
             "sections": [
               {
-                "name": "No strings attached",
-                "item_count": 1
+                "name": "No strings attached"
               }
             ]
           },
@@ -137,15 +136,14 @@
                 "map_locations": [
                   {
                     "map": "world5",
-                    "x": 40,
-                    "y": 540
+                    "x": 30,
+                    "y": 570
                   }
                 ],
                 "access_rules": ["w5mouseinside"],
                 "sections": [
                   {
-                    "name": "Mouse in Hallway",
-                    "item_count": 1
+                    "name": "Mouse in Hallway"
                   }
                 ]
               },
@@ -161,8 +159,7 @@
                 ],
                 "sections": [
                   {
-                    "name": "Dance, plant, dance!",
-                    "item_count": 1
+                    "name": "Dance, plant, dance!"
                   }
                 ]
               }
@@ -173,19 +170,17 @@
             "map_locations": [
               {
                 "map": "world5",
-                "x": 25,
+                "x": 30,
                 "y": 780
               }
             ],
             "access_rules": ["doorkey,w5doorsouthwest,w5drawers1st"],
             "sections": [
               {
-                "name": "Open the Drawers",
-                "item_count": 1
+                "name": "Open the Drawers"
               },
               {
-                "name": "Push the Drawers",
-                "item_count": 1
+                "name": "Push the Drawers"
               }
             ]
           }
@@ -201,8 +196,8 @@
             "map_locations": [
               {
                 "map": "world5",
-                "x": 315,
-                "y": 405
+                "x": 325,
+                "y": 400
               }
             ],
             "sections": [
@@ -228,8 +223,7 @@
                 "access_rules": ["w5sleepycat,dreamrod"],
                 "sections": [
                   {
-                    "name": "Where's the fish...ZZZZZZ",
-                    "item_count": 1
+                    "name": "Where's the fish...ZZZZZZ"
                   }
                 ]
               },
@@ -245,8 +239,7 @@
                 "access_rules": ["w5plantmodel"],
                 "sections": [
                   {
-                    "name": "Dance, plant, dance!",
-                    "item_count": 1
+                    "name": "Dance, plant, dance!"
                   }
                 ]
               },
@@ -256,7 +249,7 @@
                 "map_locations": [
                   {
                     "map": "world5",
-                    "x": 35,
+                    "x": 40,
                     "y": 100
                   }
                 ],
@@ -277,8 +270,8 @@
                 "map_locations": [
                   {
                     "map": "world5",
-                    "x": 35,
-                    "y": 250
+                    "x": 50,
+                    "y": 230
                   }
                 ],
                 "access_rules": ["w5model1"],
@@ -338,8 +331,8 @@
                 "map_locations": [
                   {
                     "map": "world5",
-                    "x": 90,
-                    "y": 250
+                    "x": 95,
+                    "y": 230
                   }
                 ],
                 "access_rules": ["w5model2"],

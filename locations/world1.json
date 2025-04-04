@@ -22,12 +22,10 @@
             "chest_opened_img": "images/tracker/chestopen.png",
             "sections": [
               {
-                "name": "Trial Room Chest",
-                "item_count": 1
+                "name": "Trial Room Chest"
               },
               {
                 "name": "Magician Item",
-                "item_count": 1,
                 "chest_unopened_img": "images/tracker/monsterlairopen.png",
                 "chest_opened_img": "images/tracker/monsterlairsealed.png"
               },
@@ -42,60 +40,50 @@
             "map_locations": [
               {
                 "map": "world1",
-                "x": 310,
-                "y": 940
+                "x": 300,
+                "y": 915
               }
             ],
             "chest_unopened_img": "images/tracker/monsterlairopen.png",
             "chest_opened_img": "images/tracker/monsterlairsealed.png",
             "sections": [
               { 
-                "name": "Lair East of Entrance",
-                "item_count": 1
+                "name": "Lair East of Entrance"
               },
               {
                 "name": "Triangle Pillar Chest",
                 "chest_unopened_img": "images/tracker/chestclosed.png",
-                "chest_opened_img": "images/tracker/chestopen.png",
-                "item_count": 1
+                "chest_opened_img": "images/tracker/chestopen.png"
               },
               {
                 "name": "Crystal on Ledge",
                 "chest_unopened_img": "images/tracker/jewel.png",
-                "chest_opened_img": "images/tracker/jewelfairy.png",
-                "item_count": 1
+                "chest_opened_img": "images/tracker/jewelfairy.png"
               },
               {
-                "name": "West Bridge Lair",
-                "item_count": 1
+                "name": "West Bridge Lair"
               },
               {
                 "name": "Triangle Torch Chest",
                 "chest_unopened_img": "images/tracker/chestclosed.png",
-                "chest_opened_img": "images/tracker/chestopen.png",
-                "item_count": 1
+                "chest_opened_img": "images/tracker/chestopen.png"
               },
               {
-                "name": "Lair North of Triangle Torch Chest",
-                "item_count": 1
+                "name": "Lair North of Triangle Torch Chest"
               },
               {
-                "name": "North-East Lair",
-                "item_count": 1
+                "name": "North-East Lair"
               },
               {
                 "name": "North-East Island Chest",
                 "chest_unopened_img": "images/tracker/chestclosed.png",
-                "chest_opened_img": "images/tracker/chestopen.png",
-                "item_count": 1
+                "chest_opened_img": "images/tracker/chestopen.png"
               },
               {
-                "name": "Plant Cage",
-                "item_count": 1
+                "name": "Plant Cage"
               },
               {
-                "name": "South-East Island Lair",
-                "item_count": 1
+                "name": "South-East Island Lair"
               }
             ]
           },
@@ -105,8 +93,8 @@
             "map_locations": [
               {
                 "map": "world1",
-                "x": 345,
-                "y": 940
+                "x": 335,
+                "y": 915
               }
             ],
             "chest_unopened_img": "images/tracker/monsterlairopen.png",
@@ -164,8 +152,8 @@
             "map_locations": [
               {
                 "map": "world1",
-                "x": 80,
-                "y": 425
+                "x": 150,
+                "y": 325
               }
             ],
             "sections": [
@@ -189,15 +177,13 @@
             "access_rules": ["w1toolshopowner"],
             "sections": [
               {
-                "name": "Tool Shop Owner",
-                "item_count": 1
+                "name": "Tool Shop Owner"
               },
               {
                 "name": "Tool Shop Owner's Son",
                 "access_rules": [
                   "w1teddy"
-                ],
-                "item_count": 1
+                ]
               }
             ]
           }
@@ -221,8 +207,45 @@
                 "name": "Southeast Corner",
                 "access_rules": [
                   "w1goatpen"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Water Mill",
+            "map_locations": [
+              {
+                "map": "world1",
+                "x": 655,
+                "y": 420
+              }
+            ],
+            "sections": [
+              {
+                "name": "Activate the elevator",
+                "access_rules": [
+                  "w1watermillkeeper"
                 ],
-                "item_count": 1
+                "hosted_item": "watermill"
+              }
+            ]
+          },
+          {
+            "name": "Lisa",
+            "map_locations": [
+              {
+                "map": "world1",
+                "x": 950,
+                "y": 500
+              }
+            ],
+            "sections": [
+              {
+                "name": "In her dreams",
+                "access_rules": [
+                  "w1lisa,dreamrod"
+                ],
+                "hosted_item": "dreamlisa"
               }
             ]
           },
@@ -231,8 +254,8 @@
             "map_locations": [
               {
                 "map": "world1",
-                "x": 575,
-                "y": 940
+                "x": 585,
+                "y": 920
               }
             ],
             "access_rules": [
@@ -249,8 +272,7 @@
               {
                 "name": "Crystal",
                 "chest_unopened_img": "images/tracker/jewel.png",
-                "chest_opened_img": "images/tracker/jewelfairy.png",
-                "item_count": 1
+                "chest_opened_img": "images/tracker/jewelfairy.png"
               }
             ]
           },
@@ -272,8 +294,7 @@
                     "name": "Push Left",
                     "access_rules": [
                       "w1sleepytulip"
-                    ],
-                    "item_count": 1
+                    ]
                   }
                 ]
               },
@@ -282,8 +303,8 @@
                 "map_locations": [
                   {
                     "map": "world1",
-                    "x": 740,
-                    "y": 795
+                    "x": 745,
+                    "y": 805
                   }
                 ],
                 "sections": [
@@ -291,8 +312,7 @@
                     "name": "Left-most cliff",
                     "access_rules": [
                       "w1ivyemblema"
-                    ],
-                    "item_count": 1
+                    ]
                   }
                 ]
               }
@@ -313,8 +333,7 @@
                 ],
                 "sections": [
                   {
-                    "name": "Lower-right most outlook",
-                    "item_count": 1
+                    "name": "Lower-right most outlook"
                   }
                 ]
               },
@@ -323,8 +342,8 @@
                 "map_locations": [
                   {
                     "map": "world1",
-                    "x": 650,
-                    "y": 80
+                    "x": 640,
+                    "y": 85
                   }
                 ],
                 "sections": [
@@ -332,8 +351,7 @@
                     "name": "Nice view at least...",
                     "access_rules": ["w1ivyhideoutcrystal"],
                     "chest_unopened_img": "images/tracker/jewel.png",
-                    "chest_opened_img": "images/tracker/jewelfairy.png",
-                    "item_count": 1
+                    "chest_opened_img": "images/tracker/jewelfairy.png"
                   }
                 ]
               }
@@ -347,65 +365,53 @@
             "map_locations": [
               {
                 "map": "world1",
-                "x": 770,
-                "y": 160
+                "x": 780,
+                "y": 90
               }
             ],
             "sections": [
               {
-                "name": "Room 1 Entrance",
-                "item_count": 1
+                "name": "Room 1 Entrance"
               },
               {
-                "name": "Room 1 Exit",
-                "item_count": 1
+                "name": "Room 1 Exit"
               },
               {
-                "name": "Room 2 North of Entrance",
-                "item_count": 1
+                "name": "Room 2 North of Entrance"
               },
               {
                 "name": "Room 2 Chest",
                 "chest_unopened_img": "images/tracker/chestclosed.png",
-                "chest_opened_img": "images/tracker/chestopen.png",
-                "item_count": 1
+                "chest_opened_img": "images/tracker/chestopen.png"
               },
               {
-                "name": "Room 3 Entrance",
-                "item_count": 1
+                "name": "Room 3 Entrance"
               },
               {
-                "name": "Room 3 North-East Birds",
-                "item_count": 1
+                "name": "Room 3 North-East Birds"
               },
               {
-                "name": "Room 3 South-East Blocks",
-                "item_count": 1
+                "name": "Room 3 South-East Blocks"
               },
               {
-                "name": "Room 4 Torch Guards",
-                "item_count": 1
+                "name": "Room 4 Torch Guards"
               },
               {
-                "name": "Boss: Solid Arm",
-                "item_count": 1
+                "name": "Boss: Solid Arm"
               },
               {
                 "name": "Room 2 Metal Enemies Chest",
                 "access_rules": ["$canDefeatMetalMonsters"],
                 "chest_unopened_img": "images/tracker/chestclosed.png",
-                "chest_opened_img": "images/tracker/chestopen.png",
-                "item_count": 1
+                "chest_opened_img": "images/tracker/chestopen.png"
               },
               {
                 "name": "Room 3 Metal Enemies",
-                "access_rules": ["$canDefeatMetalMonsters"],
-                "item_count": 1
+                "access_rules": ["$canDefeatMetalMonsters"]
               },
               {
                 "name": "Room 4 Metal Enemies",
-                "access_rules": ["$canDefeatMetalMonsters"],
-                "item_count": 1
+                "access_rules": ["$canDefeatMetalMonsters"]
               }
             ]
           }

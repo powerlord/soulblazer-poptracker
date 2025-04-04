@@ -12,7 +12,7 @@
           {
             "map": "world2",
             "x": 375,
-            "y": 230
+            "y": 225
           }
         ],
         "access_rules": ["w2guardian"],
@@ -27,8 +27,14 @@
         "map_locations": [
           {
             "map": "world2",
-            "x": 195,
-            "y": 180
+            "x": 175,
+            "y": 170
+          },
+          {
+            "map": "world2",
+            "x": 110,
+            "y": 500,
+            "size": 12
           }
         ],
         "access_rules": [
@@ -38,8 +44,7 @@
         "sections": [
           {
             "name": "All 8 Emblems...",
-            "capture_item": true,
-            "item_count": 1
+            "capture_item": true
           }
         ]
       },
@@ -55,8 +60,7 @@
         "access_rules": ["w2woodstindeer,w2woodstindog,w2woodstinsquirrel"],
         "sections": [
           {
-            "name": "Always right",
-            "item_count": 1
+            "name": "Always right"
           }
         ]
       },
@@ -67,13 +71,17 @@
             "map": "world2",
             "x": 65,
             "y": 270
+          },
+          {
+            "map": "world2",
+            "x": 690,
+            "y": 270
           }
         ],
         "access_rules": ["w2bird"],
         "sections": [
           {
-            "name": "Sneak carefully...",
-            "item_count": 1
+            "name": "Sneak carefully..."
           }
         ]
       },
@@ -84,13 +92,17 @@
           {
             "map": "world2",
             "x": 230,
-            "y": 465
+            "y": 500
+          },
+          {
+            "map": "world2",
+            "x": 670,
+            "y": 200
           }
         ],
         "sections": [
           {
-            "name": "Guide them home",
-            "item_count": 1
+            "name": "Guide them home"
           }
         ]
       },
@@ -99,12 +111,31 @@
         "access_rules": ["w2holesleepystump"],
         "children": [
           {
+            "name": "Sleepy Stump",
+            "map_locations": [
+              {
+                "map": "world2",
+                "x": 125,
+                "y": 700
+              }
+            ],
+            "access_rules": [
+              "dreamrod,w2squirrelsleepy"
+            ],
+            "sections": [
+              {
+                "name": "I believe I can fly...",
+                "hosted_item": "dreamstump"
+              }
+            ]
+          },
+          {
             "name": "Sleepy Stump Chest",
             "map_locations": [
               {
                 "map": "world2",
-                "x": 100,
-                "y": 670
+                "x": 260,
+                "y": 90
               }
             ],
             "access_rules": [
@@ -113,8 +144,7 @@
             ],
             "sections": [
               {
-                "name": "I believe I can fly...",
-                "item_count": 1
+                "name": "In the garbage"
               }
             ]
           },
@@ -125,15 +155,33 @@
               {
                 "map": "world2",
                 "x": 310,
-                "y": 490
+                "y": 480
               }
             ],
             "sections": [
               {
-                "name": "Ribbon exchanged for...",
-                "item_count": 1
+                "name": "Ribbon exchanged for..."
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "Sleepy Bird",
+        "access_rules": [
+          "w2crocodileisland,w2crocodilegraveyard,w2sleepybird,dreamrod"
+        ],
+        "map_locations": [
+          {
+            "map": "world2",
+            "x": 285,
+            "y": 725
+          }
+        ],
+        "sections": [
+          {
+            "name": "Mourning the dead",
+            "hosted_item": "dreambird"
           }
         ]
       },
@@ -143,7 +191,7 @@
         "map_locations": [
           {
             "map": "world2",
-            "x": 425,
+            "x": 415,
             "y": 475
           }
         ],
@@ -157,8 +205,7 @@
             "access_rules": [
               "dreambird",
               "w2crocodileisland,w2crocodilegraveyard,w2sleepybird,dreamrod"
-            ],
-            "item_count": 1
+            ]
           }
         ]
       },
@@ -169,20 +216,18 @@
           {
             "map": "world2",
             "x": 550,
-            "y": 100
+            "y": 120
           }
         ],
         "sections": [
           {
             "name": "Hungry Squirrel",
             "access_rules": ["seeds"],
-            "capture_item": true,
-            "item_count": 1
+            "capture_item": true
           },
           {
             "name": "Hungry Squirrel's Roommate",
-            "access_rules": ["w2squirrelroommate"],
-            "item_count": 1
+            "access_rules": ["w2squirrelroommate"]
           }
         ]
       },
@@ -199,82 +244,66 @@
         ],
         "sections": [
           {
-            "name": "Lostside Marsh: Entrance",
-            "item_count": 1
+            "name": "Lostside Marsh: Entrance"
           },
           {
-            "name": "Lostside Marsh: Island West of Water Shrine",
-            "item_count": 1
+            "name": "Lostside Marsh: Island West of Water Shrine"
           },
           {
-            "name": "1F Center Island",
-            "item_count": 1
+            "name": "1F Center Island"
           },
           {
-            "name": "B1 Pillars Near Waterfalls",
-            "item_count": 1
+            "name": "B1 Pillars Near Waterfalls"
           },
           {
             "name": "B1 Behind the Waterfall Chest",
             "chest_unopened_img": "images/tracker/chestclosed.png",
-            "chest_opened_img": "images/tracker/chestopen.png",
-            "item_count": 1
+            "chest_opened_img": "images/tracker/chestopen.png"
           },
           {
             "name": "B1 Moving Spike Trap Crystal",
             "chest_unopened_img": "images/tracker/jewel.png",
-            "chest_opened_img": "images/tracker/jewelfairy.png",
-            "item_count": 1
+            "chest_opened_img": "images/tracker/jewelfairy.png"
           },
           {
             "name": "B1 Moving Spike Trap Chest",
             "chest_unopened_img": "images/tracker/chestclosed.png",
-            "chest_opened_img": "images/tracker/chestopen.png",
-            "item_count": 1
+            "chest_opened_img": "images/tracker/chestopen.png"
           },
           {
-            "name": "B1 Moving Spike Trap Lair",
-            "item_count": 1
+            "name": "B1 Moving Spike Trap Lair"
           },
           {
             "name": "B2 South-West Chest",
             "chest_unopened_img": "images/tracker/chestclosed.png",
-            "chest_opened_img": "images/tracker/chestopen.png",
-            "item_count": 1
+            "chest_opened_img": "images/tracker/chestopen.png"
           },
           {
-            "name": "B2 West Side-Room",
-            "item_count": 1
+            "name": "B2 West Side-Room"
           },
           {
             "name": "B2 Side-Room Secret Tile",
             "chest_unopened_img": "images/tracker/chestclosed.png",
-            "chest_opened_img": "images/tracker/chestopen.png",
-            "item_count": 1
+            "chest_opened_img": "images/tracker/chestopen.png"
           },
           {
-            "name": "B2 North Hallway",
-            "item_count": 1
+            "name": "B2 North Hallway"
           },
           {
-            "name": "B2 Statue Room",
-            "item_count": 1
+            "name": "B2 Statue Room"
           },
           {
             "name": "B2 South-East Chest",
             "chest_unopened_img": "images/tracker/chestclosed.png",
-            "chest_opened_img": "images/tracker/chestopen.png",
-            "item_count": 1
+            "chest_opened_img": "images/tracker/chestopen.png"
           },
           {
-            "name": "B2 to 1F Connector",
-            "item_count": 1
+            "name": "B2 to 1F Connector"
           },
           {
             "name": "1F Chest Near Exit",
             "chest_unopened_img": "images/tracker/chestclosed.png",
-            "chest_opened_img": "images/tracker/chestopen.png",
-            "item_count": 1
+            "chest_opened_img": "images/tracker/chestopen.png"
           }
         ]
       },
@@ -291,97 +320,78 @@
         ],
         "sections": [
           {
-            "name": "Lostside Marsh: North of Water Shrine",
-            "item_count": 1
+            "name": "Lostside Marsh: North of Water Shrine"
           },
           {
             "name": "1F Second Bridge from the Left",
             "chest_unopened_img": "images/tracker/chestclosed.png",
-            "chest_opened_img": "images/tracker/chestopen.png",
-            "item_count": 1
+            "chest_opened_img": "images/tracker/chestopen.png"
           },
           {
-            "name": "1F Eastmost Lair",
-            "item_count": 1
+            "name": "1F Eastmost Lair"
           },
           {
             "name": "B1 Near the Stairs",
             "chest_unopened_img": "images/tracker/chestclosed.png",
-            "chest_opened_img": "images/tracker/chestopen.png",
-            "item_count": 1
+            "chest_opened_img": "images/tracker/chestopen.png"
           },
           {
-            "name": "B1 North-West Lair",
-            "item_count": 1
+            "name": "B1 North-West Lair"
           },
           {
-            "name": "B1 South Lair",
-            "item_count": 1
+            "name": "B1 South Lair"
           },
           {
-            "name": "B1 South-East Lair",
-            "item_count": 1
+            "name": "B1 South-East Lair"
           },
           {
-            "name": "B2 West of Stairs",
-            "item_count": 1
+            "name": "B2 West of Stairs"
           },
           {
-            "name": "B2 Past First Heated Path",
-            "item_count": 1
+            "name": "B2 Past First Heated Path"
           },
           {
             "name": "B2 Heated Path Crystal",
             "chest_unopened_img": "images/tracker/jewel.png",
-            "chest_opened_img": "images/tracker/jewelfairy.png",
-            "item_count": 1
+            "chest_opened_img": "images/tracker/jewelfairy.png"
           },
           {
             "name": "B2 Triple Scorpion Chest",
             "chest_unopened_img": "images/tracker/chestclosed.png",
-            "chest_opened_img": "images/tracker/chestopen.png",
-            "item_count": 1
+            "chest_opened_img": "images/tracker/chestopen.png"
           },
           {
-            "name": "B2 Heated Circle",
-            "item_count": 1
+            "name": "B2 Heated Circle"
           },
           {
-            "name": "B2 Snaking Path Center",
-            "item_count": 1
+            "name": "B2 Snaking Path Center"
           },
           {
-            "name": "B2 Snaking Path Bridge",
-            "item_count": 1
+            "name": "B2 Snaking Path Bridge"
           },
           {
             "name": "B2 Chest Near Exit",
             "chest_unopened_img": "images/tracker/chestclosed.png",
-            "chest_opened_img": "images/tracker/chestopen.png",
-            "item_count": 1
+            "chest_opened_img": "images/tracker/chestopen.png"
           },
           {
-            "name": "B1 Isolated Room",
-            "item_count": 1
+            "name": "B1 Isolated Room"
           },
           {
             "name": "1F Metal Enemies Crystal",
             "access_rules": ["$canDefeatMetalMonsters"],
             "chest_unopened_img": "images/tracker/jewel.png",
-            "chest_opened_img": "images/tracker/jewelfairy.png",
-            "item_count": 1
+            "chest_opened_img": "images/tracker/jewelfairy.png"
           },
           {
             "name": "B1 Metal Enemies",
             "access_rules": ["$canDefeatMetalMonsters"],
             "chest_unopened_img": "images/tracker/chestclosed.png",
-            "chest_opened_img": "images/tracker/chestopen.png",
-            "item_count": 1
+            "chest_opened_img": "images/tracker/chestopen.png"
           },
           {
             "name": "B2 Metal Enemies",
-            "access_rules": ["$canDefeatMetalMonsters"],
-            "item_count": 1
+            "access_rules": ["$canDefeatMetalMonsters"]
           }
         ]
       },
@@ -399,52 +409,43 @@
         ],
         "sections": [
           {
-            "name": "Lostside Marsh: South-West of Light Shrine",
-            "item_count": 1
+            "name": "Lostside Marsh: South-West of Light Shrine"
           },
           {
-            "name": "Lostside Marsh: East of Fire Shrine",
-            "item_count": 1
+            "name": "Lostside Marsh: East of Fire Shrine"
           },
           {
             "name": "Lostside Marsh: Crystal Near Light Shrine",
             "chest_unopened_img": "images/tracker/jewel.png",
-            "chest_opened_img": "images/tracker/jewelfairy.png",
-            "item_count": 1
+            "chest_opened_img": "images/tracker/jewelfairy.png"
           },
           {
-            "name": "1F North Lair",
-            "item_count": 1
+            "name": "1F North Lair"
           },
           {
             "name": "Basement East Lair",
-            "access_rules": ["[soullight]"],
-            "item_count": 1
+            "access_rules": ["[soullight]"]
           },
           {
             "name": "Basement Lair Near Portal",
-            "access_rules": ["[soullight]"],
-            "item_count": 1
+            "access_rules": ["[soullight]"]
           },
           {
             "name": "Boss: Elemental Statues",
             "access_rules": ["[soullight]"],
-            "chest_unopened_img": "images/bosses/elementalstatues.png",
-            "item_count": 1
+            "chest_unopened_img": "images/bosses/elementalstatues.png"
           },
           {
             "name": "1st Floor Spirit Enemies Chest",
             "chest_unopened_img": "images/tracker/chestclosed.png",
             "chest_opened_img": "images/tracker/chestopen.png",
-            "access_rules": ["$canDefeatSpiritMonsters"],
-            "item_count": 1
+            "access_rules": ["$canDefeatSpiritMonsters"]
           },
           {
             "name": "Basement Spirit Lair",
             "access_rules": [
               "$canDefeatSpiritMonsters,[soullight]"
-            ],
-            "item_count": 1
+            ]
           }
         ]
       }

@@ -19,8 +19,7 @@
         "sections": [
           {
             "name": "Wake up please",
-            "capture_item": true,
-            "item_count": 1
+            "capture_item": true
           }
         ]
       },
@@ -30,14 +29,13 @@
         "map_locations": [
           {
             "map": "world6",
-            "x": 125,
-            "y": 840
+            "x": 135,
+            "y": 825
           }
         ],
         "sections": [
           {
-            "name": "Nice music. Go to where the soldier stood.",
-            "item_count": 1
+            "name": "Nice music. Go to where the soldier stood."
           }
         ]
       },
@@ -46,15 +44,14 @@
         "map_locations": [
           {
             "map": "world6",
-            "x": 860,
+            "x": 870,
             "y": 825
           }
         ],
         "access_rules": ["w6maid"],
         "sections": [
           {
-            "name": "Recharging",
-            "item_count": 1
+            "name": "Recharging"
           }
         ]
       },
@@ -64,19 +61,17 @@
         "map_locations": [
           {
             "map": "world6",
-            "x": 895,
+            "x": 905,
             "y": 475
           }
         ],
         "sections": [
           {
-            "name": "Meet the Queen (never major)",
-            "item_count": 1
+            "name": "Meet the Queen (never major)"
           },
           {
             "name": "RIP the Queen (post Leo's Death)",
-            "access_rules": ["ripleo"],
-            "item_count": 1
+            "access_rules": ["ripleo"]
           }
         ]
       },
@@ -90,8 +85,8 @@
             "map_locations": [
               {
                 "map": "world6",
-                "x": 490,
-                "y": 130
+                "x": 505,
+                "y": 120
               }
             ],
             "sections": [
@@ -111,8 +106,7 @@
             ],
             "sections": [
               {
-                "name": "Please be a good one",
-                "item_count": 1
+                "name": "Please be a good one"
               }
             ]
           }
@@ -124,8 +118,8 @@
         "map_locations": [
           {
             "map": "world6",
-            "x": 575,
-            "y": 830
+            "x": 585,
+            "y": 825
           }
         ],
         "sections": [
@@ -249,14 +243,13 @@
             "map_locations": [
               {
                 "map": "world6",
-                "x": 30,
-                "y": 140
+                "x": 40,
+                "y": 135
               }
             ],
             "sections": [
               {
-                "name": "1F North-East Corner",
-                "item_count": 1
+                "name": "1F North-East Corner"
               },
               {
                 "name": "2F North-West Room",
@@ -286,8 +279,8 @@
             "map_locations": [
               {
                 "map": "world6",
-                "x": 975,
-                "y": 140
+                "x": 985,
+                "y": 135
               }
             ],
             "sections": [

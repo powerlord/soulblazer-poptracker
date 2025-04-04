@@ -1,6 +1,6 @@
 function updateArchipelagoMiscRewardsFromMemorySegment( segment )
   -- check if we're in the game.
-  if not isInGame() then
+  if not isInGame() or AutoTracker:GetConnectionState("AP") == CONNECTIONSTATE_ACTIVE then
     return false
   end
 
@@ -41,7 +41,7 @@ function updateArchipelagoMiscRewardsFromMemorySegment( segment )
   updateLocationFromBit( segment, "@Mermaid in Common House Hidden Room/How'd you find me?", 0x7e1b19, 0x20 ) -- 0x35
   updateLocationFromBit( segment, "@Mermaid Queen/To the next act!", 0x7e1b19, 0x40 ) -- 0x36
   updateLocationFromBit( segment, "@Mermaid with Gift/Mermaid with Gift", 0x7e1b19, 0x80 ) -- 0x37
-  updateLocationFromBit( segment, "@Lue the Dolphin/Prison Break!", 0x7e1b1a, 0x01 ) -- 0x38
+  updateLocationFromBit( segment, "@Seabed Prison/Lue's Prison Break!", 0x7e1b1a, 0x01 ) -- 0x38
   updateLocationFromBit( segment, "@Rockbird/North-Western Island Crystal", 0x7e1b1a, 0x02 ) -- 0x39
   updateLocationFromBit( segment, "@Blester/Seabed North-East, Crystal South of the Current", 0x7e1b1a, 0x04 ) -- 0x3A
   updateLocationFromBit( segment, "@Durean/Crystal Near Durean", 0x7e1b1a, 0x08 ) -- 0x3B
@@ -84,4 +84,22 @@ function updateArchipelagoMiscRewardsFromMemorySegment( segment )
 
 end
 
+function updateArchipelagoEventFlagsFromMemorySegment( segment )
+  -- check if we're in the game.
+  if not isInGame() or AutoTracker:GetConnectionState("AP") == CONNECTIONSTATE_ACTIVE then
+    return false
+  end
+
+  if not AUTOTRACKER_ENABLE_LOCATION_TRACKING then
+    return
+  end
+
+  InvalidateReadCaches()
+
+  updateToggleItemFromBit( segment, "watermill", 0x7e1a62, 0x10 )
+
+end
+
+
 ScriptHost:AddMemoryWatch( "Soul Blazer Archipelago Misc Rewards", 0x7e1b13, 9, updateArchipelagoMiscRewardsFromMemorySegment )
+ScriptHost:AddMemoryWatch( "Soul Blazer Event Flags", 0x7e1a5e, 9, updateArchipelagoEventFlagsFromMemorySegment )

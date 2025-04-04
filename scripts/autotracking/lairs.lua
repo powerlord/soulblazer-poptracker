@@ -4,6 +4,11 @@ local function updateLairLocationFromBit( segment, code, lair_id )
   updateLocationFromBit( segment, code, lair_address, 0x80 )
 end
 
+local function updateLairItemFromBit( segment, code, lair_id )
+  local lair_address = LairAddressLookup( lair_id )
+  updateToggleItemFromBit( segment, code, lair_address, 0x80 )
+end
+
 local function updateLairLocationFromMultipleBits( segment, code, lair_ids )
   local lair_addresses = {}
   for _, lair_id in ipairs( lair_ids ) do
@@ -14,7 +19,7 @@ end
 
 function updateLairsFromMemorySegment( segment )
   -- check if we're in the game.
-  if not isInGame() then
+  if not isInGame() or AutoTracker:GetConnectionState("AP") == CONNECTIONSTATE_ACTIVE then
     return false
   end
 
@@ -46,6 +51,7 @@ function updateLairsFromMemorySegment( segment )
   updateLairLocationFromBit( segment, "@Leo's Painting/Room 4 Metal Enemies", 0x02c ) -- IVY_RECOVERY_SWORD
   updateLairLocationFromBit( segment, "@Leo's Painting/Room 1 Entrance", 0x02e ) -- TULIP4
   updateLairLocationFromBit( segment, "@Leo's Painting/Room 3 Entrance", 0x02f ) -- GOAT2
+  updateLairItemFromBit( segment, "dreamlisa", 0x032 ) -- LISA'S DREAM
 
   updateLairLocationFromBit( segment, "@Light Shrine/Basement Spirit Lair", 0x037 ) -- BIRD_RED_HOT_MIRROR
   updateLairLocationFromBit( segment, "@Water Shrine/Lostside Marsh: Entrance", 0x038 ) -- BIRD
@@ -74,8 +80,11 @@ function updateLairsFromMemorySegment( segment )
   updateLairLocationFromBit( segment, "@Fire Shrine/B2 Snaking Path Bridge", 0x063 ) -- DEER_MAGIC_BELL
   updateLairLocationFromBit( segment, "@Fire Shrine/B2 Metal Enemies", 0x064 ) -- BIRD3
   updateLairLocationFromBit( segment, "@Light Shrine/Basement East Lair", 0x06f ) -- CROCODILE3
-  updateLairLocationFromBit( segment, "@Light Shrine/Basement Lair Near Portal", 0x072) -- MONMO
+  updateLairLocationFromBit( segment, "@Light Shrine/Basement Lair Near Portal", 0x072 ) -- MONMO
+  updateLairItemFromBit( segment, "dreambird", 0x074 ) -- Bird's Dream
+  updateLairItemFromBit( segment, "dreamstump", 0x075 ) -- Stump's Dream
 
+  updateLairItemFromBit( segment, "dreamdolphin", 0x079 ) -- Dolphin's Dream
   updateLairLocationFromBit( segment, "@Ghost Ship/Seabed North-West, Seaweed Maze East", 0x07c ) -- DOLPHIN
   updateLairLocationFromBit( segment, "@Blester/Seabed North-East, South of the Current", 0x083 ) -- ANGELFISH
   updateLairLocationFromBit( segment, "@Blester/Seabed North-East, West Nook", 0x084 ) -- MERMAID
@@ -117,6 +126,7 @@ function updateLairsFromMemorySegment( segment )
   updateLairLocationFromBit( segment, "@Lune/South-East Corner", 0x0dd ) -- MUSHROOM_EMBLEM_F
   updateLairLocationFromBit( segment, "@Lune/Cloackwise Gauntlet", 0x0e1 ) -- DANCING_GRANDMA
   updateLairLocationFromBit( segment, "@Lune/Counter-Clockwise Gauntlet", 0x0e6 ) -- DANCING_GRANDMA2
+  updateLairItemFromBit( segment, "dreammushroom", 0x0e7 )
   updateLairLocationFromBit( segment, "@Lune/Dream Lair", 0x0e8 ) -- SNAIL_EMBLEM_E
   updateLairLocationFromBit( segment, "@Laynole Mountain (without Mushroom Shoes)/Cave, ICE PHYSICS!!!!", 0x0e9 ) -- BOY_MUSHROOM_SHOES
   updateLairLocationFromBit( segment, "@Laynole Mountain (with Mushroom Shoes)/Cave, Middle of the Ice", 0x0ea ) -- GRANDMA
