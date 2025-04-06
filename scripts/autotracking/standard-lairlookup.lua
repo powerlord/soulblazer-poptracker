@@ -206,6 +206,7 @@ function locateRomLairsFromMemorySegment( segment )
       for other_lair_id, other_coordinates in pairs(VANILLA_LAIR_LOCATIONS) do
         if coordinates == other_coordinates then
           lairs[other_lair_id] = lair_id
+          break
         end
       end
     end
