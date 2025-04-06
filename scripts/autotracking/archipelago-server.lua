@@ -65,55 +65,7 @@ function onClear(slot_data)
         -- add snes interface functions here
     end
 
-    -- Read the slot data for options
-    if SLOT_DATA ~= nil then
-        if SLOT_DATA["goal"] ~= nil then
-            local goal = Tracker:FindObjectForCode("goal")
-            if SLOT_DATA["goal"] == 1 then
-                goal.Active = true
-            else
-                goal.Active = false
-            end
-        end
-
-        if SLOT_DATA["stones_count"] ~= nil then
-            local stone_count = Tracker:FindObjectForCode("requiredstonecount")
-            stone_count.AcquiredCount = SLOT_DATA["stones_count"]
-        end
-
-        if SLOT_DATA["open_deathtoll"] ~= nil then
-            local opendeathtoll = Tracker:FindObjectForCode("opendeathtoll")
-            if SLOT_DATA["open_deathtoll"] == 1 then
-                opendeathtoll.Active = true
-            else
-                opendeathtoll.Active = false
-            end
-        end
-
-        if SLOT_DATA["act_progression"] ~= nil then
-            local leader
-            if SLOT_DATA["act_progression"] == 1 then
-                leader = Tracker:FindObjectForCode("chief")
-                leader.Active = true
-
-                leader = Tracker:FindObjectForCode("guardian")
-                leader.Active = true
-
-                leader = Tracker:FindObjectForCode("mermaid")
-                leader.Active = true
-
-                leader = Tracker:FindObjectForCode("nome")
-                leader.Active = true
-
-                leader = Tracker:FindObjectForCode("marie")
-                leader.Active = true
-
-                leader = Tracker:FindObjectForCode("king")
-                leader.Active = true
-            end
-        end
-
-    end
+    SBOnClear()
 end
 
 -- called when an item gets collected
@@ -238,3 +190,118 @@ if AUTOTRACKER_ENABLE_LOCATION_TRACKING then
 end
 -- Archipelago:AddScoutHandler("scout handler", onScout)
 -- Archipelago:AddBouncedHandler("bounce handler", onBounce)
+
+
+-- SoulBlazer specific things
+local sbDatastoreKeyLairs = nil
+local sbDatastoreKeyEvents = nil
+local SB_EVENT_FLAGS_START = 0x7e1a5e
+
+-- [itemname] = lair id (in hex)
+local SB_TRACKED_LAIRS = {["dreamlisa"] = 0x032, ["dreambird"] = 0x074, ["dreamstump"] = 0x075, ["dreamdolphin"] = 0x079, ["dreammushroom"] = 0x0e7}
+-- [itemname] = {address, bit}
+local SB_TRACKED_EVENTS = {["watermill"] = {0x7e1a62, 0x10}}
+local SB_LAIR_OFFSET = 0x80
+
+function SBOnClear()
+    sbDatastoreKeyLairs = string.format("soulblazer_lair_state_%d_%d", Archipelago.TeamNumber, Archipelago.PlayerNumber)
+    sbDatastoreKeyEvents = string.format("soulblazer_event_flags_%d_%d", Archipelago.TeamNumber, Archipelago.PlayerNumber)
+    if SLOT_DATA ~= nil then
+        SBProcessSlotData()
+    end
+
+    SBConfigureDataStorage()
+end
+
+function SBProcessSlotData()
+    if SLOT_DATA["goal"] ~= nil then
+        local goal = Tracker:FindObjectForCode("goal")
+        if SLOT_DATA["goal"] == 1 then
+            goal.Active = true
+        else
+            goal.Active = false
+        end
+    end
+
+    if SLOT_DATA["stones_count"] ~= nil then
+        local stone_count = Tracker:FindObjectForCode("requiredstonecount")
+        stone_count.AcquiredCount = SLOT_DATA["stones_count"]
+    end
+
+    if SLOT_DATA["open_deathtoll"] ~= nil then
+        local opendeathtoll = Tracker:FindObjectForCode("opendeathtoll")
+        if SLOT_DATA["open_deathtoll"] == 1 then
+            opendeathtoll.Active = true
+        else
+            opendeathtoll.Active = false
+        end
+    end
+
+    if SLOT_DATA["act_progression"] ~= nil then
+        local leader = nil
+        if SLOT_DATA["act_progression"] == 1 then
+            leader = Tracker:FindObjectForCode("chief")
+            leader.Active = true
+
+            leader = Tracker:FindObjectForCode("guardian")
+            leader.Active = true
+
+            leader = Tracker:FindObjectForCode("mermaid")
+            leader.Active = true
+
+            leader = Tracker:FindObjectForCode("nome")
+            leader.Active = true
+
+            leader = Tracker:FindObjectForCode("marie")
+            leader.Active = true
+
+            leader = Tracker:FindObjectForCode("king")
+            leader.Active = true
+        end
+    end
+end
+
+function SBConfigureDataStorage()
+    local keys = {sbDatastoreKeyLairs, sbDatastoreKeyEvents}
+
+    Archipelago:AddSetReplyHandler("Soul Blazer DataStorage Changed", SBDataStorageChanged)
+    Archipelago:AddRetrievedHandler("Soul Blazer DataStorage Retrieved", SBDataStorageRetrieved)
+    Archipelago:SetNotify(keys)
+    Archipelago:Get(keys)
+end
+
+function SBDataStorageChanged(key, value, old_value)
+    if key == sbDatastoreKeyLairs then
+        for dreamId,lairId in pairs(SB_TRACKED_LAIRS) do
+            SBCheckStorageItem(dreamId, lairId + 1, SB_LAIR_OFFSET, value, old_value)
+        end
+    elseif key == sbDatastoreKeyEvents then
+        for eventId, offsets in pairs(SB_TRACKED_EVENTS) do
+            -- Convert address to byte number in the array
+            local address = offsets[1] - SB_EVENT_FLAGS_START
+            SBCheckStorageItem(eventId, address + 1, offsets[2], value, old_value)
+        end
+    end
+end
+
+function SBCheckStorageItem(code, address, offset, value, old_value)
+    local realValue = value[address] & offset
+    if old_value == nil then
+        SBUpdateStorageItem(code, realValue)
+    else
+        local realOldValue = old_value[address] & offset
+        if realValue ~= realOldValue then SBUpdateStorageItem(code, realValue) end
+    end
+end
+
+-- This is the starting state for the item when we connect, so just run the storage changed callback but with a nil old_value
+function SBDataStorageRetrieved(key, value)
+    SBDataStorageChanged(key, value, nil)
+end
+
+function SBUpdateStorageItem(code, data)
+    local storageItem = Tracker:FindObjectForCode(code)
+    if isValidTarget(storageItem) then
+        storageItem.Active = data
+    end
+end

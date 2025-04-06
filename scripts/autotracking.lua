@@ -17,7 +17,7 @@ U8_READ_CACHE_ADDRESS = 0
 
 LAIR_WRAM_OFFSET = 0x7f0203
 
-local function isValidTarget( target )
+function isValidTarget( target )
   return ( target and ( not target.Owner.ModifiedByUser ) )
 end
 
