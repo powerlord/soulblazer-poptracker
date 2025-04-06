@@ -29,7 +29,7 @@ LOCATION_MAPPING = {
   [apIdForChest(7)] = {"@Leo's Painting/Room 2 Chest"}, -- 0x09
   [apIdForChest(8)] = {"@Leo's Painting/Room 2 Metal Enemies Chest"}, -- 0x0A
 
-  [apIdForChest(9)] = {"@Sleepy Stump Chest/I believe I can fly..."}, -- 0x0C
+  [apIdForChest(9)] = {"@Sleepy Stump Chest/In the garbage"}, -- 0x0C
   [apIdForChest(10)] = {"@Mole Outside/Guide them home"}, -- 0x0D
   [apIdForChest(11)] = {"@Water Shrine/1F Chest Near Exit"}, -- 0x0B
   [apIdForChest(12)] = {"@Water Shrine/B1 Behind the Waterfall Chest"}, -- 0x0E
@@ -153,7 +153,7 @@ LOCATION_MAPPING = {
   [apIdForNpcReward(0x35)] = {"@Mermaid in Common House Hidden Room/How'd you find me?"}, -- 0x35
   [apIdForNpcReward(0x36)] = {"@Mermaid Queen/To the next act!"}, -- 0x36
   [apIdForNpcReward(0x37)] = {"@Mermaid with Gift/Mermaid with Gift"}, -- 0x37
-  [apIdForNpcReward(0x38)] = {"@Lue the Dolphin/Prison Break!"}, -- 0x38
+  [apIdForNpcReward(0x38)] = {"@Seabed Prison/Lue's Prison Break!"}, -- 0x38
   [apIdForNpcReward(0x39)] = {"@Rockbird/North-Western Island Crystal"}, -- 0x39
   [apIdForNpcReward(0x3A)] = {"@Blester/Seabed North-East, Crystal South of the Current"}, -- 0x3A
   [apIdForNpcReward(0x3B)] = {"@Durean/Crystal Near Durean"}, -- 0x3B
