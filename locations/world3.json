@@ -290,10 +290,7 @@
                   },
                   {
                     "name": "Secret Cove",
-                    "access_rules": [
-                      "dreamdolphin",
-                      "dreamrod,bigpearl,w3mermaidwestguard,w3dolphinsleepy"
-                    ],
+                    "access_rules": ["dreamdolphin"],
                     "chest_unopened_img": "images/tracker/chestclosed.png",
                     "chest_opened_img": "images/tracker/chestopen.png",
                     "item_count": 4

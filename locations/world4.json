@@ -202,17 +202,11 @@
               },
               {
                 "name": "Dream Lair",
-                "access_rules": [
-                  "dreammushroom",
-                  "dreamrod,w4mushroomsouth,w4grandpanome,w4sleepymushroom"
-                ]
+                "access_rules": ["dreammushroom"]
               },
               {
                 "name": "Dream Tile",
-                "access_rules": [
-                  "dreammushroom",
-                  "dreamrod,w4mushroomsouth,w4grandpanome,w4sleepymushroom"
-                ],
+                "access_rules": ["dreammushroom"],
                 "chest_unopened_img": "images/tracker/chestclosed.png",
                 "chest_opened_img": "images/tracker/chestopen.png"  
               }

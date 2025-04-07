@@ -138,10 +138,7 @@
                 "y": 90
               }
             ],
-            "access_rules": [
-              "dreamstump",
-              "dreamrod,w2squirrelsleepy"
-            ],
+            "access_rules": ["dreamstump"],
             "sections": [
               {
                 "name": "In the garbage"
@@ -202,10 +199,7 @@
           },
           {
             "name": "RIP Turbo",
-            "access_rules": [
-              "dreambird",
-              "w2crocodileisland,w2crocodilegraveyard,w2sleepybird,dreamrod"
-            ]
+            "access_rules": ["dreambird"]
           }
         ]
       },

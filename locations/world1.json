@@ -89,7 +89,7 @@
           },
           {
             "name": "Underground Castle East",
-            "access_rules": ["w1bridgeguard,w1watermillkeeper"],
+            "access_rules": ["watermill"],
             "map_locations": [
               {
                 "map": "world1",
@@ -134,15 +134,13 @@
                 "chest_unopened_img": "images/tracker/chestclosed.png",
                 "chest_opened_img": "images/tracker/chestopen.png",
                 "access_rules": [
-                  "dreamlisa",
-                  "w1bridgeguard,w1watermillkeeper,w1lisa,dreamrod"
+                  "dreamlisa"
                 ]
               },
               {
                 "name": "South-West, Lisa's Lair",
                 "access_rules": [
-                  "dreamlisa",
-                  "w1bridgeguard,w1watermillkeeper,w1lisa,dreamrod"
+                  "dreamlisa"
                 ]
               }
             ]
