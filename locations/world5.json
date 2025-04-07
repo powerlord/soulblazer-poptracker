@@ -256,8 +256,7 @@
                 "sections": [
                   {
                     "name": "Chest of Drawers",
-                    "access_rules": ["w5drawersattic"],
-                    "item_count": 1
+                    "access_rules": ["w5drawersattic"]
                   },
                   {
                     "name": "Marie the Doll",

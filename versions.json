@@ -1,6 +1,21 @@
 {
     "versions": [
         {
+            "package_version": "2.4.1",
+            "download_url": "https://github.com/powerlord/soulblazer-poptracker/releases/download/2.4.1/soulblazer-poptracker-2.4.1.zip",
+            "sha256": "CFAD26F7A83BE59290F3F142EF33B619044F08F7D8B2B584BBF357671A41A1FC",
+            "changelog": [
+                "Add new locations for the Watermill and certain dreams to assist newer players",
+                "Add additional locations for some checks to assist newer players",
+                "Update access rules to use new locations",
+                "Add SNES autotracking for new locations",
+                "Add AP autotracking for new locations.  Requires SoulBlazer APWorld v0.4.0-beta.2 or newer.",
+                "Renamed certain locations to avoid naming conflicts",
+                "Made changes to how AP ids are resolved. This is to make updating these earlier for an upcoming breaking change.",
+                "Moved many locations so they're closer to their actual locations on the map"
+            ]
+        },
+        {
             "package_version": "2.3.0.2",
             "download_url": "https://github.com/powerlord/soulblazer-poptracker/releases/download/2.3.0.2/soulblazer-poptracker-2.3.0.2.zip",
             "sha256": "C701FB0D80ADEB3BB85B600572B11A7D9B2A097F294A33DF4DA6B36E136260F4",
