@@ -277,6 +277,10 @@
             "sections": [
               {
                 "name": "DANCING GRANDMAS!"
+              },
+              {
+                "name": "DANCING GRANDMAS EVENT!",
+                "hosted_item": "summonphoenix"
               }
             ]
           }

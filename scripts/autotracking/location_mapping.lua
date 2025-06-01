@@ -145,7 +145,7 @@ LOCATION_MAPPING = {
   [apIdForNpcReward(0x2E)] = {"@Maid at the Bar/Recharging"}, -- 0x2E
   [apIdForNpcReward(0x2F)] = {"@Item on the Grounds/Please be a good one"}, -- 0x2F
   [apIdForNpcReward(0x30)] = {"@King Magridd/Long live..."}, -- 0x30
-  [apIdForNpcReward(0x31)] = {"ripleo"}, -- 0x31
+  [apIdForNpcReward(0x31)] = {"@Right Tower/Dr. Leo's Item"}, -- 0x31
   [apIdForNpcReward(0x32)] = {"@Magridd Dungeon/B1 Skeleton next to North-East Chest"}, -- 0x32
 
   [apIdForNpcReward(0x33)] = {"@Mermaid in Northeast House/Lonely Mermaid"}, -- 0x33

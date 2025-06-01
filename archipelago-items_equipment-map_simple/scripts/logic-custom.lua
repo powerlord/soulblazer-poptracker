@@ -50,7 +50,7 @@ function canSummonDeathtoll()
     return 0
   end
 
-  -- Skip the red hot items if we have open deathtoll
+  -- Skip the dancing grandmas if we have open deathtoll
   if Tracker:ProviderCountForCode( "opendeathtoll" ) <= 0 then
     if Tracker:ProviderCountForCode( "w4mountainking" ) <= 0 then
       return 0
@@ -68,20 +68,8 @@ function canSummonDeathtoll()
       return 0
     end
 
-    local grandmas = Tracker:FindObjectForCode("@Mountain King/DANCING GRANDMAS!")
-
-    if grandmas.AvailableChestCount > 0 then
-      if Tracker:ProviderCountForCode( "redhotball" ) <= 0 then
-        return 0
-      end
-
-      if Tracker:ProviderCountForCode( "redhotmirror" ) <= 0 then
-        return 0
-      end
-
-      if Tracker:ProviderCountForCode( "redhotrod" ) <= 0 then
-        return 0
-      end
+    if Tracker:ProviderCountForCode( "summonphoenix" ) <= 0 then
+      return 0
     end
   end
 

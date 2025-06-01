@@ -73,7 +73,8 @@ function updateArchipelagoMiscRewardsFromMemorySegment( segment )
   updateLocationFromBit( segment, "@Maid at the Bar/Recharging", 0x7e1b18, 0x40 ) -- 0x2E
   updateLocationFromBit( segment, "@Item on the Grounds/Please be a good one", 0x7e1b18, 0x80 ) -- 0x2F
   updateLocationFromBit( segment, "@King Magridd/Long live...", 0x7e1b19, 0x01 ) -- 0x30
-  updateToggleItemFromBit( segment, "ripleo", 0x7e1b19, 0x02 ) -- 0x31
+  updateLocationFromBit( segment, "@Right Tower/Dr. Leo's Item", 0x7e1b19, 0x02 ) -- 0x31
+  --updateToggleItemFromBit( segment, "ripleo", 0x7e1b19, 0x02 ) -- 0x31 -- old Dr. Leo
   updateLocationFromBit( segment, "@Magridd Dungeon/B1 Skeleton next to North-East Chest", 0x7e1b19, 0x04 ) -- 0x32
 
   updateToggleItemFromBit( segment, "soulmagicianitem", 0x7e1b1a, 0x10 ) -- 0x3C
@@ -84,22 +85,4 @@ function updateArchipelagoMiscRewardsFromMemorySegment( segment )
 
 end
 
-function updateArchipelagoEventFlagsFromMemorySegment( segment )
-  -- check if we're in the game.
-  if not isInGame() or AutoTracker:GetConnectionState("AP") == CONNECTIONSTATE_ACTIVE then
-    return false
-  end
-
-  if not AUTOTRACKER_ENABLE_LOCATION_TRACKING then
-    return
-  end
-
-  InvalidateReadCaches()
-
-  updateToggleItemFromBit( segment, "watermill", 0x7e1a62, 0x10 )
-
-end
-
-
 ScriptHost:AddMemoryWatch( "Soul Blazer Archipelago Misc Rewards", 0x7e1b13, 9, updateArchipelagoMiscRewardsFromMemorySegment )
-ScriptHost:AddMemoryWatch( "Soul Blazer Event Flags", 0x7e1a5e, 9, updateArchipelagoEventFlagsFromMemorySegment )

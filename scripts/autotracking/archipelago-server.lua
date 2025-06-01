@@ -200,7 +200,9 @@ local SB_EVENT_FLAGS_START = 0x7e1a5e
 -- [itemname] = lair id (in hex)
 local SB_TRACKED_LAIRS = {["dreamlisa"] = 0x032, ["dreambird"] = 0x074, ["dreamstump"] = 0x075, ["dreamdolphin"] = 0x079, ["dreammushroom"] = 0x0e7}
 -- [itemname] = {address, bit}
-local SB_TRACKED_EVENTS = {["watermill"] = {0x7e1a62, 0x10}}
+local SB_TRACKED_EVENTS = {["watermill"] = {0x7e1a62, 0x10}, ["ripleo"] = {0x7e1a66, 0x20}, ["summonphoenix"] = {0x7e1a68, 0x01},
+    ["chief"] = {0x7e1a79, 0x01}, ["guardian"] = {0x7e1a79, 0x02}, ["mermaid"] = {0x7e1a79, 0x04}, ["nome"] = {0x7e1a79, 0x08},
+    ["marie"] = {0x7e1a79, 0x10}, ["king"] = {0x7e1a79, 0x20}}
 local SB_LAIR_OFFSET = 0x80
 
 function SBOnClear()
@@ -276,7 +278,7 @@ function SBDataStorageChanged(key, value, old_value)
             SBCheckStorageItem(dreamId, lairId + 1, SB_LAIR_OFFSET, value, old_value)
         end
     elseif key == sbDatastoreKeyEvents then
-        for eventId, offsets in pairs(SB_TRACKED_EVENTS) do
+        for eventId,offsets in pairs(SB_TRACKED_EVENTS) do
             -- Convert address to byte number in the array
             local address = offsets[1] - SB_EVENT_FLAGS_START
             SBCheckStorageItem(eventId, address + 1, offsets[2], value, old_value)

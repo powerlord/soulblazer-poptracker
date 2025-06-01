@@ -11,6 +11,7 @@ Tracker:AddItems( "items/emblems.json" )
 Tracker:AddItems( "items/inventory.json" )
 Tracker:AddItems( "items/souls.json" )
 Tracker:AddItems( "items/stones.json" )
+Tracker:AddItems( "items/events.json" )
 
 -- Load variant-specific scripts/layouts
 ScriptHost:LoadScript( "scripts/init-custom.lua" )

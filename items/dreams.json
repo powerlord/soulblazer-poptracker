@@ -1,11 +1,5 @@
 [
   {
-    "name": "Water Mill",
-    "type": "toggle",
-    "img": "images/tracker/soullight.png",
-    "codes": "watermill"
-  },
-  {
     "name": "Lisa's Dream",
     "type": "toggle",
     "img": "images/tracker/soullight.png",

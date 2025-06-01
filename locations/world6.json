@@ -180,7 +180,7 @@
               },
               {
                 "name": "B2 Hidden Chest in North Room South-West Corner",
-                "access_rules": ["$canDefeatSpiritMonsters,[soulreality]"],
+                "access_rules": ["$canDefeatSpiritMonsters"],
                 "chest_unopened_img": "images/tracker/chestclosed.png",
                 "chest_opened_img": "images/tracker/chestopen.png"
               },
@@ -196,13 +196,13 @@
               },
               {
                 "name": "B2 Hidden Chest North-East of B3 stairs",
-                "access_rules": ["$canDefeatSpiritMonsters,[soulreality]"],
+                "access_rules": ["$canDefeatSpiritMonsters"],
                 "chest_unopened_img": "images/tracker/chestclosed.png",
                 "chest_opened_img": "images/tracker/chestopen.png"
               },
               {
                 "name": "B2 Hidden Chest at Fake Dead End",
-                "access_rules": ["$canDefeatSpiritMonsters,[soulreality]"],
+                "access_rules": ["$canDefeatSpiritMonsters"],
                 "chest_unopened_img": "images/tracker/chestclosed.png",
                 "chest_opened_img": "images/tracker/chestopen.png"
               },
@@ -212,7 +212,7 @@
               },
               {
                 "name": "B3 Hidden Chest, North-West Corner",
-                "access_rules": ["$canDefeatSpiritMonsters,[soulreality]"],
+                "access_rules": ["$canDefeatSpiritMonsters"],
                 "chest_unopened_img": "images/tracker/chestclosed.png",
                 "chest_opened_img": "images/tracker/chestopen.png"
               },
@@ -252,12 +252,10 @@
                 "name": "1F North-East Corner"
               },
               {
-                "name": "2F North-West Room",
-                "access_rules": ["[soulreality]"]
+                "name": "2F North-West Room"
               },
               {
-                "name": "2F South-East Room",
-                "access_rules": ["[soulreality]"]
+                "name": "2F South-East Room"
               },
               {
                 "name": "3F South-East Corner"
@@ -297,40 +295,41 @@
                 "name": "2F East Chests",
                 "chest_unopened_img": "images/tracker/chestclosed.png",
                 "chest_opened_img": "images/tracker/chestopen.png",
-                "access_rules": ["[soulreality]"],
                 "clear_as_group": false,
                 "item_count": 2
               },
               {
-                "name": "2F East, below Chests",
-                "access_rules": ["[soulreality]"]
+                "name": "2F East, below Chests"
               },
               {
-                "name": "2F Hidden Lair in Center",
-                "access_rules": ["[soulreality]"]
+                "name": "2F Hidden Lair in Center"
               },
               {
-                "name": "3F Between Fireball Shooters",
-                "access_rules": ["[soulreality]"]
+                "name": "3F Between Fireball Shooters"
               },
               {
                 "name": "3F South-West Chests",
                 "chest_unopened_img": "images/tracker/chestclosed.png",
                 "chest_opened_img": "images/tracker/chestopen.png",
-                "access_rules": ["[soulreality]"],
                 "clear_as_group": false,
                 "item_count": 2
               },
               {
-                "name": "Dr. Leo",
+                "name": "Dr. Leo's Item",
                 "chest_unopened_img": "images/tracker/monsterlairopen.png",
                 "chest_opened_img": "images/tracker/monsterlairsealed.png",
-                "access_rules": ["[soulreality],w6leo,w6soldierdok,w6soldieroct"],
+                "access_rules": ["w6leo,w6soldierdok,w6soldieroct"]
+              },
+              {
+                "name": "Dr. Leo's Sacrifice",
+                "chest_unopened_img": "images/tracker/monsterlairopen.png",
+                "chest_opened_img": "images/tracker/monsterlairsealed.png",
+                "access_rules": ["w6leo,w6soldierdok,w6soldieroct"],
                 "hosted_item": "ripleo"
               },
               {
                 "name": "Boss: Demon Falcon",
-                "access_rules": ["[soulreality],mobilekey"],
+                "access_rules": ["mobilekey"],
                 "chest_unopened_img": "images/bosses/demonfalcon.png"
               }
             ]

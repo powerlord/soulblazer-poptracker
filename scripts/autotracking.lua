@@ -347,9 +347,29 @@ function updateReleasedSoulsFromMemorySegment( segment )
   end
 end
 
+function updateSpecificEventFlagsFromMemorySegment( segment )
+  -- check if we're in the game.
+  if not isInGame() or AutoTracker:GetConnectionState("AP") == CONNECTIONSTATE_ACTIVE then
+    return false
+  end
+
+  -- Despite looking like items, these are only used for location tracking
+  if not AUTOTRACKER_ENABLE_LOCATION_TRACKING then
+    return
+  end
+
+  InvalidateReadCaches()
+
+  updateToggleItemFromBit( segment, "watermill", 0x7e1a62, 0x10 )
+  updateToggleItemFromBit( segment, "ripleo", 0x7e1a66, 0x20 )
+  updateToggleItemFromBit( segment, "summonphoenix", 0x7e1a68, 0x01 )
+
+end
+
 ScriptHost:AddMemoryWatch( "Soul Blazer Item Data", 0x7e1b1e, 64, updateItemsFromMemorySegment )
 ScriptHost:AddMemoryWatch( "Soul Blazer Stone Holders", 0x7e1a79, 64, updateStoneHoldersFromMemorySegment )
 ScriptHost:AddMemoryWatch( "Soul Blazer Souls from the Sky", 0x7e1b82, 64, updateSoulsFromSkyFromMemorySegment )
 ScriptHost:AddMemoryWatch( "Soul Blazer Soul Reveals from Lairs", 0x7e1ade, 64, updateReleasedSoulsFromMemorySegment )
+ScriptHost:AddMemoryWatch( "Soul Blazer Event Flags", 0x7e1a5e, 11, updateSpecificEventFlagsFromMemorySegment )
 
 ScriptHost:LoadScript( "scripts/autotracking-custom.lua" )

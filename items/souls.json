@@ -94,11 +94,5 @@
     "type": "toggle",
     "img": "images/tracker/soullight.png",
     "codes": "soulrealityitem"
-  },
-  {
-    "name": "RIP Leo",
-    "type": "toggle",
-    "img": "images/tracker/gravestone.png",
-    "codes": "ripleo"
   }
 ]

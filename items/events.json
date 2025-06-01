@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Water Mill",
+    "type": "toggle",
+    "img": "images/tracker/soullight.png",
+    "codes": "watermill"
+  },
+  {
+    "name": "RIP Leo",
+    "type": "toggle",
+    "img": "images/tracker/gravestone.png",
+    "codes": "ripleo"
+  },
+  {
+    "name": "Summon the Phoenix",
+    "type": "toggle",
+    "img": "images/magic/phoenix.png",
+    "codes": "summonphoenix"
+  }
+
+]
