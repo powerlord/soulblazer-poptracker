@@ -1,6 +1,17 @@
 {
     "versions": [
         {
+            "package_version": "2.5.0",
+            "download_url": "https://github.com/powerlord/soulblazer-poptracker/releases/download/v2.5.0/soulblazer-poptracker-2.5.0.zip",
+            "sha256": "EA462EFA8B775502472AD00D2CA576F64EA3636DDF5CF6647356E7C74523EBDB",
+            "changelog": [
+                "Split Dr. Leo and Dancing Grandmas into two checks and added auto-tracking for the new checks",
+                "The above fixes issues with AP where the items were collected and marked the locations as checked",
+                "Corrected logic in Light Shrine Basement and Model Town 2 to match the randomizer",
+                "Added missing area leader auto-tracking when using an AP connection"
+            ]
+        },
+        {
             "package_version": "2.4.1",
             "download_url": "https://github.com/powerlord/soulblazer-poptracker/releases/download/2.4.1/soulblazer-poptracker-2.4.1.zip",
             "sha256": "CFAD26F7A83BE59290F3F142EF33B619044F08F7D8B2B584BBF357671A41A1FC",
