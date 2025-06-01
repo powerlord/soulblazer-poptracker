@@ -6,7 +6,7 @@
             "sha256": "EA462EFA8B775502472AD00D2CA576F64EA3636DDF5CF6647356E7C74523EBDB",
             "changelog": [
                 "Split Dr. Leo and Dancing Grandmas into two checks and added auto-tracking for the new checks",
-                "The above fixes issues with AP where the items were collected and marked the locations as checked",
+                "The above fixes issues with AP where the items were collected and marked event locations as checked",
                 "Corrected logic in Light Shrine Basement and Model Town 2 to match the randomizer",
                 "Added missing area leader auto-tracking when using an AP connection"
             ]
