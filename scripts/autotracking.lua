@@ -1,6 +1,7 @@
 -- Constants for AutoTracker:GetConnectionState
-CONNECTIONSTATE_DISABLED = 1
-CONNECTIONSTATE_UNAVAILABLE = 1
+CONNECTIONSTATE_UNAVAILABLE = -1
+CONNECTIONSTATE_DISABLED = 0
+CONNECTIONSTATE_DISCONNECTED = 1
 CONNECTIONSTATE_NOTREADY = 2
 CONNECTIONSTATE_ACTIVE = 3
 
@@ -347,6 +348,16 @@ function updateReleasedSoulsFromMemorySegment( segment )
   end
 end
 
+function ToggleSummonPhoenix( segment )
+  local openDeathtoll = Tracker:FindObjectForCode("open_deathtoll")
+  if openDeathtoll and openDeathtoll.Active then
+    return
+  end
+
+  updateToggleItemFromBit( segment, "summonphoenix", 0x7e1a68, 0x01 )
+end
+
+
 function updateSpecificEventFlagsFromMemorySegment( segment )
   -- check if we're in the game.
   if not isInGame() or AutoTracker:GetConnectionState("AP") == CONNECTIONSTATE_ACTIVE then
@@ -362,8 +373,138 @@ function updateSpecificEventFlagsFromMemorySegment( segment )
 
   updateToggleItemFromBit( segment, "watermill", 0x7e1a62, 0x10 )
   updateToggleItemFromBit( segment, "ripleo", 0x7e1a66, 0x20 )
-  updateToggleItemFromBit( segment, "summonphoenix", 0x7e1a68, 0x01 )
+  ToggleSummonPhoenix( segment )
+  --updateToggleItemFromBit( segment, "summonphoenix", 0x7e1a68, 0x01 )
+end
 
+-- From the Lua manual section 11.5 – Sets and Bags
+function Set (list)
+  local set = {}
+  for _, l in ipairs(list) do set[l] = true end
+  return set
+end
+
+LisaLockedSectionsSet = Set{"Grass Valley/West Grass Valley/Underground Castle East/South-West, Lisa's Chest",
+ "Grass Valley/West Grass Valley/Underground Castle East/South-West, Lisa's Lair"}
+
+WatermillLockedSectionsSet = Set{"Grass Valley/West Grass Valley/Underground Castle East/Above the Elevator",
+ "Grass Valley/West Grass Valley/Underground Castle East/Entrance",
+ "Grass Valley/West Grass Valley/Underground Castle East/Southern U",
+ "Grass Valley/West Grass Valley/Underground Castle East/Northern U",
+ "Grass Valley/West Grass Valley/Underground Castle East/Stone Garden",
+ "Grass Valley/West Grass Valley/Underground Castle East/Conveyor Dead End",
+ "Grass Valley/West Grass Valley/Underground Castle East/4 Lair Gauntlet",
+ "Grass Valley/West Grass Valley/Underground Castle East/Narrow Bridge",
+ "Grass Valley/West Grass Valley/Underground Castle East/Near Jewel Fairy",
+ "Grass Valley/West Grass Valley/Underground Castle East/South-West, Lisa's Chest",
+ "Grass Valley/West Grass Valley/Underground Castle East/South-West, Lisa's Lair"}
+
+SleepyMushroomSectionsSet = Set{"Mountain of Lost Souls/Southeast Lake/Lune/Dream Lair",
+"Mountain of Lost Souls/Southeast Lake/Lune/Dream Tile"}
+
+RIPQueenSection = "Magridd Castle/The Queen/RIP the Queen (post Leo's Death)"
+SleepyStumpChestSection = "Woods of Greenwood/Hole to Sleepy Stump/Sleepy Stump Chest/In the garbage"
+MoleRemainsSection = "Woods of Greenwood/Hole to Turbo's Remains/RIP Turbo"
+SecretCoveSection = "Seabed Sanctuary/Mermaid Common House/Underwater.../Ghost Ship/Secret Cove"
+
+function AreAllSectionsChecked(sectionsSet)
+  local allSectionsChecked = true
+  for sectionName, _ in pairs(sectionsSet) do
+    local section = Tracker:FindObjectForCode("@" .. sectionName)
+
+    if section and section.AvailableChestCount > 0 then
+      allSectionsChecked = false
+      break;
+    end
+  end
+
+  return allSectionsChecked
+end
+
+-- Returns true or false so we can check it on data storage change
+function ActivateToggleItemIfAllSectionsChecked(itemCode, sectionsSet)
+  local allSectionsChecked = AreAllSectionsChecked(sectionsSet)
+  if allSectionsChecked then
+    local item = Tracker:FindObjectForCode(itemCode)
+    if item then
+      item.Active = true
+    end
+  end
+
+  return allSectionsChecked
+end
+
+-- Returns true or false so we can check it on data storage change
+function ActivateToggleItemIfSectionChecked(itemCode, sectionName)
+  local section = Tracker:FindObjectForCode("@" .. sectionName)
+  local sectionChecked = (section and section.AvailableChestCount == 0)
+  if sectionChecked then
+    local item = Tracker:FindObjectForCode(itemCode)
+    if item then
+      item.Active = true
+    end
+  end
+
+  return sectionChecked
+end
+
+function FixLisaEventFlag()
+  return ActivateToggleItemIfAllSectionsChecked("dreamlisa", LisaLockedSectionsSet)
+end
+
+function FixWatermillEventFlag()
+  return ActivateToggleItemIfAllSectionsChecked("watermill", WatermillLockedSectionsSet)
+end
+
+function FixDreamingMushroomFlag()
+  return ActivateToggleItemIfAllSectionsChecked("dreammushroom", SleepyMushroomSectionsSet)
+end
+
+function ToggleItemIfSectionChecked(locationSection, sectionName, itemName)
+  if locationSection.FullID == sectionName and locationSection.AvailableChestCount == 0 then
+    local item = Tracker:FindObjectForCode(itemName)
+    if item then
+      item.Active = true
+    end
+  end
+end
+
+--This will need to change if we ever add full maps
+function FixEventsCollectedSectionChanged(locationSection)
+  if not locationSection then
+    return
+  end
+
+  if LisaLockedSectionsSet[locationSection.FullID] then
+    FixLisaEventFlag()
+  end
+
+  if WatermillLockedSectionsSet[locationSection.FullID] then
+    FixWatermillEventFlag()
+  end
+
+  if SleepyMushroomSectionsSet[locationSection.FullID] then
+    FixDreamingMushroomFlag()
+  end
+
+  ToggleItemIfSectionChecked(locationSection, RIPQueenSection, "ripleo")
+  ToggleItemIfSectionChecked(locationSection, SleepyStumpChestSection, "dreamstump")
+  ToggleItemIfSectionChecked(locationSection, MoleRemainsSection, "dreambird")
+  ToggleItemIfSectionChecked(locationSection, SecretCoveSection, "dreamdolphin")
+
+end
+
+-- This should work because summonphoenix SNES checking is now turned off if open_deathtoll is on
+function FixSummonPhoenix(code)
+  local openDeathtoll = Tracker:FindObjectForCode("opendeathtoll")
+
+  if openDeathtoll and openDeathtoll.Active then
+    local summonPhoenix = Tracker:FindObjectForCode("summonphoenix")
+
+    if summonPhoenix then
+      summonPhoenix.Active = true
+    end
+  end
 end
 
 ScriptHost:AddMemoryWatch( "Soul Blazer Item Data", 0x7e1b1e, 64, updateItemsFromMemorySegment )
@@ -371,5 +512,10 @@ ScriptHost:AddMemoryWatch( "Soul Blazer Stone Holders", 0x7e1a79, 64, updateSton
 ScriptHost:AddMemoryWatch( "Soul Blazer Souls from the Sky", 0x7e1b82, 64, updateSoulsFromSkyFromMemorySegment )
 ScriptHost:AddMemoryWatch( "Soul Blazer Soul Reveals from Lairs", 0x7e1ade, 64, updateReleasedSoulsFromMemorySegment )
 ScriptHost:AddMemoryWatch( "Soul Blazer Event Flags", 0x7e1a5e, 11, updateSpecificEventFlagsFromMemorySegment )
+
+-- May change later
+ScriptHost:AddOnLocationSectionChangedHandler("Fix Event Checks", FixEventsCollectedSectionChanged)
+ScriptHost:AddWatchForCode("Fix Deathtoll Phoenix Check", "opendeathtoll", FixSummonPhoenix)
+--ScriptHost:AddWatchForCode("Fix Phoenix Check", "summonphoenix", FixSummonPhoenix)
 
 ScriptHost:LoadScript( "scripts/autotracking-custom.lua" )
