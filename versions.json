@@ -1,6 +1,15 @@
 {
     "versions": [
         {
+            "package_version": "2.5.1",
+            "download_url": "https://github.com/powerlord/soulblazer-poptracker/releases/download/v2.5.1/soulblazer-poptracker-2.5.1.zip",
+            "sha256": "F69A9339C7D7AA90B1BABCF8A1A083E8BDB5F56C2587F80F86BF4D9FD643A891",
+            "changelog": [
+                "AP: Correctly update event locations when their corresponding checks are collected",
+                "Event-only locations now use a diamond shape instead of the default square"
+            ]
+        },
+        {
             "package_version": "2.5.0",
             "download_url": "https://github.com/powerlord/soulblazer-poptracker/releases/download/v2.5.0/soulblazer-poptracker-2.5.0.zip",
             "sha256": "EA462EFA8B775502472AD00D2CA576F64EA3636DDF5CF6647356E7C74523EBDB",
