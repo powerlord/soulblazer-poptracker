@@ -215,7 +215,8 @@
               {
                 "map": "world1",
                 "x": 655,
-                "y": 420
+                "y": 420,
+                "shape": "diamond"
               }
             ],
             "sections": [
@@ -234,7 +235,8 @@
               {
                 "map": "world1",
                 "x": 950,
-                "y": 500
+                "y": 500,
+                "shape": "diamond"
               }
             ],
             "sections": [

@@ -240,7 +240,8 @@
                   {
                     "map": "world4",
                     "x": 310,
-                    "y": 710
+                    "y": 710,
+                    "shape": "diamond"
                   }
                 ],
                 "sections": [

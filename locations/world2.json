@@ -116,7 +116,8 @@
               {
                 "map": "world2",
                 "x": 125,
-                "y": 700
+                "y": 700,
+                "shape": "diamond"
               }
             ],
             "access_rules": [
@@ -172,7 +173,8 @@
           {
             "map": "world2",
             "x": 285,
-            "y": 725
+            "y": 725,
+            "shape": "diamond"
           }
         ],
         "sections": [
