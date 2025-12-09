@@ -419,13 +419,16 @@
             "name": "1F North Lair"
           },
           {
-            "name": "Basement East Lair"
+            "name": "Basement East Lair",
+            "access_rules": ["[soullight]"]
           },
           {
-            "name": "Basement Lair Near Portal"
+            "name": "Basement Lair Near Portal",
+            "access_rules": ["[soullight]"]
           },
           {
             "name": "Boss: Elemental Statues",
+            "access_rules": ["[soullight]"],
             "chest_unopened_img": "images/bosses/elementalstatues.png"
           },
           {
@@ -437,7 +440,7 @@
           {
             "name": "Basement Spirit Lair",
             "access_rules": [
-              "$canDefeatSpiritMonsters"
+              "$canDefeatSpiritMonsters, [soullight]"
             ]
           }
         ]
