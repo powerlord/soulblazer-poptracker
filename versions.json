@@ -1,6 +1,17 @@
 {
     "versions": [
         {
+            "package_version": "2.5.2",
+            "download_url": "https://github.com/powerlord/soulblazer-poptracker/releases/download/v2.5.2/soulblazer-poptracker-2.5.2.zip",
+            "sha256": "68A317FD1317FDC2A3FD1181E6BCF3B4E385F4F703B5E6221FC43E376A36152F",
+            "changelog": [
+                "Reverted logic changes:",
+                "* World 2 locations in the Light Shrine basement are marked out of logic without the Soul of Light",
+                "* World 5 locations that require defeating hidden enemies are marked out of logic without the Soul of Detection",
+                "* World 6 locations that are invisible or behind invisible passages are marked out of logic without the Soul of Reality"
+            ]
+        },
+        {
             "package_version": "2.5.1",
             "download_url": "https://github.com/powerlord/soulblazer-poptracker/releases/download/v2.5.1/soulblazer-poptracker-2.5.1.zip",
             "sha256": "F69A9339C7D7AA90B1BABCF8A1A083E8BDB5F56C2587F80F86BF4D9FD643A891",
